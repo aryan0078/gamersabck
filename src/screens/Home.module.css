@@ -1,0 +1,397 @@
+.main{
+    background-image: url('./assets/back.jpg');
+flex-direction: column;
+    display: flex;
+overflow: hidden;
+background-size: cover;
+    padding-left: 6%;
+    justify-content: center;
+    align-items: center;
+}
+.emptyspace{
+   
+    height: 200px;
+    width: 90%;
+}
+.btitleholder{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+}
+.animationtext{
+    color:#CA0C2A;
+    font-size: 57.5px;
+    font-weight: 700;
+    line-height: 69.6px;
+  margin-left: 5%;
+    word-spacing: 0px;
+}
+.title{
+    align-self: start;
+    
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    color: white;
+}
+.btitle{
+    align-self: start;
+    display: inline-flex;
+    font-size: 57.5px;
+    font-weight: 700;
+    line-height: 69.6px;
+    color: white;
+    word-spacing: 0px;
+}
+.searchbox{
+    
+    background-color: #121212;
+    width: 80%;
+    height: 132px;
+    flex-direction: row;
+    border-radius: 10px;
+    align-self: start;
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.whatholder{
+color: white;
+    position: relative;
+    width: 30%;
+    font-size: medium;
+    text-align: left;
+}
+
+
+.upcoming{
+    color: white;
+    font-weight: 700;
+font-size:35px;
+
+ line-height: 35px;
+}
+.upcomingholder{
+    align-self: flex-start;
+    margin-top: 5%;
+   
+}
+.searchind{
+    color: white;
+}
+.cardholder{
+    display: flex;
+    margin-top: 2%;
+    flex-direction: column;
+}
+.divider{
+    width: 30px;
+}
+
+.row1{
+   
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    width: 5em;
+}
+.entertainmentholder{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: mont;
+}
+.entertainmenl1{
+    color: white;
+}
+.entertainmenl2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: mont;
+    src: url('../components/fonts/Montserrat-Regular.ttf');
+  }
+  .dealofthedayholder{
+      display: flex;
+   box-shadow: #02011d 10px 10px 10px 0px;
+    align-items: center;
+    
+      font-family: mont;
+      margin-top: 10%;
+      background-color: black;
+      width: 96%;
+      height: 20em;
+      border-radius: 10px;
+      flex-direction:row;
+  }
+  .buttonndstuff{
+      display: flex;
+    margin-left: 5rem;
+      width: 50%;
+      flex-direction: column;
+      flex:0.5
+  }
+  .dealtitle1{
+      color: white;
+      font-weight: bolder;
+      font-size: 4em;
+      font-family: mont;
+      position: relative;
+      top: 1rem;
+  }
+  .dealtitle2{
+    color: white;
+   
+    font-size: 1em;
+    position: relative;
+    top: -1rem;
+    font-family: mont;
+}
+.grabdealnowbtn{
+    background-color: #AA0020;
+    border-radius: 10px;
+    color: white;
+    width: 50%;
+    height: 3.5em;
+    border-width: 0px;
+}
+.off{
+    color: white;
+    width: 50%;
+    flex: 0.5;
+
+    font-size: 10em;
+font-weight: bolder;
+height:12rem;
+margin-top: 1rem;
+margin-right: 10rem;
+justify-content: flex-end;
+display: flex;
+}
+.sellticketholderl{
+    margin-top: 4%;
+color: grey;
+}
+.sellticketholder2{
+    color: white;
+    font-size: xx-large;
+}
+.sellticketholder{
+    display: flex;
+    margin-top:5%;
+    width: 110%;
+   position: relative;
+   left:-2%;margin-bottom: 10%;
+flex-direction: column;
+   padding-left: 5%;
+    background-color: #282828;
+    align-self: start;
+}
+.lableholder{
+    display: flex;
+    flex-direction: column;
+}
+.textcontainer{
+    background-color: honeydew;
+    width: 60%;
+    height: 25em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 5%;
+padding-bottom: 2%;
+z-index: 150;
+    justify-content: center;
+    margin-top: 8%;
+}
+p{
+    transition: all ease 1s;
+    font-family: mont;
+}
+.sellticketlongtext{
+    align-self: center;
+justify-self: center;
+font-size: 30px;
+line-height: 45px;
+word-wrap:break-word;
+}
+.allthebuttons{
+    align-self: flex-start;
+    justify-self: end;
+flex-direction: row;
+    z-index: 1;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 3%;
+ 
+}
+.sellticketbutton{
+    border-width: 0px;
+width: 14%;
+height: 6em;
+font-size:1em;
+margin-right: 8%;
+background-color: #282828;
+color: white;
+font-family: mont;
+transition: all ease-out 0.5s;
+    
+}
+.sellticketbutton:hover{
+    border-width: 0px;
+    border-bottom-width: 2px;
+font-family: mont;
+    border-color: #CA0C2A;
+}
+.getstartedbtn{
+    border-radius: 5px;
+    background-color:#CA0C2A ;
+    color: white;
+    width: 10em;
+    height: 3.5em;
+    position: relative;
+    left: 35%;
+    border-width: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: all ease 0.5s;
+}
+.getstartedbtn:hover{
+    transform: translateY(-5px)
+}
+.blogsectionholder{
+    
+    display: flex;
+    width: 100%;
+   position: relative;
+
+flex-direction: column;
+  
+   
+    align-self: start;
+}
+.cardhoderblog{
+    margin-top: 2.5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    left: -1%;
+    position: relative;
+}
+.card1blog{
+    width: 50%;
+    height: 35em;
+background-color: #121212;
+margin-right: 1%;
+padding-left: 5%;
+margin-left: 0.5%;
+padding-right: 5%;
+display: flex;
+border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.card2blog{
+    background-color: violet;
+    width: 50%;
+    background-image: url('../components/b1.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    height: 35em;
+}
+.blogbtn1{
+    background-color: #CA0C2A;
+    width: 10em;
+    border-width: 0px;
+    border-radius: 5px;
+    color: white;
+    height: 2em;
+    font-size: small;
+    margin-bottom: 5%;
+}
+.blogcardt1{
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    font-family: mont;
+}
+.blogcardt2{
+    font-weight: lighter;
+    color: white;
+    font-size: 18px;
+    font-family: mont;
+    line-height: 28px;
+}
+.readmorebtn{
+    background-color: black;
+    width: 10em;
+    height: 3em;
+    border-width: 0px;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    position: relative;
+    margin-top: 9%;
+    transition:  all .5s ease
+}
+.readmorebtn:hover{
+transform: translateY(-5px);
+}
+.testnomialsholder{
+    display: flex;
+    width: 100%;
+   position: relative;
+
+flex-direction: column;
+  
+   
+    align-self: start;
+    margin-top: 5%;
+}
+.testnomialcardholder{
+    display: flex;
+    flex-direction: row;
+    width: 20em;
+    height: 20em;
+
+}
+.testnomialcards{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+   
+  margin-right: 2%;
+    height: 17em;
+justify-content: center;
+align-items: left;
+padding:2%;
+text-align: left;
+    background-color: #121212;
+}
+.row1test{
+display: flex;
+width: 100%;
+flex-direction: row;
+}
+.imgstarandname{
+display: flex;
+margin-top: 2.5%;
+flex-direction: row;
+}
+.nametimestar{
+    font-family: mont;
+    color: white;
+    margin-left: 5%;
+}

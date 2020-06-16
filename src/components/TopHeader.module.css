@@ -1,0 +1,34 @@
+
+.branding{
+
+background-color: pink;
+display: flex;
+margin-left: 2%;
+flex-direction:column;
+
+
+}
+.l1{
+    color: white;
+    font-size: small;
+    position: absolute;
+    top:-10px;
+    font-weight: bolder;
+  
+
+
+
+}
+.topheader{
+    width: 100%;
+    display: flex;
+ 
+}
+.l2{
+    color:white;
+    position: absolute;
+    top: 5px;
+ 
+    
+    font-size: 10px;
+}

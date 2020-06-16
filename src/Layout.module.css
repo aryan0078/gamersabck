@@ -1,0 +1,22 @@
+.logo{
+    width: 5%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    background-image: url('./components/new.png');
+    background-size: 90% 95%;
+    background-repeat: no-repeat;
+    }
+.loginregbtn{
+    position: relative;
+    right: 0px;
+    color: grey;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: mont;
+    background-color: #121212;
+border-width: 0px;  
+  border-right-width: 0.5px ;
+  border-left-width: 0.5px ;
+border-right-color: grey;
+}

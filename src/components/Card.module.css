@@ -1,0 +1,108 @@
+.cardholder{
+   display: flex;
+   flex-direction: column;
+    width: 28em;
+    height: 35em;
+ justify-content: center;
+ align-items: center;
+    border-radius: 10px;
+ position: relative;
+    overflow: hidden;
+
+}
+.cardholder:hover{
+
+}
+.imgholder{
+   
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+background-image: url('./b1.jpg');
+    background-color: blue;
+   filter: grayscale(80%);
+  
+  position: relative;
+    background-repeat: no-repeat;
+    transition: all 1s;
+   
+   
+}
+.img:hover{
+    transform: scale(1.1);
+    filter: grayscale(20%);
+}
+.eventp{
+    color: white;
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 5%;
+    top: 60%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+
+    font-size: medium;
+   font-family: mont;
+  
+}
+.eventn{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 5%;
+    top: 70%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+ 
+    font-size: 30px;
+    font-family: mont;
+    
+}
+.eventl{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 5%;
+    top: 85%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+
+    font-size: medium;
+    font-family: mont;
+ 
+}
+@font-face {
+    font-family: mont;
+    src: url('./fonts/Montserrat-Regular.ttf');
+  }
+.booknow{
+    display: none;
+    color: white;
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 5%;
+    top: 60%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+
+    font-size: medium;
+   font-family: mont;
+}
+.booknow:hover{
+display: block;
+color: white;
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 5%;
+    top: 60%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+
+    font-size: medium;
+   font-family: mont;
+}

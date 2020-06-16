@@ -40,7 +40,7 @@ menu = (
         <div className={styles.main}> 
       
         <span className={styles.emptyspace}></span>
-        <p className={styles.title}>All fun start here</p>
+        <p className={styles.title}>ALL FUN START HERE</p>
     <div className={styles.btitleholder}>
     
         <h1 className={styles.btitle}>Discover</h1><div className={styles.animationtext}><Typewriter
@@ -54,19 +54,19 @@ menu = (
 <h1 className={styles.btitle}>around you.</h1>
         <div className={styles.searchbox}>
           <div className={styles.whatholder}>
-            <h3 className={styles.searchind} style={{marginLeft:'15px'}}>What</h3>
+            <h3 className={styles.searchind} style={{marginLeft:'15px'}}>WHAT</h3>
             <Dropdown overlay={this.menu} placement="bottomLeft" style={{backgroundColor:'black'}}>
       <Button  size={'large'} disabled={true} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}} >Select Category</Button>
     </Dropdown>
             </div>
             <div className={styles.whatholder}>
-            <h3 className={styles.searchind}>When</h3>
+            <h3 className={styles.searchind}>WHEN</h3>
             <Dropdown overlay={this.menu} placement="bottomLeft">
       <Button  size={'large'} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}}>Select Location</Button>
     </Dropdown>
             </div>
             <div className={styles.whatholder}>
-            <h3 className={styles.searchind}>Where</h3>
+            <h3 className={styles.searchind}>WHERE</h3>
             <Dropdown overlay={this.menu} >
       <Button  size={'large'} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}}>Select Category</Button>
     </Dropdown>

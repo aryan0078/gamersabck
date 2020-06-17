@@ -68,7 +68,7 @@ menu = (
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHERE</h3>
             <Dropdown overlay={this.menu} >
-      <Button  size={'large'} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}}>Select Category</Button>
+      <Button  size={'large'} style={{textAlign:'left',backgroundColor:'#121212',color:'white',borderWidth:'0px',}}>Select Category</Button>
     </Dropdown>
             </div>
             <div>
@@ -76,13 +76,13 @@ menu = (
             </div>
         </div>
         <div className={styles.upcomingholder}>
-          <h3 style={{color:'white'}}>Discover The Fun!</h3>
+          <h3 style={{color:'white',alignSelf:'flex-start'}}>DISCOVER THE FUN!</h3>
           <h1 className={styles.upcoming}>Upcoming Events</h1>
           <div className={styles.cardholder}>
     <div className={styles.row1}>
-   <Card size={'58em'}/>
+   <Card size={'60%'}/>
    <span className={styles.divider}/>
-   <Card/>
+   <Card size={'40%'}/>
    </div>
  
    <div className={styles.row1}>
@@ -171,7 +171,7 @@ menu = (
         <div className={styles.testnomialsholder}> 
         <div className={styles.lableholder}>
           <h2 className={styles.sellticketholderl}>TESTNOMIALS</h2>
-          <h1 className={styles.sellticketholder2}>Hear From Our Organizers</h1>
+          <h1 className={styles.upcoming}>Hear From Our Organizers</h1>
         </div>
      <div className={styles.alltestcardholder}>
         <Carousel  dots={false} draggable={true}>

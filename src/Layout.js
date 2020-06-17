@@ -33,12 +33,14 @@ export default class AppLayout extends Component {
 
         </Header>
         <Layout>
+          <div>
         <Sider collapsedWidth={60} width={150} trigger={null} collapsible collapsed={this.state.collapsed}  style={{
        backgroundColor:'#121212',
-        height: '91vh',
+        height: '100vh',
         position: 'fixed',
     zIndex:1000,
     display:'flex',
+    paddingTop:'5%',
      overflow:'hidden',
      justifyContent:'center',
         bottom:0,
@@ -49,7 +51,7 @@ export default class AppLayout extends Component {
               nav 1
             </Menu.Item></Menu>
       <SideHeader/>
-        </Sider>
+        </Sider></div>
           <Content > 
       <Home/>
       </Content>

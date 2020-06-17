@@ -1,19 +1,22 @@
+
 .main{
-    background-image: url('./assets/back.jpg');
+  
 flex-direction: column;
     display: flex;
 overflow: hidden;
-background-size: cover;
-    padding-left: 6%;
+background-image: url('./assets/a.jpg');
+background-size:contain;
+
+  
     justify-content: center;
     align-items: center;
 }
 .emptyspace{
    
-    height: 150px;
-    width: 90%;
+    height: 130px;
 }
 .btitleholder{
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
     align-self: start;
@@ -22,13 +25,13 @@ background-size: cover;
     color:#CA0C2A;
     font-size: 57.5px;
     font-weight: 700;
-    line-height: 69.6px;
+  
   margin-left: 5%;
     word-spacing: 0px;
 }
 .title{
     align-self: start;
-    
+    margin-left: 7%;
     font-size: 15px;
     font-weight: 600;
     line-height: 24px;
@@ -40,14 +43,14 @@ background-size: cover;
     font-size: 57.5px;
     font-weight: 700;
     line-height: 69.6px;
-    color: white;
+    color: white;margin-left: 7%;
     word-spacing: 0px;
 }
 .searchbox{
-    
+    margin-left: 7%;
     background-color: #121212;
-    width: 80%;
-    height: 132px;
+    width: 65%;
+    height: 150px;
     flex-direction: row;
     border-radius: 10px;
     align-self: start;
@@ -60,7 +63,9 @@ background-size: cover;
 .whatholder{
 color: white;
     position: relative;
-    width: 30%;
+    width: 25%;
+    justify-content: left;
+    align-items: left;
     font-size: medium;
     text-align: left;
 }
@@ -70,15 +75,25 @@ color: white;
     color: white;
     font-weight: 700;
 font-size:35px;
-
+align-self: start;
  line-height: 35px;
 }
 .upcomingholder{
-    align-self: flex-start;
-    margin-top: 5%;
+    align-self: center;
+  
+ margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  
+margin-left: 10em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: mont;
    
 }
 .searchind{
+ 
     color: white;
 }
 .cardholder{
@@ -102,6 +117,7 @@ font-size:35px;
 .entertainmentholder{
     margin-top: 7%;
     display: flex;
+    margin-left: 10em;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -121,17 +137,21 @@ font-size:35px;
   }
   .dealofthedayholder{
       display: flex;
-   box-shadow: #02011d 10px 10px 10px 0px;
+     transition: all ease 0.5s;
     align-items: center;
-    
+    margin-left: 10em;
       font-family: mont;
       margin-top: 10%;
       background-color: black;
-      width: 96%;
+      width: 85em;
       height: 20em;
       border-radius: 10px;
       flex-direction:row;
   }
+  .dealofthedayholder:hover{
+    box-shadow: 5px 5px 20px grey;
+ 
+}
   .buttonndstuff{
       display: flex;
     margin-left: 5rem;
@@ -179,24 +199,32 @@ display: flex;
 .sellticketholderl{
     margin-top: 4%;
 color: grey;
+
 }
 .sellticketholder2{
     color: white;
+ 
+   
     font-size: xx-large;
 }
 .sellticketholder{
     display: flex;
-    margin-top:5%;
-    width: 110%;
-   position: relative;
-   left:-2%;margin-bottom: 10%;
+
+    width: 100%;
+ margin-top: 5%;
+   margin-bottom: 10%;
 flex-direction: column;
-   padding-left: 5%;
+   padding: 10em;
     background-color: #282828;
-    align-self: start;
+    align-self: center;
+  
+ 
 }
 .lableholder{
     display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+  
     flex-direction: column;
 }
 .textcontainer{
@@ -237,13 +265,17 @@ flex-direction: row;
 }
 .sellticketbutton{
     border-width: 0px;
-width: 14%;
+width: 13em;
 height: 6em;
-font-size:1em;
+font-size:small;
 margin-right: 8%;
 background-color: #282828;
 color: white;
 font-family: mont;
+border-width: 0px;
+border-bottom-width: 2px;
+font-family: mont;
+border-color: transparent;
 transition: all ease-out 0.5s;
     
 }
@@ -270,15 +302,17 @@ font-family: mont;
     transform: translateY(-5px)
 }
 .blogsectionholder{
-    
+    padding: 5%;
     display: flex;
     width: 100%;
    position: relative;
-
+margin-left: 10em;
 flex-direction: column;
   
-   
-    align-self: start;
+
+   align-self: center;
+ 
+    align-items: center;
 }
 .cardhoderblog{
     margin-top: 2.5%;
@@ -293,9 +327,9 @@ flex-direction: column;
     width: 50%;
     height: 35em;
 background-color: #121212;
-margin-right: 1%;
-padding-left: 5%;
-margin-left: 0.5%;
+margin-right: 5%;
+padding-left: 10em;
+
 padding-right: 5%;
 display: flex;
 border-radius: 10px;
@@ -335,6 +369,7 @@ align-items: flex-start;
     line-height: 28px;
 }
 .readmorebtn{
+    border: 1px solid #c5c5c5;
     background-color: black;
     width: 10em;
     height: 3em;
@@ -347,17 +382,22 @@ align-items: flex-start;
     transition:  all .5s ease
 }
 .readmorebtn:hover{
+    box-shadow: white 10px 10px 10px ;
 transform: translateY(-5px);
 }
 .testnomialsholder{
     display: flex;
     width: 100%;
    position: relative;
-
+padding: 5%;
+margin-bottom: 5%;
+margin-left: 10em;
 flex-direction: column;
   
    
-    align-self: start;
+    align-self: center;
+    justify-content: center;
+   
     margin-top: 5%;
 }
 .testnomialcardholder{
@@ -371,8 +411,8 @@ flex-direction: column;
     width: 32%;
     display: flex;
     flex-direction: column;
-   
-  margin-right: 2%;
+   margin: 2.5%;
+
     height: 17em;
 justify-content: center;
 align-items: left;

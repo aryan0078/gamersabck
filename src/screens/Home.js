@@ -81,47 +81,47 @@ menu = (
           <div className={styles.cardholder}>
     <div className={styles.row1}>
    <Card size={'60%'}/>
-   <span className={styles.divider}/>
+  
    <Card size={'40%'}/>
    </div>
  
    <div className={styles.row1}>
    <Card/>
-   <span className={styles.divider}/>
+  
    <Card/>
-   <span className={styles.divider}/>
+  
    <Card/>
  
   
    </div>
    <div className={styles.row1}>
    <Card/>
-   <span className={styles.divider}/>
+ 
    <Card size={'58em'}/>
    </div>
   </div>
         </div>
         <div className={styles.entertainmentholder}>
-<div>
+
   <h3 className={styles.entertainmenl1}>ALL THE FUN STARTS HERE</h3>
   <h1  className={styles.entertainmenl2}>Entertainment Guides</h1>
   <div className={styles.row1}>
    <Card/>
-   <span className={styles.divider}/>
+
    <Card />
    
-   <span className={styles.divider}/>
+ 
    <Card />
    </div>
    <div className={styles.row1}>
    <Card/>
-   <span className={styles.divider}/>
+
    <Card />
    
-   <span className={styles.divider}/>
+
    <Card />
    </div>
-</div>
+
         </div>
         <div className={styles.dealofthedayholder}>
 <div className={styles.buttonndstuff}>

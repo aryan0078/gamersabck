@@ -1,6 +1,6 @@
 
 .main{
-  
+  padding: 7%;
 flex-direction: column;
     display: flex;
 overflow: hidden;
@@ -16,7 +16,7 @@ background-size:contain;
     height: 130px;
 }
 .btitleholder{
-    margin-left: 5%;
+    
     display: flex;
     flex-direction: row;
     align-self: start;
@@ -26,12 +26,12 @@ background-size:contain;
     font-size: 57.5px;
     font-weight: 700;
   
-  margin-left: 5%;
+
     word-spacing: 0px;
 }
 .title{
     align-self: start;
-    margin-left: 7%;
+   
     font-size: 15px;
     font-weight: 600;
     line-height: 24px;
@@ -47,10 +47,10 @@ background-size:contain;
     word-spacing: 0px;
 }
 .searchbox{
-    margin-left: 7%;
+ margin-bottom: 5em;
     background-color: #121212;
-    width: 65%;
-    height: 150px;
+    width: 80%;
+    height: 130px;
     flex-direction: row;
     border-radius: 10px;
     align-self: start;
@@ -66,7 +66,7 @@ color: white;
     width: 25%;
     justify-content: left;
     align-items: left;
-    font-size: medium;
+    font-size: smaller;
     text-align: left;
 }
 
@@ -80,12 +80,12 @@ align-self: start;
 }
 .upcomingholder{
     align-self: center;
-  
- margin-top: 5%;
+  margin-top: 5em;
+width: 100%;
     display: flex;
     flex-direction: column;
   
-margin-left: 10em;
+
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -99,6 +99,7 @@ margin-left: 10em;
 .cardholder{
     display: flex;
     margin-top: 2%;
+    width: 100%;
     flex-direction: column;
 }
 .divider{
@@ -106,7 +107,7 @@ margin-left: 10em;
 }
 
 .row1{
-   
+   width: 100%;
     margin-top: 3%;
     display: flex;
     flex-direction: row;
@@ -116,8 +117,9 @@ margin-left: 10em;
 }
 .entertainmentholder{
     margin-top: 7%;
+flex-direction: column;
     display: flex;
-    margin-left: 10em;
+  width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -139,12 +141,12 @@ margin-left: 10em;
       display: flex;
      transition: all ease 0.5s;
     align-items: center;
-    margin-left: 10em;
+  
       font-family: mont;
       margin-top: 10%;
       background-color: black;
-      width: 85em;
-      height: 20em;
+      width:90%;
+      height: 25em;
       border-radius: 10px;
       flex-direction:row;
   }
@@ -162,10 +164,9 @@ margin-left: 10em;
   .dealtitle1{
       color: white;
       font-weight: bolder;
-      font-size: 4em;
+      font-size: 50px;
       font-family: mont;
-      position: relative;
-      top: 1rem;
+    
   }
   .dealtitle2{
     color: white;

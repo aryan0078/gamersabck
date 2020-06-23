@@ -11,6 +11,11 @@ margin-left: 2em;
     overflow: hidden;
 
 }
+@media (min-width:600px){
+ .cardholder{
+     width: 90%;
+ }   
+}
 .cardholder:hover{
 
 }

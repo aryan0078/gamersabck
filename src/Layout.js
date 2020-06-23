@@ -6,6 +6,7 @@ import styles from './Layout.module.css'
 import {UserOutlined,} from '@ant-design/icons';
 import TopHeader from './components/TopHeader';
 import {Modal} from 'react-modal'
+import CFooter from './components/footer'
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class AppLayout extends Component {
@@ -27,9 +28,13 @@ export default class AppLayout extends Component {
         <Header  style={{ display:'flex',justifyContent:'flex-start',position: 'fixed', zIndex: 1001, width: '100%',backgroundColor:'#121212' }}>
         <div className={styles.logo}  ></div>
          <TopHeader/>
+         <button className={styles.createevent} onClick={this.login}>
+  Create An Event
+</button>
          <button className={styles.loginregbtn} onClick={this.login}>
   Login/Register
 </button>
+
 
         </Header>
         <Layout>
@@ -54,9 +59,11 @@ export default class AppLayout extends Component {
         </Sider></div>
           <Content > 
       <Home/>
+      <CFooter/>
       </Content>
+  
         </Layout>
-       
+    
       </Layout>
     );
   }

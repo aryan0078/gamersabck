@@ -3,23 +3,24 @@
   padding: 7%;
 flex-direction: column;
     display: flex;
-overflow: hidden;
+
 background-image: url('./assets/a.jpg');
 background-size:contain;
 
-  
+  width: 100%;
     justify-content: center;
     align-items: center;
 }
+
 .emptyspace{
    
-    height: 130px;
+    height: 10%;
 }
 .btitleholder{
-    
     display: flex;
     flex-direction: row;
     align-self: start;
+    margin-bottom: -5%;
 }
 .animationtext{
     color:#CA0C2A;
@@ -27,14 +28,14 @@ background-size:contain;
     font-weight: 700;
   
 
-    word-spacing: 0px;
+    margin-left:10px;
 }
 .title{
     align-self: start;
    
     font-size: 15px;
     font-weight: 600;
-    line-height: 24px;
+  
     color: white;
 }
 .btitle{
@@ -42,9 +43,9 @@ background-size:contain;
     display: inline-flex;
     font-size: 57.5px;
     font-weight: 700;
-    line-height: 69.6px;
-    color: white;margin-left: 7%;
-    word-spacing: 0px;
+
+    color: white;
+
 }
 .searchbox{
  margin-bottom: 5em;
@@ -64,13 +65,31 @@ background-size:contain;
 color: white;
     position: relative;
     width: 25%;
-    justify-content: left;
+    justify-content: center;
     align-items: left;
     font-size: smaller;
     text-align: left;
 }
 
+.dropdown{
+    background-color: #121212;
+    color: white;
+    border-width: 0px;
+    
+}
 
+.dropitm{
+    margin: 40px;
+ 
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.dropdownitem:hover{
+ 
+    outline-color: #AA0020;
+    color: red;
+}
 .upcoming{
     color: white;
     font-weight: 700;
@@ -145,7 +164,7 @@ flex-direction: column;
       font-family: mont;
       margin-top: 10%;
       background-color: black;
-      width:90%;
+      width:100%;
       height: 25em;
       border-radius: 10px;
       flex-direction:row;
@@ -210,12 +229,12 @@ color: grey;
 }
 .sellticketholder{
     display: flex;
-
-    width: 100%;
+padding: 10%;
+    width:120%;
  margin-top: 5%;
    margin-bottom: 10%;
 flex-direction: column;
-   padding: 10em;
+  
     background-color: #282828;
     align-self: center;
   
@@ -235,10 +254,7 @@ flex-direction: column;
     text-align: left;
     display: flex;
     align-items: center;
-padding-left: 5%;
-padding-right: 5%;
-padding-top: 5%;
-padding-bottom: 2%;
+padding:5%;
 z-index: 150;
     justify-content: center;
     margin-top: 8%;
@@ -250,7 +266,7 @@ p{
 .sellticketlongtext{
     align-self: center;
 justify-self: center;
-font-size: 30px;
+font-size: x-large;
 line-height: 45px;
 word-wrap:break-word;
 }
@@ -261,7 +277,7 @@ flex-direction: row;
     z-index: 1;
     width: 100%;
     margin-top: 5%;
-    margin-left: 3%;
+  
  
 }
 .sellticketbutton{
@@ -269,7 +285,7 @@ flex-direction: row;
 width: 13em;
 height: 6em;
 font-size:small;
-margin-right: 8%;
+align-self: center;
 background-color: #282828;
 color: white;
 font-family: mont;
@@ -292,8 +308,8 @@ font-family: mont;
     color: white;
     width: 10em;
     height: 3.5em;
-    position: relative;
-    left: 35%;
+  align-self: center;
+
     border-width: 0px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -303,11 +319,11 @@ font-family: mont;
     transform: translateY(-5px)
 }
 .blogsectionholder{
-    padding: 5%;
+
     display: flex;
     width: 100%;
    position: relative;
-margin-left: 10em;
+
 flex-direction: column;
   
 
@@ -315,23 +331,36 @@ flex-direction: column;
  
     align-items: center;
 }
+
 .cardhoderblog{
     margin-top: 2.5%;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
-    left: -1%;
+  
     position: relative;
+}
+@media screen and (max-width: 400px) {
+    .cardholderblog{
+        flex-direction: column;
+        display: flex;
+        margin-top: 2.5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    position: relative;
+    }
 }
 .card1blog{
     width: 50%;
     height: 35em;
 background-color: #121212;
-margin-right: 5%;
-padding-left: 10em;
+margin-right: 2.5%;
 
-padding-right: 5%;
+
+padding:5%;
 display: flex;
 border-radius: 10px;
 flex-direction: column;
@@ -383,16 +412,16 @@ align-items: flex-start;
     transition:  all .5s ease
 }
 .readmorebtn:hover{
-    box-shadow: white 10px 10px 10px ;
+
 transform: translateY(-5px);
 }
 .testnomialsholder{
     display: flex;
     width: 100%;
    position: relative;
-padding: 5%;
+
 margin-bottom: 5%;
-margin-left: 10em;
+
 flex-direction: column;
   
    
@@ -412,12 +441,12 @@ flex-direction: column;
     width: 32%;
     display: flex;
     flex-direction: column;
-   margin: 2.5%;
+   margin: 0.5%;
 
     height: 17em;
 justify-content: center;
 align-items: left;
-padding:2%;
+padding-left: 1%;
 text-align: left;
     background-color: #121212;
 }

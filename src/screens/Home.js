@@ -55,9 +55,11 @@ menu = (
         <div className={styles.searchbox}>
           <div className={styles.whatholder}>
             <h3 className={styles.searchind} style={{marginLeft:'15px'}}>WHAT</h3>
-            <Dropdown overlay={this.menu} placement="bottomLeft" style={{backgroundColor:'black'}}>
-      <Button  size={'large'} disabled={true} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}} >Select Category</Button>
-    </Dropdown>
+            <select className={styles.dropdown}>
+            <option className={styles.dropitm}> Select Cat</option>
+            <option className={styles.dropitm}> Select Cat</option>
+            <option className={styles.dropitm}> Select Cat</option>
+            </select>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHEN</h3>
@@ -141,11 +143,11 @@ menu = (
 <p className={styles.sellticketlongtext}>After the event was created you can add tickets. An event can have multiple ticket types. You can add the amount of tickets available and the date your audience can start buying them and a date when the sale ends.</p>
         </div>
         <div className={styles.allthebuttons}>
-          <div className={styles.thebuttons}>
+        
             <button className={styles.sellticketbutton}><span style={{color:'#CA0C2A'}}>01</span> CREATE AN EVENT</button>
             <button className={styles.sellticketbutton}><span style={{color:'#CA0C2A'}}>02</span>  ADD TICKETS</button>
             <button className={styles.sellticketbutton}><span style={{color:'#CA0C2A'}}>03</span> 03 EARN MONEY</button>
-          </div>
+     
         </div>
         <button className={styles.getstartedbtn}>GET STARTED</button>
         </div>

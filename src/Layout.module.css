@@ -19,3 +19,19 @@
 border-width: 0px;  
  
 }
+.createevent{
+    display: flex;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    font-family: mont;
+    background-color: #121212;
+    border-width: 0px;
+    align-self: flex-start;
+    width: 160px;
+    height: 99%;
+    background-color: #AA0020;margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+
+}

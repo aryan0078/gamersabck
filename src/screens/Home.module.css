@@ -2,17 +2,26 @@
 .main{
     padding-top:7%;
   padding-left: 6%;
-  padding-right: 2%;
+  padding-right: 6%;
 flex-direction: column;
     display: flex;
+    background-color: #282828;
 background-image: url('./assets/d.jpg');
 background-size:contain;
+background-repeat: no-repeat;
 
   width: 100%;
     justify-content: center;
     align-items: center;
 }
+.dropbtn{
+text-align: left;
+padding: 0px;
+    background-color:#121212;
+    color:white;
+    border-width:0px;
 
+}
 .emptyspace{
    
     height: 10%;
@@ -68,6 +77,7 @@ color: white;
     width: 25%;
     justify-content: center;
     align-items: left;
+   
     font-size: smaller;
     text-align: left;
 }
@@ -112,8 +122,14 @@ width: 100%;
     font-family: mont;
    
 }
+.Home_searchind__2uZZ2{
+    margin-bottom:10px;
+}
 .searchind{
- 
+    width: auto;
+    margin:0px;
+    padding:0px;
+    margin-left: 0px;
     color: white;
 }
 .cardholder{
@@ -363,10 +379,11 @@ flex-direction: column;
     width: 50%;
     height: 35em;
 background-color: #121212;
-margin-right: 2.5%;
 
 
-padding:5%;
+
+padding:3%;
+margin-right: 3%;
 display: flex;
 border-radius: 10px;
 flex-direction: column;
@@ -380,6 +397,7 @@ align-items: flex-start;
     background-size: cover;
     border-radius: 10px;
     height: 35em;
+    margin-right: 2%;
 }
 .blogbtn1{
     background-color: #CA0C2A;

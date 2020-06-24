@@ -54,21 +54,21 @@ menu = (
 <h1 className={styles.btitle}>around you.</h1>
         <div className={styles.searchbox}>
           <div className={styles.whatholder}>
-            <h3 className={styles.searchind} style={{marginLeft:'15px'}}>WHAT</h3>
+            <h3 className={styles.searchind} >WHAT</h3>
             <Dropdown overlay={this.menu} placement="bottomLeft">
-      <Button  size={'large'} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}}>Select Category</Button>
+     <button className={styles.dropbtn}>SELECT CATEGORY</button> 
     </Dropdown>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHEN</h3>
             <Dropdown overlay={this.menu} placement="bottomLeft">
-      <Button  size={'large'} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}}>Select Location</Button>
+            <button className={styles.dropbtn}>SELECT CATEGORY</button> 
     </Dropdown>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHERE</h3>
             <Dropdown overlay={this.menu} >
-      <Button  size={'large'} style={{textAlign:'left',backgroundColor:'#121212',color:'white',borderWidth:'0px',}}>Select Category</Button>
+            <button className={styles.dropbtn}>SELECT CATEGORY</button> 
     </Dropdown>
             </div>
             <div>

@@ -12,8 +12,8 @@ export default class Home extends Component {
   
 
 menu = (
-  <Menu style={{backgroundColor:'black'}}>
-    <Menu.Item>
+  <Menu className={styles.dropdown}>
+    <Menu.Item >
       <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/" style={{color:'white'}}>
         1st menu item
       </a>
@@ -55,11 +55,9 @@ menu = (
         <div className={styles.searchbox}>
           <div className={styles.whatholder}>
             <h3 className={styles.searchind} style={{marginLeft:'15px'}}>WHAT</h3>
-            <select className={styles.dropdown}>
-            <option className={styles.dropitm}> Select Cat</option>
-            <option className={styles.dropitm}> Select Cat</option>
-            <option className={styles.dropitm}> Select Cat</option>
-            </select>
+            <Dropdown overlay={this.menu} placement="bottomLeft">
+      <Button  size={'large'} style={{backgroundColor:'#121212',color:'white',borderWidth:'0px'}}>Select Category</Button>
+    </Dropdown>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHEN</h3>
@@ -127,11 +125,10 @@ menu = (
         </div>
         <div className={styles.dealofthedayholder}>
 <div className={styles.buttonndstuff}>
-  <h1 className={styles.dealtitle1}>Deal of the Day!</h1>
-  <h3 className={styles.dealtitle2}>Register today and get 40% OFF from your first purchase.</h3>
+ 
   <button className={styles.grabdealnowbtn}>Grab The deal Now</button>
   </div>
-  <h1 className={styles.off}>40%</h1>
+ 
         </div>
         <div className={styles.sellticketholder}>
           <div className={styles.lableholder}>
@@ -192,8 +189,8 @@ menu = (
   </div>
 </div>
 <div className={styles.testnomialcards}>
-  <h1 style={{color:'white'}}>Awesom dude</h1>
-  <p style={{color:'white'}}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+  <h1 style={{color:'white',fontSize:'medium'}}>Awesom dude</h1>
+  <p style={{color:'white',fontSize:'smaller'}}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
   <div className={styles.imgstarandname}>
   <Avatar size={60} icon={<UserOutlined />} style={{marginTop:'6%'}}/>
   <div className={styles.nametimestar}>

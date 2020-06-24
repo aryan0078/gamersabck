@@ -4,6 +4,10 @@ class CFooter extends Component {
     render() {
         return (
           <div className={styles.main}>
+              <div className={styles.taglineholder}>
+<h1 className={styles.tagline1}>YOU ARE YOU</h1>
+<h1 className={styles.tagline2}>Are you who are ? Come join us at Gamersback.Click here to check career points</h1>
+              </div>
               <div className={styles.linksholder}>
 <div className={styles.section}>
     <h5 className={styles.item11}>HELPFUL LINKS</h5>

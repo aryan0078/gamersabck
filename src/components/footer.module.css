@@ -12,10 +12,16 @@ flex-direction: column;
 .taglineholder{
 display: flex;
 flex-direction: column;
-width: 100%;
+width: 1000%;
+
 justify-content: center;
 align-items: center;
-margin-bottom: 5%;
+padding-bottom: 5%;
+border-top-width: 0px;
+border-bottom-width:1px;
+border-style: solid;
+border-color: white;
+margin-top: 5%;
 }
 h1{
    

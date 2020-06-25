@@ -73,10 +73,19 @@ export default class AppLayout extends Component {
     bodyStyle={{ padding: '0' }}
     footer={null}
     width={820}
+  
 >
     <div className={styles.login}>
-       <div className={styles.image}></div>
+       <div className={styles.image}>
+         <div className={styles.textontop}>
+           <h1 className={styles.date}>Sep 26</h1>
+           <h1 className={styles.eventname}>Sesame Street Live! MAke Your Magic</h1>
+           <h1 className={styles.place}>Grand Chapiteau</h1>
+           <div className={styles.price}>$45</div>
+         </div>
+       </div>
        <div className={styles.loginholder}>
+         <h1 className={styles.lableoflogin}>Sign In</h1>
        <Form
       name="normal_login"
       className="login-form"
@@ -101,19 +110,19 @@ export default class AppLayout extends Component {
       </Form.Item>
       <Form.Item>
         <Form.Item name="remember" valuePropName="checked" noStyle>
-          <Checkbox>Remember me</Checkbox>
+          <Checkbox style={{color:"white"}}>REMEMBER ME</Checkbox>
         </Form.Item>
 
-        <a className="login-form-forgot" href="">
+        <a className={styles.loginformforgot} href="">
           Forgot password
         </a>
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
-        </Button>
-        Or <a href="">register now!</a>
+        <button className={styles.loginbutton}>
+          LOGIN
+        </button>
+         <a className={styles.loginformreg}> Or Register now</a>
       </Form.Item>
     </Form>
        </div>

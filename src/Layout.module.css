@@ -8,27 +8,77 @@
     background-size: cover;
     background-repeat: no-repeat;
     }
+    .eventname{
+        font-size: medium;
+        color: white;
+    }
+    .place{
+        color:white;
+    }
+    .date{
+        font-size: small;
+        color: white;
+    }
+    .textontop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .lableoflogin{
+        color:white;
+
+
+        font-size: xx-large;
+       
+        font-weight: bold;
+    }
 .login{
     background-color: transparent;
     display: flex;
-    height: 100vh;
+    height: 85vh;
 z-index: 11000;
     width: 100%;
+background-color: transparent;
     border-radius: 25px;
     flex-direction: row;
 }
+.loginformforgot{
+    font-size: 15px;
+    color: #AA0020;
+    font-weight: bolder;
+}
+.loginformreg{
+    font-size: 12px;
+    color: #AA0020;
+    font-weight: bolder;
+}
+.loginbutton{
+    color: white;
+    background-color: #AA0020;
+    border-width: 0px;
+    border-radius: 5px;
+    width: 40%;
+    height: 50px;
+    font-size: medium;
+}
 .image{display: flex;
 width: 50%;
+color: white;
 height: 100%;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
+justify-content: center;
+align-items: center;
 background-size: cover;
 background: url('./components/b1.jpg');
 }
 .loginholder{
     display: flex;
     width: 50%;
+    flex:1;
     color: white;
+    flex-direction: column;
+  justify-content: center;
+    align-items: center;
     background-color: #121212;
 }
 .loginregbtn{

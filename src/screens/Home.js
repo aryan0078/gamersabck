@@ -131,14 +131,16 @@ menu = (
  
         </div>
         <div className={styles.sellticketholder}>
+          
           <div className={styles.lableholder}>
           <h2 className={styles.sellticketholderl}>HOW TO</h2>
-          <h1 className={styles.sellticketholder2}>Sell Your Tickets</h1>
+          <h1 className={styles.sellticketholder2}>Sell Your <span style={{color:"red"}}>Tickets</span></h1>
         </div>
-       
+       <div className={styles.textandimg}>
         <div className={styles.textcontainer}>
 <p className={styles.sellticketlongtext}>After the event was created you can add tickets. An event can have multiple ticket types. You can add the amount of tickets available and the date your audience can start buying them and a date when the sale ends.</p>
         </div>
+        <div className={styles.sideimageofsell}></div></div>
         <div className={styles.allthebuttons}>
         
             <button className={styles.sellticketbutton}><span style={{color:'#CA0C2A'}}>01</span> CREATE AN EVENT</button>

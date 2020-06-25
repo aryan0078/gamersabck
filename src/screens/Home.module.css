@@ -132,6 +132,12 @@ width: 100%;
     margin-left: 0px;
     color: white;
 }
+.textandimg{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    
+}
 .cardholder{
     display: flex;
     margin-top: 2%;
@@ -141,10 +147,19 @@ width: 100%;
 .divider{
     width: 30px;
 }
-
+.sideimageofsell{
+background-image: url('./assets/d.jpg');
+height: 80vh;
+position: relative;
+top: 5%;
+right: 5%;
+width: 50%;
+z-index: 1;
+background-size: cover;
+}
 .row1{
    width: 100%;
-    margin-top: 3%;
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
 }

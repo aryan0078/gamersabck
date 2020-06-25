@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import SideHeader from './components/SideHeader'
 import Home from './screens/Home'
-import { Layout,Menu } from 'antd';
+import { Layout,Menu,Modal } from 'antd';
 import styles from './Layout.module.css'
-import {UserOutlined,} from '@ant-design/icons';
+
 import TopHeader from './components/TopHeader';
-import {Modal} from 'react-modal'
+import { Form, Input, Button, Checkbox } from 'antd';
+import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import CFooter from './components/footer'
+
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class AppLayout extends Component {
@@ -15,8 +17,11 @@ export default class AppLayout extends Component {
         this.state={login:false,collapsed:true}
     }
     login=()=>{
+      if(this.state.login){
+        this.setState({login:false})
+      }else{
       this.setState({login:true})
-    }
+    }}
     toggle = () => {
         this.setState({
           collapsed: !this.state.collapsed,
@@ -35,6 +40,7 @@ export default class AppLayout extends Component {
   Login/Register
 </button>
 
+      
 
         </Header>
         <Layout>
@@ -59,6 +65,60 @@ export default class AppLayout extends Component {
         </Sider></div>
           <Content > 
       <Home/>
+      <Modal
+    visible={this.state.login}
+   
+  
+    style={{ top: '20' }}
+    bodyStyle={{ padding: '0' }}
+    footer={null}
+    width={820}
+>
+    <div className={styles.login}>
+       <div className={styles.image}></div>
+       <div className={styles.loginholder}>
+       <Form
+      name="normal_login"
+      className="login-form"
+      initialValues={{ remember: true }}
+   
+    >
+      <Form.Item
+        name="username"
+        rules={[{ required: true, message: 'Please input your Username!' }]}
+      >
+        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+      </Form.Item>
+      <Form.Item
+        name="password"
+        rules={[{ required: true, message: 'Please input your Password!' }]}
+      >
+        <Input
+          prefix={<LockOutlined className="site-form-item-icon" />}
+          type="password"
+          placeholder="Password"
+        />
+      </Form.Item>
+      <Form.Item>
+        <Form.Item name="remember" valuePropName="checked" noStyle>
+          <Checkbox>Remember me</Checkbox>
+        </Form.Item>
+
+        <a className="login-form-forgot" href="">
+          Forgot password
+        </a>
+      </Form.Item>
+
+      <Form.Item>
+        <Button type="primary" htmlType="submit" className="login-form-button">
+          Log in
+        </Button>
+        Or <a href="">register now!</a>
+      </Form.Item>
+    </Form>
+       </div>
+    </div>
+</Modal>
       <CFooter/>
       </Content>
   

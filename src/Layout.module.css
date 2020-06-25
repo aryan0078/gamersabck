@@ -8,6 +8,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     }
+.login{
+    background-color: transparent;
+    display: flex;
+    height: 100vh;
+z-index: 11000;
+    width: 100%;
+    border-radius: 25px;
+    flex-direction: row;
+}
+.image{display: flex;
+width: 50%;
+height: 100%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+background-size: cover;
+background: url('./components/b1.jpg');
+}
+.loginholder{
+    display: flex;
+    width: 50%;
+    color: white;
+    background-color: #121212;
+}
 .loginregbtn{
     position: relative;
     right: 0px;

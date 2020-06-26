@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
 import styles from './Payment.module.css'
 import {Select,Row,Col,Input} from 'antd'
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { UserOutlined, LockOutlined,SecurityScanOutlined  } from '@ant-design/icons';
 const {Option}=Select
 class Payment extends Component {
+    constructor(props){
+        super(props)
+        this.state={quantity:1}
+    }
+    _quantityp=()=>{
+        this.setState({quantity:this.state.quantity+1})
+    }
+    _quantitym=()=>{
+        if(this.state.quantity===1){
+            return
+        }
+        this.setState({quantity:this.state.quantity-1})
+    }
     render() {
         return (
             <div className={styles.main}>
@@ -22,9 +35,9 @@ class Payment extends Component {
         </Select>
         </div>
                         <div class={styles.quantityinput}>
-				                        <span class={styles.minus}>-</span>
-				                        <input type="number" class={styles.input} value="1" disabled=""/>
-				                        <span class={styles.plus}>+</span>
+				                        <span class={styles.minus} onClick={this._quantitym}>-</span>
+				                        <input  class={styles.input} value={this.state.quantity} disabled=""/>
+				                        <span class={styles.plus} onClick={this._quantityp}>+</span>
 				                    </div>
                     </div>
                     <div className={styles.row2}>
@@ -72,7 +85,7 @@ class Payment extends Component {
                             </div>
                             <div className={styles.row6}>
                             <div className={styles.iconntitle}>
-                                    <div className={styles.xicon}>l</div>
+                                    <div className={styles.xicon}><SecurityScanOutlined /></div>
                                    <h1 className={styles.x}>Secure Checkout</h1>
                                 </div>
                                 <p className={styles.longtext}>

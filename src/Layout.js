@@ -64,7 +64,7 @@ export default class AppLayout extends Component {
       <SideHeader/>
         </Sider></div>
           <Content > 
-      <Home/>
+  {this.props.screen}
       <Modal
     visible={this.state.login}
    

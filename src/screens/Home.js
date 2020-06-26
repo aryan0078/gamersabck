@@ -10,7 +10,10 @@ import { Rate } from 'antd';
 import Typewriter from 'typewriter-effect';
 export default class Home extends Component {
   
-
+constructor(props){
+  super(props)
+  this.state={sellbutton:0}
+}
 menu = (
   <Menu className={styles.dropdown}>
     <Menu.Item >
@@ -143,9 +146,9 @@ menu = (
         <div className={styles.sideimageofsell}></div></div>
         <div className={styles.allthebuttons}>
         
-            <button className={styles.sellticketbutton}><span style={{color:'#CA0C2A'}}>01</span> CREATE AN EVENT</button>
-            <button className={styles.sellticketbutton}><span style={{color:'#CA0C2A'}}>02</span>  ADD TICKETS</button>
-            <button className={styles.sellticketbutton}><span style={{color:'#CA0C2A'}}>03</span> 03 EARN MONEY</button>
+            <button className={styles.sellticketbutton} value={this.state.value} onMouseOver={this.datac} ><span style={{color:'#CA0C2A'}}>01</span> CREATE AN EVENT</button>
+            <button className={styles.sellticketbutton}  value={this.state.value} onMouseOver={this.datac} ><span style={{color:'#CA0C2A'}}>02</span>  ADD TICKETS</button>
+            <button className={styles.sellticketbutton}  value={this.state.value} onMouseOver={this.datac} ><span style={{color:'#CA0C2A'}}>03</span> 03 EARN MONEY</button>
      
         </div>
         <button className={styles.getstartedbtn}>GET STARTED</button>

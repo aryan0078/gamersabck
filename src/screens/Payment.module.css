@@ -24,6 +24,9 @@ flex-direction: column;
 width: 50%;
 align-self: center;
 }
+.placenlocation{
+    margin-left: 10px;
+}
 .paymenttitile{
     font-size:xx-large;
 color: white;
@@ -50,7 +53,7 @@ align-self: start;
 }
 .placeorder{
     border-radius: 5px;
-    background-color: #CA0C2A;
+    background-color: #AA0020;
     color: white;
     height: 4rem;
     width: 40%;
@@ -103,7 +106,7 @@ align-self: start;
 .paypal:hover,.cc:hover,.payfast:hover{
     border-width: 2px;
     border-style: solid;
-    border-color: #CA0C2A;
+    border-color: #AA0020;
 }
 .paypal{
     background-image: url('./assets/paypal.png');
@@ -241,7 +244,7 @@ align-items: center;
     -o-transition: all 0.2s ease !important;
     transition: all 0.2s ease !important;
     color: #fff !important;
-    background-color: #de2358;
+    background-color: #AA0020;
 }
 
 .minus{
@@ -261,7 +264,7 @@ align-items: center;
     -o-transition: all 0.2s ease !important;
     transition: all 0.2s ease !important;
     color: #fff !important;
-    background-color: #de2358;
+    background-color: #AA0020;
 }
 .paymentcontainer{
     background-color: #121212;
@@ -302,6 +305,13 @@ font-size: x-large;
     flex-direction: row;
     color: white;
 width: 100%;
+padding-bottom: 1%;
+border-top: 0px;
+border-right: 0px;
+border-left: 0px;
+border-style: solid;
+border-bottom-color: grey;
+border-bottom-width: 1px;
 
 }
 .options{

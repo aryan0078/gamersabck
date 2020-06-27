@@ -1,0 +1,18 @@
+.main{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background: url('./assets/new.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eventname{
+    color: white;
+    font-size: 48px; 
+    font-weight: bolder;
+    width: 60%;
+    text-align: center;
+}

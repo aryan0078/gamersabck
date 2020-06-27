@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styles from './Payment.module.css'
 import {Select,Row,Col,Input} from 'antd'
-import { UserOutlined, LockOutlined,SecurityScanOutlined  } from '@ant-design/icons';
+import { CalendarOutlined,SecurityScanOutlined  } from '@ant-design/icons';
 const {Option}=Select
 class Payment extends Component {
     constructor(props){
         super(props)
-        this.state={quantity:1}
+        this.state={quantity:1,subtotal:70}
     }
     _quantityp=()=>{
         this.setState({quantity:this.state.quantity+1})
@@ -26,7 +26,7 @@ class Payment extends Component {
                     <div className={styles.row1}>
                         <div className={styles.eventname}>
                         <h1 className={styles.event}>Vibra Mahou Fest</h1>
-        <h1 className={styles.placenlocation}>location place</h1>
+        <h1 className={styles.placenlocation}>location <CalendarOutlined /> Gyanpur </h1>
                         </div>
                         <div className={styles.dropdown}>
                         <Select size={'large'} showArrow={true} dropdownStyle={{backgroundColor:'black',color:'white'}} defaultValue="Select Event" style={{ width: 350,backgroundColor:'black',color:'white' }}>

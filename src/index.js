@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css'
 import Landing from './screens/Landing'
 import AppLayout from  './Layout'
+import AllEventsP from './screens/AllEventsP'
 import PaymentP from './screens/PaymentPageHF'
 import AboutEventP from './screens/AboutEventP'
 const routing = (
@@ -15,7 +16,7 @@ const routing = (
       <Route exact path="/payment" component={PaymentP} />
        <Route exact path="/aboutevents" component={AboutEventP} />
       <Route exact path="/" component={Landing} />
-     
+     <Route exact path="/allevents" component={AllEventsP} />
     </div>
   </Router>
 )

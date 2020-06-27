@@ -12,9 +12,9 @@ import AboutEventP from './screens/AboutEventP'
 const routing = (
   <Router>
     <div>
-      <Route path="/payment" component={PaymentP} />
-       <Route path="/aboutevents" component={AboutEventP} />
-      <Route path="/" component={Landing} />
+      <Route exact path="/payment" component={PaymentP} />
+       <Route exact path="/aboutevents" component={AboutEventP} />
+      <Route exact path="/" component={Landing} />
      
     </div>
   </Router>

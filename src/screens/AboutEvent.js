@@ -35,6 +35,37 @@ class AboutEvent extends Component {
 A wonderful gathering of music, dance, <br/><br/>comedy and craft booths, Lollapalooza is another multi-genre delight which also provides a platform for political and non-profit artists and groups. The festival is forever creating historical moments in many a musicians career firmly cementing it in the global hall of fame for festivals.
     </p>
                 </div>
+                <div className={styles.cardsholder}>
+                    <div className={styles.crow1}>
+                        <div className={styles.card}>
+                            Watch Now
+                        </div>
+                        <div className={styles.card}>
+                            Description
+                        </div>
+                        <div className={styles.card}>
+                            Test1
+                        </div>
+                    </div>
+                    <div className={styles.crow1}>
+                        <div className={styles.card}>
+                            Test2
+                        </div>
+                        <div className={styles.card}>
+                            Test3
+                        </div>
+                        <div className={styles.card}>
+                            Test4
+                        </div>
+                    </div>
+                    <div className={styles.crow1}>
+                        <div className={styles.card}>
+                            Test5
+                        </div>
+                       
+                    </div>
+                 
+                </div>
                 </div>
             </div>
         );

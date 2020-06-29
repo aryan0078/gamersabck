@@ -49,12 +49,45 @@
     margin-top: 15%;
     text-align: center;
 }
+.elogo{
+    background-image: url('../components/new.png');
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+.omodal{
+    background-color: #CA0C2A;
+    border-width: 0px;
+    color: white;
+    border-radius: 5px;
+    font-family: mont;
+
+}
+.rowp1{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+  
+
+    margin-bottom: 2%;
+    justify-content: space-between;
+}
+.rowp2{
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .detailbox{
     
 display: flex;
 width: 100%; 
-padding: 5%;
-flex-direction: row;
+padding-top: 3%;
+padding-left: 3%;
+padding-right: 3%;
+padding-bottom: 3%;
+flex-direction: column;
 background-color: #121212;
 }
 .row1,.row2,.row3{
@@ -65,11 +98,10 @@ background-color: #121212;
 
 }
 .row1{
-    margin-left: 2.5%;
+ 
 }
 .row2{
-    margin-left: 10%;
-    margin-right: 8%;
+   
 }
 .book{
 background-color: #CA0C2A;
@@ -102,28 +134,30 @@ border-width: 0px;
     display: flex;
     flex-direction: column;
     width: 100%;
-  
-    margin-top: 5%;
+    margin-bottom: 5%;
+
 
 }
 .crow1{
+   
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
 
 }
 .card{
-    width: 35%;
+    width: 25%;
     margin-right: 2%;
-    height: 8rem;
+    height: 6rem;
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 5px;
     justify-content: center;
     color: white;
-    font-size: x-large;
+    font-size:large;
     align-items: center;
     display: flex;
-    font-weight: bold;
+
     background-color: #CA0C2A;
 }

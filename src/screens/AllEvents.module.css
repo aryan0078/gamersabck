@@ -44,9 +44,10 @@
 }
 .caurosel{
 padding: 2%;
+
 margin-top: -5%;
    border-radius: 10px;
-    width: 100%;
+    width: 104%;
 }
 .titlenfilter{
     display: flex;

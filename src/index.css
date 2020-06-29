@@ -14,7 +14,12 @@ code {
 select:active, select:hover {
   outline: none
 }
-.h1{color: white;}
+.ant-btn ,.ant-dropdown-trigger{
+  
+  color: white !important;
+  background: #121212 !important;
+  border-color: #121212 !important;
+}
 .ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector {
   padding: 0 11px;
   border-radius: 2px;

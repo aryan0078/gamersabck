@@ -75,12 +75,12 @@ menu = (
     </Dropdown>
             </div>
             <div>
-              <Button type="primary" danger style={{width:'10em',height:'4em',marginRight:'2em'}}>Search</Button>
+              <Button type="primary" danger style={{backgroundColor:"#CA0C2A",width:'10em',height:'4em',marginRight:'2em'}}>Search</Button>
             </div>
         </div>
         <div className={styles.upcomingholder}>
           <h3 style={{color:'white',alignSelf:'flex-start'}}>DISCOVER THE FUN!</h3>
-          <h1 className={styles.upcoming}>Upcoming Events</h1>
+          <h1 className={styles.upcoming}>Upcoming <span style={{color:"#CA0C2A"}}> Events</span></h1>
           <div className={styles.cardholder}>
     <div className={styles.row1}>
    <Card size={'60%'}/>
@@ -107,7 +107,7 @@ menu = (
         <div className={styles.entertainmentholder}>
 
   <h3 className={styles.entertainmenl1}>ALL THE FUN STARTS HERE</h3>
-  <h1  className={styles.entertainmenl2}>Entertainment Guides</h1>
+  <h1  className={styles.entertainmenl2}>Entertainment <span style={{color:"#CA0C2A"}}> Guides</span></h1>
   <div className={styles.row1}>
    <Card/>
 
@@ -137,7 +137,7 @@ menu = (
           
           <div className={styles.lableholder}>
           <h2 className={styles.sellticketholderl}>HOW TO</h2>
-          <h1 className={styles.sellticketholder2}>Sell Your <span style={{color:"red"}}>Tickets</span></h1>
+          <h1 className={styles.sellticketholder2}>Sell Your <span style={{color:"#CA0C2A"}}>Tickets</span></h1>
         </div>
        <div className={styles.textandimg}>
         <div className={styles.textcontainer}>
@@ -156,7 +156,7 @@ menu = (
         <div className={styles.blogsectionholder}>
         <div className={styles.lableholder}>
           <h2 className={styles.sellticketholderl}>LATEST NEWS</h2>
-          <h1 className={styles.sellticketholder2}>From the Blog</h1>
+          <h1 className={styles.sellticketholder2}>From the  <span style={{color:"#CA0C2A"}}> Blog</span></h1>
         </div>
         <div className={styles.cardhoderblog}>
           <div className={styles.card1blog}>
@@ -175,7 +175,7 @@ menu = (
         <div className={styles.testnomialsholder}> 
         <div className={styles.lableholder}>
           <h2 className={styles.sellticketholderl}>TESTNOMIALS</h2>
-          <h1 className={styles.upcoming}>Hear From Our Organizers</h1>
+          <h1 className={styles.upcoming}>Hear From Our <span style={{color:"#CA0C2A"}}> Organizers</span></h1>
         </div>
      <div className={styles.alltestcardholder}>
         <Carousel  dots={false} draggable={true}>

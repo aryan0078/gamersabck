@@ -30,7 +30,7 @@
 }
 .date{
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     margin: 0px;
 }
 .button{
@@ -58,14 +58,18 @@ flex-direction: row;
 background-color: #121212;
 }
 .row1,.row2,.row3{
-    padding: 5%;
+    padding: 2%;
     display: flex;
+
     flex-direction: column;
-    margin-right: 5%;
+
+}
+.row1{
+    margin-left: 2.5%;
 }
 .row2{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 8%;
 }
 .book{
 background-color: #CA0C2A;
@@ -109,9 +113,9 @@ border-width: 0px;
 
 }
 .card{
-    width: 31.6%;
+    width: 35%;
     margin-right: 2%;
-    height: 15rem;
+    height: 8rem;
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 5px;

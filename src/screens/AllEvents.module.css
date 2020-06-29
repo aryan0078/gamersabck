@@ -42,6 +42,24 @@
         font-size: smaller;
         text-align: left;
 }
+.caurosel{
+padding: 2%;
+margin-top: -5%;
+   border-radius: 10px;
+    width: 100%;
+}
+.titlenfilter{
+    display: flex;
+    flex-direction: row;
+}
+.cimg{
+    height:18em;
+    width: 100%;
+    border-radius: 10px;
+    background: url('./assets/cypher.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .dropdown{
     background-color: #121212;
     color: white;
@@ -74,7 +92,7 @@
     color: white;
 }
 .searchbox{
-    margin-bottom: 0.5em;
+    margin-bottom: 5%;
        background-color: #121212;
        width: 100%;
        height: 130px;
@@ -88,16 +106,17 @@
        justify-content: center;
    }
 .title{
-    padding-bottom: 2.5%;
+   width: 50%;
     color: #ffffff;
     font-size: 40px;
     padding-left: 2%;
 }
 .entertainmentholder{
-    margin-top: 7%;
+   
 flex-direction: column;
     display: flex;
   width: 100%;
+  margin-top: 2%;
     justify-content: center;
     align-items: center;
     text-align: center;

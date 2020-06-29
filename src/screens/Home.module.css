@@ -102,7 +102,7 @@ color: white;
     color: red;
 }
 .upcoming{
-    color: #CA0C2A;
+    color: white;
     font-weight: 700;
 font-size:35px;
 align-self: start;
@@ -180,7 +180,7 @@ flex-direction: column;
     color: white;
 }
 .entertainmenl2{
-    color: #CA0C2A;
+    color: white;
     font-size: xx-large;
     font-weight: bolder;
 }
@@ -210,12 +210,11 @@ flex-direction: column;
 }
   .buttonndstuff{
       display: flex;
-    margin-left: 5rem;
-      width: 50%;
+   margin-top: 15%;
+      width: 90%;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      flex:0.5
+      align-items: flex-start;
+            flex-direction: column;
   }
   .dealtitle1{
       color: white;
@@ -236,7 +235,7 @@ flex-direction: column;
     background-color: #AA0020;
     border-radius: 10px;
     color: white;
-    width: 50%;
+    width: 30%;
     height: 3.5em;
     border-width: 0px;
 }
@@ -259,7 +258,7 @@ color: grey;
 
 }
 .sellticketholder2{
-    color: #CA0C2A;
+    color: white;
  
    
     font-size: xx-large;

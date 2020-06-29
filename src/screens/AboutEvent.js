@@ -23,7 +23,7 @@ class AboutEvent extends Component {
                 <div className={styles.row3}>
                 <div className={styles.icons}><CalendarFilled style={{ fontSize: '30px' }}/></div>
                     <h1 className={styles.date}>$45</h1>
-                    <button className={styles.book}>Book a Ticket</button>
+            
                    
                 </div>
                 </div>

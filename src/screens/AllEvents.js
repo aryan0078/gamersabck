@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../components/Card'
 import styles from './AllEvents.module.css'
+import { Carousel } from 'antd';
 import {Button,Dropdown,Menu} from 'antd'
 class AllEvents extends Component {
     menu = (
@@ -25,8 +26,23 @@ class AllEvents extends Component {
     render() {
         return (
             <div className={styles.main}>
-                <h1 className={styles.title}>Simple Layout</h1>
-                <div className={styles.searchbox}>
+              <div className={styles.caurosel}>
+              <Carousel>
+    <div>
+      <div className={styles.cimg}></div>
+    </div>
+    <div>
+    <div className={styles.cimg}></div>
+    </div>
+    <div>
+    <div className={styles.cimg}></div>
+    </div>
+    <div>
+    <div className={styles.cimg}></div>
+    </div>
+  </Carousel>
+              </div>
+                     <div className={styles.searchbox}>
           <div className={styles.whatholder}>
             <h3 className={styles.searchind} >WHAT</h3>
             <Dropdown overlay={this.menu} placement="bottomLeft">
@@ -55,6 +71,11 @@ class AllEvents extends Component {
               <Button type="primary" danger style={{width:'10em',height:'4em',marginRight:'2em'}}>Search</Button>
             </div>
         </div>
+
+                <div className={styles.titlenfilter}>
+                  <h1  className={styles.title}>Simple Layout</h1>
+                  </div>
+         
                 <div className={styles.entertainmentholder}>
 <div className={styles.row1}>
  <Card/>

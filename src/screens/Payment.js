@@ -76,7 +76,7 @@ class Payment extends Component {
                             </div>
                             <div className={styles.row5}>
                                 <div className={styles.iconntitle}>
-                                    <div className={styles.xicon}>l</div>
+                                    <div className={styles.xicon}></div>
                                    <h1 className={styles.x}>Your Information is Safe</h1>
                                 </div>
                                 <p className={styles.longtext}>
@@ -85,7 +85,7 @@ class Payment extends Component {
                             </div>
                             <div className={styles.row6}>
                             <div className={styles.iconntitle}>
-                                    <div className={styles.xicon}><SecurityScanOutlined /></div>
+                                    <div className={styles.xicon}></div>
                                    <h1 className={styles.x}>Secure Checkout</h1>
                                 </div>
                                 <p className={styles.longtext}>

@@ -17,7 +17,7 @@ export default class Card extends Component {
   }
   render() {
     return (
-      <Link to='/aboutevents'>
+      
       <div className={styles.cardholder} style={{width:this.props.size}}>
        
        
@@ -27,7 +27,7 @@ export default class Card extends Component {
         <button  className={this.state.hover ? styles.eventll : styles.eventl}>Gyanpur Bhadohi</button>
         <button   className={this.state.hover ? styles.booknow : styles.booknowl}>Book Now  <ArrowRightOutlined /> </button>
       </div>
-      </Link>
+     
     );
   }
 }

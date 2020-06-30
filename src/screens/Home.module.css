@@ -316,6 +316,23 @@ flex-direction: row;
   
  
 }
+.viewallbtn{
+    border-radius: 5px;
+    background-color: #CA0C2A;
+    border-width: 0px;
+    color: white;
+    width: 10rem;
+    font-size: small;
+    height: 3rem;
+    justify-self: center;
+    margin-top: -15%;
+}
+.titleholder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .sellticketbutton{
     border-width: 0px;
 width: 13em;

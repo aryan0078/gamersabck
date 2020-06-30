@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './AboutEvent.module.css'
 import { CalendarFilled} from '@ant-design/icons';
+import {Link} from 'react-router-dom'
 import {Modal} from 'antd'
 class AboutEvent extends Component {
     constructor(props){
@@ -28,7 +29,8 @@ c=()=>{
 <button>fubdifb</button>
 </div>
 </Modal>
-                <button className={styles.booknowf}>Book Now</button>
+               
+               <Link to='/payment'> <button className={styles.booknowf}>Book Now</button></Link>
                 <h1 className={styles.eventname}>Sesame Street Live! Make Your Magic</h1>
             <div className={styles.detailbox}>
                 <div className={styles.rowp1}>

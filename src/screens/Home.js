@@ -4,7 +4,8 @@ import { Carousel } from 'antd';
 import { Menu, Dropdown, Button } from 'antd';
 import { Col, Row } from 'antd';
 import { Avatar } from 'antd';
-import { UserOutlined,DownOutlined } from '@ant-design/icons';
+import {Link} from 'react-router-dom'
+import { UserOutlined,DownOutlined ,ArrowRightOutlined} from '@ant-design/icons';
 import Card from '../components/Card'
 import { Rate } from 'antd';
 
@@ -80,8 +81,12 @@ constructor(props){
             </div>
         </div>
         <div className={styles.upcomingholder}>
+          
           <h3 style={{color:'white',alignSelf:'flex-start'}}>DISCOVER THE FUN!</h3>
+          <div className={styles.titleholder}>
           <h1 className={styles.upcoming}>Upcoming <span style={{color:"#CA0C2A"}}> Events</span></h1>
+        <Link to='/allevents'>  <button className={styles.viewallbtn}>View All Events <ArrowRightOutlined /></button></Link>
+          </div>
           <div className={styles.cardholder}>
     <div className={styles.row1}>
    <Card size={'60%'}/>

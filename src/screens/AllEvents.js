@@ -46,26 +46,26 @@ class AllEvents extends Component {
           <div className={styles.whatholder}>
             <h3 className={styles.searchind} >WHAT</h3>
             <Dropdown overlay={this.menu} placement="bottomLeft">
-     <button className={styles.dropbtn}>SELECT CATEGORY</button> 
+     <button className={styles.dropbtn}>SELECT CATEGORY</button>
     </Dropdown>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHEN</h3>
             <Dropdown overlay={this.menu} placement="bottomLeft">
-            <button className={styles.dropbtn}>SELECT CATEGORY</button> 
+            <button className={styles.dropbtn}>SELECT CATEGORY</button>
     </Dropdown>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHERE</h3>
             <Dropdown overlay={this.menu} >
-            <button className={styles.dropbtn}>SELECT CATEGORY</button> 
+            <button className={styles.dropbtn}>SELECT CATEGORY</button>
     </Dropdown>
             </div>
             <div className={styles.whatholder_}>
             <h3 className={styles.searchind}>KEYWORD</h3>
             <input className={styles.inputk} placeholder="...">
            </input>
-   
+
             </div>
             <div>
               <Button type="primary" danger style={{width:'10em',height:'4em',marginRight:'2em'}}>Search</Button>
@@ -74,14 +74,19 @@ class AllEvents extends Component {
 
                 <div className={styles.titlenfilter}>
                   <h1  className={styles.title}>Simple Layout</h1>
+                  <div className={styles.fbuttons}>
+                  <button className={styles.fbutton_} >icon </button>
+                    <button className={styles.fbutton}>FILTER </button>
+                    <button className={styles.fbutton}>SORT BY: Relevance</button>
+                    </div>
                   </div>
-         
+
                 <div className={styles.entertainmentholder}>
 <div className={styles.row1}>
  <Card/>
 
  <Card />
- 
+
 
  <Card />
  </div>
@@ -89,7 +94,7 @@ class AllEvents extends Component {
  <Card/>
 
  <Card />
- 
+
 
  <Card />
  </div>
@@ -100,7 +105,7 @@ class AllEvents extends Component {
 <button className={styles.bnav}> + </button>
 </div>
       </div>
-    
+
             </div>
         );
     }

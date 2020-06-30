@@ -9,9 +9,9 @@
 }
 .pagenav{
     background-color: #282828;
-    padding: 1%;
+    padding: 1.4%;
     border-radius: 5px;
-    margin-left: 5%;
+    margin-left: 1%;
     align-self: start;
     margin-top: 5%;
     display: flex;
@@ -38,7 +38,7 @@
         width: 20%;
         justify-content: center;
         align-items: left;
-       
+
         font-size: smaller;
         text-align: left;
 }
@@ -51,7 +51,10 @@ margin-top: -5%;
 }
 .titlenfilter{
     display: flex;
+    width: 100%;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .cimg{
     height:18em;
@@ -65,7 +68,7 @@ margin-top: -5%;
     background-color: #121212;
     color: white;
     border-width: 0px;
-    
+
 }
 .dropbtn{
     text-align: left;
@@ -73,7 +76,7 @@ margin-top: -5%;
         background-color:#121212;
         color:white;
         border-width:0px;
-    
+
     }
 .whatholder{
     color: white;
@@ -81,7 +84,7 @@ margin-top: -5%;
         width: 20%;
         justify-content: center;
         align-items: left;
-       
+
         font-size: smaller;
         text-align: left;
     }
@@ -106,14 +109,41 @@ margin-top: -5%;
        align-items: center;
        justify-content: center;
    }
+   .fbuttons{
+     flex-direction: row;
+     display: flex;
+     height: 100%;
+margin-bottom: 1%
+
+
+   }
+   .fbutton_{
+     background-color: #0000;
+     border-width: 0px;
+     color: white;
+  font-family: mont;
+  font-family: mont;
+  font-size: small;
+     display: flex;
+   }
+   .fbutton{
+     background-color: #0000;
+     border-width: 0px;
+     color: white;
+       font-family: mont;
+       font-size: small;
+     border-left-width: 1px;
+     border-left-color: white;
+     display: flex;
+   }
 .title{
-   width: 50%;
+
     color: #ffffff;
     font-size: 40px;
     padding-left: 2%;
 }
 .entertainmentholder{
-   
+
 flex-direction: column;
     display: flex;
   width: 100%;

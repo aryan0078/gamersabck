@@ -1,5 +1,5 @@
 .main{
-  
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -10,6 +10,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-color: black;
+}
+.imggalleryh{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .booknowf{
     position: fixed;
@@ -26,7 +31,7 @@
 }
 .icons{
     color: white;
-   
+
 }
 .date{
     color: white;
@@ -42,7 +47,7 @@
 }
 .eventname{
     color: white;
-    font-size: 48px; 
+    font-size: 48px;
     font-weight: bolder;
     width: 60%;
     margin-bottom: 15%;
@@ -67,7 +72,7 @@
     flex-direction: row;
     display: flex;
     width: 100%;
-  
+
 
     margin-bottom: 2%;
     justify-content: space-between;
@@ -80,9 +85,9 @@
     justify-content: space-between;
 }
 .detailbox{
-    
+
 display: flex;
-width: 100%; 
+width: 100%;
 padding-top: 3%;
 padding-left: 3%;
 padding-right: 3%;
@@ -98,10 +103,10 @@ background-color: #121212;
 
 }
 .row1{
- 
+
 }
 .row2{
-   
+
 }
 .book{
 background-color: #CA0C2A;
@@ -139,7 +144,7 @@ border-width: 0px;
 
 }
 .crow1{
-   
+
     display: flex;
     flex-direction: row;
     width: 110%;

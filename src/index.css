@@ -30,3 +30,16 @@ select:active, select:hover {
 label{
   font-family: mont;
 }
+body::-webkit-scrollbar {
+  width: 0.8em;
+ background-color: #282828;
+}
+ 
+body::-webkit-scrollbar-track {
+
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #CA0C2A;
+  border-radius: 10px;
+}

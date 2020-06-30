@@ -68,6 +68,16 @@
     font-family: mont;
 
 }
+.contact{
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5%;
+}
 .rowp1{
     flex-direction: row;
     display: flex;

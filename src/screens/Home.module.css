@@ -271,7 +271,7 @@ padding: 10%;
    margin-bottom: 10%;
 flex-direction: column;
   
-    background-color: #121212;
+    background-color: #0a0a0a;
     align-self: center;
   
  
@@ -320,9 +320,11 @@ flex-direction: row;
     border-width: 0px;
 width: 13em;
 height: 6em;
+position: relative;
+top: -120px;
 font-size:small;
 align-self: center;
-background-color: #121212;
+background-color: #0a0a0a;
 color: white;
 font-family: mont;
 border-width: 0px;

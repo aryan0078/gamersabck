@@ -8,19 +8,24 @@ class AboutEvent extends Component {
         this.state={m:false}
     }
 c=()=>{
-    this.setState({m:true})}
+    if(this.state.m){
+        this.setState({m:false})
+    }else{
+    this.setState({m:true})}}
     render() {
         return (
             <div className={styles.main}>
                 <Modal
     visible={this.state.m}
-    style={{ top: '20' }}
+    style={{ top: '40' ,borderRadius:'10px',display:'flex',justifyContent:'center',alignItems:'center'}}
     bodyStyle={{ padding: '0' }}
     footer={null}
-    width={820}
+    width={500}
+    height={500}
+    onCancel={this.c}
 >
 <div className={styles.contact}>
-
+<button>fubdifb</button>
 </div>
 </Modal>
                 <button className={styles.booknowf}>Book Now</button>

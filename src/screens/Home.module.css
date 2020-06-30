@@ -65,7 +65,8 @@ padding: 0px;
     flex-direction: row;
     border-radius: 10px;
     align-self: start;
-
+border-width: 1px;
+border-color: grey;
     display: flex;
     position: relative;
     align-items: center;

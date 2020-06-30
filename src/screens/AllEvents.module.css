@@ -21,7 +21,7 @@
     color: white;
     border-radius: 5px;
     border-width: 0px;
-    font-size: x-large;
+    font-size: large;
     width: 3rem;
     margin-right: 2%;
     height: 3rem;
@@ -125,6 +125,10 @@ margin-bottom: 1%
   font-family: mont;
   font-size: small;
      display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 2rem;
+
    }
    .fbutton{
      background-color: #0000;

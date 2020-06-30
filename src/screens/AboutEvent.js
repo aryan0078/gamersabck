@@ -1,16 +1,34 @@
 import React, { Component } from 'react';
 import styles from './AboutEvent.module.css'
 import { CalendarFilled} from '@ant-design/icons';
+import {Modal} from 'antd'
 class AboutEvent extends Component {
+    constructor(props){
+        super(props)
+        this.state={m:false}
+    }
+c=()=>{
+    this.setState({m:true})}
     render() {
         return (
             <div className={styles.main}>
+                <Modal
+    visible={this.state.m}
+    style={{ top: '20' }}
+    bodyStyle={{ padding: '0' }}
+    footer={null}
+    width={820}
+>
+<div className={styles.contact}>
+
+</div>
+</Modal>
                 <button className={styles.booknowf}>Book Now</button>
                 <h1 className={styles.eventname}>Sesame Street Live! Make Your Magic</h1>
             <div className={styles.detailbox}>
                 <div className={styles.rowp1}>
                     <div className={styles.elogo}></div>
-                    <button className={styles.omodal}>Contact Organizer</button>
+                    <button className={styles.omodal} onClick={this.c}>Contact Organizer</button>
                 </div>
                 <div className={styles.rowp2}>
                 <div className={styles.row1}>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from '../components/Card'
 import styles from './AllEvents.module.css'
 import { Carousel } from 'antd';
+import {FilterOutlined } from '@ant-design/icons'
 import {Button,Dropdown,Menu} from 'antd'
 class AllEvents extends Component {
     menu = (
@@ -75,7 +76,7 @@ class AllEvents extends Component {
                 <div className={styles.titlenfilter}>
                   <h1  className={styles.title}>Simple Layout</h1>
                   <div className={styles.fbuttons}>
-                  <button className={styles.fbutton_} >icon </button>
+                  <button className={styles.fbutton_} ><FilterOutlined /> </button>
                     <button className={styles.fbutton}>FILTER </button>
                     <button className={styles.fbutton}>SORT BY: Relevance</button>
                     </div>

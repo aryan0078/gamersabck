@@ -54,10 +54,30 @@
     margin-top: 15%;
     text-align: center;
 }
+.eventnametop,.eventnametop_{
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    left: 125px;
+top: 10px;
+}
+.eventnametop_{
+   top:50px;
+   font-size: 22px;
+}
+.logoc{
+    padding:1%;
+    display: flex;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
 .elogo{
     background-image: url('../components/new.png');
     width: 80px;
     height: 80px;
+   
     background-size: contain;
 }
 .omodal{
@@ -67,13 +87,15 @@
     border-radius: 5px;
     font-size: small;
     padding: 1%;
+    width: 10rem;
+    height: 4rem;
     font-family: mont;
 
 }
 .contact{
     background-color: white;
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 4rem;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -84,7 +106,7 @@
     flex-direction: row;
     display: flex;
     width: 100%;
-
+position: relative;
 
     margin-bottom: 2%;
     justify-content: space-between;

@@ -66,6 +66,7 @@ padding: 0px;
     border-radius: 10px;
     align-self: start;
 border-width: 1px;
+border-style: solid;
 border-color: grey;
     display: flex;
     position: relative;

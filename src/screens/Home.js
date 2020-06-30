@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styles from './Home.module.css'
 import { Carousel } from 'antd';
-import { Menu, Dropdown, Button } from 'antd';
+import { Menu, Button } from 'antd';
+import Drop from '../components/dropdown'
 import { Col, Row } from 'antd';
 import { Avatar } from 'antd';
 import {Link} from 'react-router-dom'
@@ -16,19 +17,7 @@ constructor(props){
   super(props)
   this.state={sellbutton:0}
 }
- menu = (
-  <Menu >
-    <Menu.Item key="1" icon={<UserOutlined />}>
-      1st menu item
-    </Menu.Item>
-    <Menu.Item key="2" icon={<UserOutlined />}>
-      2nd menu item
-    </Menu.Item>
-    <Menu.Item key="3" icon={<UserOutlined />}>
-      3rd item
-    </Menu.Item>
-  </Menu>
-);
+ 
   render() {
     return (
       <>
@@ -54,27 +43,21 @@ constructor(props){
         <div className={styles.searchbox}>
           <div className={styles.whatholder}>
             <h3 className={styles.searchind} >WHAT</h3>
-            <Dropdown overlay={this.menu} >
-            <Button>
-        Button <DownOutlined />
-      </Button>
-    </Dropdown>
+            <Drop >
+      
+    </Drop>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHEN</h3>
-            <Dropdown overlay={this.menu} >
-            <Button>
-        Button <DownOutlined />
-      </Button>
-    </Dropdown>
+            <Drop>
+        
+    </Drop>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHERE</h3>
-            <Dropdown overlay={this.menu} >
-            <Button>
-        Button <DownOutlined />
-      </Button>
-    </Dropdown>
+            <Drop  >
+      
+    </Drop>
             </div>
             <div>
               <Button type="primary" danger style={{backgroundColor:"#CA0C2A",width:'10em',height:'4em',marginRight:'2em'}}>Search</Button>

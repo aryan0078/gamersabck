@@ -46,7 +46,7 @@ class Payment extends Component {
                         </div>
                 </div>
                 <div className={styles.paymentdetails}>
-            
+            <div className={styles.paymentbox}>
 							<div className={styles.row1form}>
                                 <label className={styles.frstname}>FULL NAME</label>
                                 <input type="text" className={styles.frstnameinp} />
@@ -73,7 +73,7 @@ class Payment extends Component {
                             </div>
                             <div className={styles.row4}>
                                 <button className={styles.placeorder}>PLACE ORDER</button>
-                            </div>
+                            </div></div>
                             <div className={styles.row5}>
                                 <div className={styles.iconntitle}>
                                     <div className={styles.xicon}></div>

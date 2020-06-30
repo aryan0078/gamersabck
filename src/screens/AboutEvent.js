@@ -34,7 +34,12 @@ c=()=>{
                 <h1 className={styles.eventname}>Sesame Street Live! Make Your Magic</h1>
             <div className={styles.detailbox}>
                 <div className={styles.rowp1}>
+                    <div className={styles.logoc}>
                     <div className={styles.elogo}></div>
+                   
+                    </div>
+                    <h1 className={styles.eventnametop}>Vira Mount Fest</h1>
+                    <h1 className={styles.eventnametop_}>bla bla</h1>
                     <button className={styles.omodal} onClick={this.c}>Contact Organizer</button>
                 </div>
                 <div className={styles.rowp2}>

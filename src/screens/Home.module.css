@@ -65,9 +65,9 @@ padding: 0px;
     flex-direction: row;
     border-radius: 10px;
     align-self: start;
-border-width: 1px;
+border-width: 0.5px;
 border-style: solid;
-border-color: grey;
+ border-color: #4b4a4a;
     display: flex;
     position: relative;
     align-items: center;
@@ -272,7 +272,7 @@ padding: 10%;
  margin-top: 5%;
    margin-bottom: 10%;
 flex-direction: column;
-  
+  transition: all ease 0.5s;
     background-color: #0a0a0a;
     align-self: center;
   
@@ -294,8 +294,10 @@ flex-direction: column;
     align-items: center;
 padding:5%;
 z-index: 150;
+overflow: hidden;
     justify-content: center;
     margin-top: 8%;
+    transition: all ease 0.5s;
 }
 p{
     transition: all ease 1s;
@@ -305,7 +307,10 @@ p{
     align-self: center;
 justify-self: center;
 font-size: x-large;
-line-height: 45px;
+transition: all ease 1.5s;
+font-size: large;
+overflow: hidden;
+width: 100%;
 word-wrap:break-word;
 }
 .allthebuttons{

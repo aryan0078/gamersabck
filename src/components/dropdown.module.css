@@ -48,6 +48,7 @@
   
   .menuitem {
     height: 35px;
+    font-size: small;
     display: flex;
     align-items: center;
     border-radius: var(--border-radius);

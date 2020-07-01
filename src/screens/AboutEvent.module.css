@@ -118,8 +118,23 @@ position: relative;
     flex-direction: row;
     justify-content: space-between;
 }
-.detailbox{
+.titleofcard{
+    width: 25%;
+    margin-right: 2%;
+    height: 6rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    justify-content: center;
+    color: white;
+    font-size:large;
+    align-items: center;
+    display: flex;
 
+    background-color: #CA0C2A;
+}
+.detailbox{
+border-radius: 5px;
 display: flex;
 width: 100%;
 padding-top: 3%;
@@ -158,25 +173,41 @@ border-width: 0px;
     margin-top: 5%;
     display: flex;
     width: 100%;
-    padding: 2%;
+    padding: 1%;
     margin-left: 5%;
     flex-direction: column;
+}
+.sep{
+    width: 10px;
 }
 .desc{
     color: white;
     text-align: left;
+}
+.corholder{
+    display: flex;
+    flex-direction:column;
+    width: 120%;
+    justify-content: center;
+  
+    margin-left: -10%;
+  
 }
 .eventname_{
     color: #CA0C2A;
     font-weight: bolder;
     font-size: x-large;
 }
+.cardin{
+    font-size: x-large;
+    color: white;
+}
 .cardsholder{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    width: 90%;
     margin-bottom: 5%;
-
+margin-left: 7%;
 
 }
 .crow1{
@@ -189,9 +220,9 @@ display: flex;
 
 }
 .card{
-    width: 25%;
-    margin-right: 2%;
-    height: 6rem;
+    width: 11.875rem;
+  
+    height: 10.6rem;
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 5px;

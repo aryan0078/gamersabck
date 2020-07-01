@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './AboutEvent.module.css'
 import { CalendarFilled} from '@ant-design/icons';
 import {Link} from 'react-router-dom'
-import {Modal} from 'antd'
+import {Modal,Carousel} from 'antd'
 class AboutEvent extends Component {
     constructor(props){
         super(props)
@@ -64,15 +64,48 @@ c=()=>{
                 </div>
                 </div>
                 <div className={styles.content}>
-
-                <div className={styles.cardsholder}>
-                    <div className={styles.crow1}>
-                        <div className={styles.card}>
+                    <div className={styles.corholder}>
+                <div className={styles.cardin}>
                             Watch Now
                         </div>
+                <Carousel  dots={false} draggable={true}>
+                   
+                <div>
+                    <div className={styles.sep}></div>
+                <div className={styles.cardsholder}>
+                    <div className={styles.crow1}>
+                       
                         <div className={styles.card}>
                             Description
                         </div>
+                       
+
+
+                        <div className={styles.card}>
+                            Test2
+                        </div>
+                        <div className={styles.card}>
+                            Test3
+                        </div>
+                        <div className={styles.card}>
+                            Test4
+                        </div>
+
+
+                        <div className={styles.card}>
+                            Test5
+                        </div>
+
+                    </div>
+
+                </div>
+                <div className={styles.sep}></div>
+                </div>
+                    <div>
+                <div className={styles.cardsholder}>
+                    <div className={styles.crow1}>
+                        
+                        
                         <div className={styles.card}>
                             Test1
                         </div>
@@ -96,6 +129,8 @@ c=()=>{
                     </div>
 
                 </div>
+                </div>
+                </Carousel></div>
                 <div className={styles.orow2}>
     <h1 className={styles.eventname_}>VIBRA MAHOU FEST</h1>
     <p className={styles.desc}>

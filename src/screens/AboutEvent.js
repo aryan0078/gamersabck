@@ -68,6 +68,7 @@ c=()=>{
                 <div className={styles.cardin}>
                             Watch Now
                         </div>
+                        <div className={styles.corsel}>
                 <Carousel  dots={false} draggable={true}>
                    
                 <div>
@@ -130,20 +131,57 @@ c=()=>{
 
                 </div>
                 </div>
-                </Carousel></div>
+                </Carousel></div></div>
                 <div className={styles.orow2}>
     <h1 className={styles.eventname_}>VIBRA MAHOU FEST</h1>
     <p className={styles.desc}>
     Festival lineup: The Strokes, the Chainsmokers, Childish Gambino, Tame Impala, Twenty One Pilots, J Balvin, Ariana Grande, Flume
 A wonderful gathering of music, dance, <br/><br/>comedy and craft booths, Lollapalooza is another multi-genre delight which also provides a platform for political and non-profit artists and groups. The festival is forever creating historical moments in many a musicians career firmly cementing it in the global hall of fame for festivals.
     </p>
+                </div> 
                 </div>
                 <div className={styles.imggalleryh}>
+                <Carousel  dots={false} draggable={true}> 
+                <div>
+               
+              
 <div className={styles.imrow1}>
+<div className={styles.title_}>
+    <h1 className={styles.textonc}>Image Gallery</h1>
+    <h1 className={styles.textonc}>test 123 regrw</h1>
+</div>
+<div className={styles.gimg}></div>
+<div className={styles.gimg}></div>
 <div className={styles.gimg}></div>
 </div>
+<div className={styles.imrow1}>
+
+<div className={styles.gimg} style={{width:'25rem'}}></div>
+<div className={styles.gimg}></div>
+<div className={styles.gimg}></div>
+<div className={styles.gimg}></div>
+</div>
+             
                 </div>
-                </div>
+                <div>
+               
+              
+               <div className={styles.imrow1}>
+              
+               <div className={styles.gimg}></div>
+               <div className={styles.gimg}></div>
+               <div className={styles.gimg}></div>
+               </div>
+               <div className={styles.imrow1}>
+               
+               <div className={styles.gimg} style={{width:'25rem'}}></div>
+               <div className={styles.gimg}></div>
+               <div className={styles.gimg}></div>
+               <div className={styles.gimg}></div>
+               </div>
+                            
+                               </div>
+                </Carousel>   </div>
             </div>
         );
     }

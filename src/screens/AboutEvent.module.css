@@ -23,16 +23,53 @@
     color: white;
     width: 10rem;
     height: 4rem;
+    z-index: 100;
     font-size: large;
     border-width: 0px;
     border-radius: 5px;
     background-color: #CA0C2A;
 
 }
+.textonc{
+    color: white;
+}
+.title_{
+    width: 25rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color:#CA0C2A ;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.imggalleryh{
+    width: 100%;
+
+    margin-left: 5%;
+
+     border-radius: 5px;
+}
+.gimg{
+    background: url('https://source.unsplash.com/daily');
+    height: 15rem;
+    width: 15rem;
+    background-size: cover; border-radius: 5px;
+ 
+}
 .icons{
     color: white;
 
 }
+.imrow1{
+    display: flex;
+
+    background-color: #121212;
+   
+    padding: 2%; border-radius: 5px;
+    width: 100%;
+}
+
 .date{
     color: white;
     font-size: 28px;
@@ -190,8 +227,12 @@ border-width: 0px;
     width: 120%;
     justify-content: center;
   
-    margin-left: -10%;
+margin-left: -10%;
   
+}
+.corsel{
+    display: flex;
+    flex-direction: column;
 }
 .eventname_{
     color: #CA0C2A;

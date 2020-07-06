@@ -333,3 +333,7 @@ display: flex;
 align-items: center;
     background-color: #CA0C2A;
 }
+.rowofg{
+display: flex;
+flex-wrap: wrap;
+}

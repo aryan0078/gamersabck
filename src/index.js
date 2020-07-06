@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import CreateEvent from './screens/CreateEvent'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css'
@@ -19,6 +19,7 @@ const routing = (
        <Route exact path="/aboutevents" component={AboutEventP} />
       <Route exact path="/" component={Landing} />
      <Route exact path="/allevents" component={AllEventsP} />
+     <Route exact path="/createevent" component={CreateEvent} />
     </div>
   </Router>
 )

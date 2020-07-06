@@ -54,6 +54,16 @@ body::-webkit-scrollbar-thumb {
     background-color: #121212 !important;
     color: black;
 }
+.ant-tabs-nav-list{
+  border-width: 0px !important;
+}
+.ant-tabs-tab-active{
+  color: #CA0C2A !important;
+}
+.ant-tabs-tab {
+  color: white !important;
+  border-width: 0px !important;
+}
 .ant-picker-input
 {
   background-color: #111111 !important;

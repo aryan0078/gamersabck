@@ -3,7 +3,7 @@ import SideHeader from '../components/SideHeader'
 import AboutEvent from './AboutEvent'
 import { Layout,Menu,Modal } from 'antd';
 import styles from './Layout.module.css'
-
+import {Link} from 'react-router-dom'
 import TopHeader from '../components/TopHeader';
 import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
@@ -33,9 +33,9 @@ export default class PaymentP extends Component {
         <Header  style={{ display:'flex',justifyContent:'flex-start',position: 'fixed', zIndex: 1001, width: '100%',backgroundColor:'#121212' }}>
         <div className={styles.logo}  ></div>
          <TopHeader/>
-         <button className={styles.createevent} onClick={this.login}>
-  Create An Event
-</button>
+         <Link >     <button className={styles.createevent} >
+ Create An Event
+</button></Link>
          <button className={styles.loginregbtn} onClick={this.login}>
   Login/Register
 </button>

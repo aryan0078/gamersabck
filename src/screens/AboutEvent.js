@@ -143,21 +143,56 @@ class AboutEvent extends Component {
           </div>
         </div>
         <div className={styles.parentDiv}>
-          <div className={styles.title}></div>
+          <div className={styles.title}>
+          <h1 className={styles.titleofc}>Image Gallery
+              </h1>
+          </div>
           <div className={styles.imggalleryh1}>
             {/* <div className={styles.leftBox}></div> */}
             <Carousel dots={true} draggable={true}>
               <div>
-                <h3 className={styles.test}>1</h3>
+              <div className={styles.rowofg}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+              
+               </div>
               </div>
               <div>
-                <h3 className={styles.test}>2</h3>
+              <div className={styles.rowofg}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               </div>
               </div>
               <div>
-                <h3 className={styles.test}>3</h3>
+              <div className={styles.rowofg}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+              
+               </div>
               </div>
               <div>
-                <h3 className={styles.test}>4</h3>
+              <div className={styles.rowofg}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+            
+               <div className={styles.dcards}></div>
+               </div>
               </div>
             </Carousel>
           </div>

@@ -80,42 +80,53 @@ class AboutEvent extends Component {
             </div>
           </div>
         </div>
-        <div className={styles.content}>
-          <div className={styles.corholder}>
-            <div className={styles.cardin}>Watch Now</div>
-            <div className={styles.corsel}>
-              <Carousel dots={false} draggable={true}>
-                <div>
-                  <div className={styles.sep}></div>
-                  <div className={styles.cardsholder}>
-                    <div className={styles.crow1}>
-                      <div className={styles.card}>Description</div>
-
-                      <div className={styles.card}>Test2</div>
-                      <div className={styles.card}>Test3</div>
-                      <div className={styles.card}>Test4</div>
-
-                      <div className={styles.card}>Test5</div>
-                    </div>
-                  </div>
-                  <div className={styles.sep}></div>
-                </div>
-                <div>
-                  <div className={styles.cardsholder}>
-                    <div className={styles.crow1}>
-                      <div className={styles.card}>Test1</div>
-
-                      <div className={styles.card}>Test2</div>
-                      <div className={styles.card}>Test3</div>
-                      <div className={styles.card}>Test4</div>
-
-                      <div className={styles.card}>Test5</div>
-                    </div>
-                  </div>
-                </div>
-              </Carousel>
+        <div className={styles.parentDiv}>
+          <div className={styles.title}>
+            <h1 className={styles.titleofc}>Browse categorys
+              </h1>
             </div>
+          <div className={styles.imggalleryh1}>
+            {/* <div className={styles.leftBox}></div> */}
+            <Carousel dots={false} draggable={true}>
+              <div>
+                <div className={styles.rowofc}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               </div>
+              </div>
+              <div>
+              <div className={styles.rowofc}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               </div>
+              </div>
+              <div>
+              <div className={styles.rowofc}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               </div>
+              </div>
+              <div>
+              <div className={styles.rowofc}>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               <div className={styles.dcards}></div>
+               </div>
+              </div>
+            </Carousel>
           </div>
+
+      
+        </div>
+        <div className={styles.content}>
+        
           <div className={styles.orow2}>
             <h1 className={styles.eventname_}>VIBRA MAHOU FEST</h1>
             <p className={styles.desc}>
@@ -132,7 +143,7 @@ class AboutEvent extends Component {
           </div>
         </div>
         <div className={styles.parentDiv}>
-          <div style={{ border: "1px solid red", width:'38%' }}></div>
+          <div className={styles.title}></div>
           <div className={styles.imggalleryh1}>
             {/* <div className={styles.leftBox}></div> */}
             <Carousel dots={true} draggable={true}>
@@ -151,48 +162,7 @@ class AboutEvent extends Component {
             </Carousel>
           </div>
 
-          {/* 
-              <Carousel dots={false} draggable={true}>
-
-                <div>
-                  <div className={styles.imrow1}>
-                    <div className={styles.title_}>
-                      <h1 className={styles.textonc}>Image Gallery</h1>
-                      <h1 className={styles.textonc}>test 123 regrw</h1>
-                    </div>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                  </div>
-                  <div className={styles.imrow1}>
-                    <div
-                      className={styles.gimg}
-                      style={{ width: "25rem" }}
-                    ></div>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className={styles.imrow1}>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                  </div>
-                  <div className={styles.imrow1}>
-                    <div
-                      className={styles.gimg}
-                      style={{ width: "25rem" }}
-                    ></div>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                    <div className={styles.gimg}></div>
-                  </div>
-                </div>
-
-              </Carousel>{" "} */}
+      
         </div>
       </div>
     );

@@ -11,16 +11,34 @@
     background-size: contain;
     background-color: black;
 }
+.rowofc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 120%;
+}
+.titleofc{
+    color:white;
+    font-size: 25px;
+}
+.dcards{
+    background-color: #CA0C2A;
+    height: 25vh;
+    width: 19%;
+    margin-left: 2vh;
+    margin-top: 2.5vh;
+    border-radius: 10px;
 
+}
 /* Rahuls dummy CSS starts here */
 .imggalleryh1{
- 
-  width: 60%;
-  border: 1px solid white;
-  height: 50vh;
+  width: 80%;
+  margin-left: 1%;
+
+  height: 40vh;
 }
 .parentDiv{
     width: 100%;
+    margin-top: 5%;
     justify-content: space-around;
     display: flex;
 
@@ -59,13 +77,19 @@
 .textonc{
     color: white;
 }
-.title_{
-    width: 25rem;
-    height: 15rem;
+.side_{
+    font-size: 28px;
+    color: white;
+}
+.title{
+    width: 2rem;
+    height: 30vh;
     justify-content: center;
     align-items: center;
-    background-color:#CA0C2A ;
-    border-radius: 5px;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
+
     display: flex;
     flex-direction: column;
 }
@@ -216,7 +240,9 @@ background-color: #121212;
 
 }
 .row1{
-
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 .row2{
 
@@ -241,15 +267,22 @@ border-width: 0px;
     flex-direction: column;
 }
 .sep{
-    width: 10px;
+    width: 4px;
 }
 .desc{
     color: white;
     text-align: left;
 }
+.date{
+    background-color: #121212 !important;
+    border-width: 0px !important;
+    color: white !important;
+}
+
+
+
 .corholder{
-    display: flex;
-    flex-direction:column;
+  
     width: 120%;
     justify-content: center;
   
@@ -257,9 +290,13 @@ margin-left: -10%;
   
 }
 .corsel{
-    display: flex;
-    flex-direction: column;
-}
+    width: 100%;
+    margin-left: 5%;
+    flex-direction: row;
+
+
+
+flex-wrap: wrap;}
 .eventname_{
     color: #CA0C2A;
     font-weight: bolder;
@@ -287,17 +324,12 @@ display: flex;
 
 }
 .card{
-    width: 11.875rem;
-  
-    height: 10.6rem;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    border-radius: 5px;
-    justify-content: center;
+    width: 20%;
+  border-radius: 10px;
+ height: 10em;
     color: white;
-    font-size:large;
-    align-items: center;
-    display: flex;
-
+    justify-content: center;
+display: flex;
+align-items: center;
     background-color: #CA0C2A;
 }

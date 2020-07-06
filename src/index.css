@@ -44,3 +44,25 @@ body::-webkit-scrollbar-thumb {
   background-color: #CA0C2A;
   border-radius: 10px;
 }
+.ant-picker:hover, .ant-picker-focused {
+    /* border-color: #40a9ff; */
+    border-right-width: 1px !important;
+}
+
+.ant-picker{
+    border-width: 0px !important;
+    background-color: #121212 !important;
+    color: black;
+}
+.ant-picker-input
+{
+  background-color: #111111 !important;
+}
+.ant-carousel .slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 110% !important;
+}

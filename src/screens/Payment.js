@@ -47,6 +47,9 @@ class Payment extends Component {
                 </div>
                 <div className={styles.paymentdetails}>
             <div className={styles.paymentbox}>
+            <div className={styles.row1form}>
+                <h1 className={styles.titleofp}>Payment Details</h1>
+            </div>
 							<div className={styles.row1form}>
                                 <label className={styles.frstname}>FULL NAME</label>
                                 <input type="text" className={styles.frstnameinp} />

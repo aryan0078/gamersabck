@@ -210,6 +210,12 @@ font-size: large;
     display: flex;
     flex-direction: column;
 }
+.titleofp{
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    align-self: start;
+}
 .main{
  
     background: url('./assets/r6.jpg');

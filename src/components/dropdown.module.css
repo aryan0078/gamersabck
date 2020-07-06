@@ -32,7 +32,7 @@
 .dropdown {
     position: absolute;
     top: 50px;
-    width: 150px;
+    width: 200px;
     transform: translateX(-5%);
     background-color: var(--bg);
     border: var(--border);

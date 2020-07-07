@@ -538,3 +538,66 @@ flex-direction: row;
 .alltestcardholder{
     margin-top:5%;
 }
+@media screen and (max-width: 800px) {
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+   
+    }
+    .btitle,.animationtext,.upcoming,.entertainmenl2,.entertainmenl2{
+        font-size: x-large;
+        
+    }
+    .cardholder{
+        padding: 0px;
+    }
+    .searchbox{
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+padding:5%;
+height: 60vh;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    .dropdown{
+        font-size: x-large
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .sideimageofsell{
+       display: none;
+    }
+    .textcontainer{
+        width: 100%;
+    }
+    .allthebuttons{
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 0px;
+        margin-top: 40%;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+        padding: 0px;
+    }
+.cardhoderblog{
+    flex-direction: column;
+    width: 100%;
+}
+.card1blog,.card2blog{
+    width: 100%;
+    margin: 0px !important;
+    margin-bottom: 5% !important;
+}
+.row1test{
+    flex-direction: column;
+}
+.testnomialcards{
+    width: 90%;
+    padding: 3%;
+}
+   
+
+
+}

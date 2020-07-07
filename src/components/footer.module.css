@@ -124,3 +124,21 @@ justify-content:left;
 
  flex-direction: row;   
 }
+@media screen and (max-width: 800px) {
+    .main{
+        width: 100%;
+    }
+    .taglineholder{
+        width: 100%;
+        padding-left: 5%;
+        border-color: black;
+    }
+    .linksholder{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .newsletter{
+        display: none;
+    }
+}

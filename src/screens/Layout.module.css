@@ -108,3 +108,32 @@ border-width: 0px;
     align-items: center;
 
 }
+@media screen and (max-width: 800px) {
+     .logo{
+   display: none;
+    }
+    .createevent{
+        display: flex;
+        color: white;
+        font-size: x-small;
+        font-weight: bolder;
+        font-family: mont;
+        background-color: #121212;
+        border-width: 0px;
+        align-self: flex-start;
+        width: 180px;
+     
+        background-color: #AA0020;
+        
+    }.loginregbtn{
+        position: relative;
+        right: -30px;
+        color: grey;
+        font-size: small;
+        font-weight: bolder;
+        font-family: mont;
+        background-color: #121212;
+    border-width: 0px;  
+     
+    }
+  }

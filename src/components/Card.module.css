@@ -135,3 +135,10 @@ background-color: transparent;
     font-size: medium;
     font-family: mont;
 }
+@media screen and (max-width: 800px) {
+    .cardholder{
+        width: 100% !important;
+        margin-bottom: 5% !important;
+        margin: 0px;
+    }
+}

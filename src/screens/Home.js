@@ -63,7 +63,7 @@ export default class Home extends Component {
               </Drop>
             </div>
             <div>
-              <Button type="primary" danger style={{ backgroundColor: "#CA0C2A", width: '10em', height: '4em', marginRight: '2em' }}>Search</Button>
+              <button className={styles.searchs}>Search</button>
             </div>
           </div>
           <div className={styles.upcomingholder}>

@@ -319,7 +319,7 @@ word-wrap:break-word;
 flex-direction: row;
     z-index: 1;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 8%;
   
  
 }
@@ -403,7 +403,7 @@ flex-direction: column;
   
     position: relative;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
     .cardholderblog{
         flex-direction: column;
         display: flex;
@@ -507,7 +507,7 @@ flex-direction: column;
     width: 15em;
 }
 .testnomialcards{
-    width: 32%;
+    width: 30%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -524,9 +524,9 @@ text-align: left;
     background-color: #CA0C2A;
     border: none;
     color: white;
-    width: 35vh;
+    width: 20vh;
     height: 10vh;
-  margin-right: 5%;
+    margin-right: 5%;
     margin-top: 5%;
 }
 .row1test{
@@ -547,7 +547,7 @@ flex-direction: row;
 .alltestcardholder{
     margin-top:5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 
     .main{
         padding-left: 20px;
@@ -572,7 +572,7 @@ background-repeat: no-repeat;
         background-color: #CA0C2A;
         border: none;
         color: white;
-        width: 40vh;
+        width: 17rem;
         height: 7vh;
         border-radius: 10px;
         margin-top: 5%;
@@ -585,7 +585,8 @@ background-repeat: no-repeat;
         padding: 0px;
         flex-direction: column;
 padding:10%;
-height: 35vh;
+height: 40vh;
+margin-bottom: 5%;
         justify-content:center;
         align-items: flex-start;
     }
@@ -602,13 +603,16 @@ height: 35vh;
         width: 100%;
     }
     .allthebuttons{
-        flex-wrap: wrap;
+        flex-direction: row;
         position: relative;
         bottom: 0px;
-        margin-top: 40%;
+        margin-top: 50%;
         margin-bottom: 0px !important;
         padding-bottom: 0px !important;
         padding: 0px;
+    }
+    .sellticketbutton{
+        font-size: 8px;
     }
 .cardhoderblog{
     flex-direction: column;

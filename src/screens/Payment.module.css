@@ -365,7 +365,78 @@ border-bottom-width: 0.2px;
     margin-right: 15px;
     margin-top: -6px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+    .main{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .x{
+        font-size: medium;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        
+        justify-self: center;
+    }
+    .iconntitle{
+        padding-top: 0px;
+        padding: 1%;
+    }
+    .dropdown{
+   
+    }
+    .row5,.row6{
+        width: 80%;
+        padding: 5%;
+    text-align: center;
+    }
+    
+    .row6{
+        margin-bottom: 30px;
+    }
+    .placeorder{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .paypal,.cc,.payfast{
+        width: 100%;
+        margin: 0px !important;
+
+    }
+    .cardsholder{
+        height: 30vh;
+        margin-top: 5%;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .frstname{
+        font-size: small;
+        padding-bottom: 10px !important;
+    }
+    .phno{
+        font-size: small;
+        padding-bottom: 10px !important;
+    }
+    .paymenttitile{
+        font-size: large;
+    }
+    .row2form{
+        padding-top: 0px !important;
+    }
+    .email{
+        margin-top: 5% !important;
+    }
+    .titleofp{
+        font-size: x-large;
+        margin-top: 5%;
+    }
+    .paymentcontainer{
+        margin-bottom: 10% !important;
+    }
     .email{
         width: 100%;
     }

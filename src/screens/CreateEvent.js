@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './CreateEvent.module.css'
 
-import { Tabs, Radio } from 'antd';
+import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 class CreateEvent extends Component {

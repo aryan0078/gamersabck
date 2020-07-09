@@ -165,3 +165,69 @@ flex-direction: column;
      display: flex;
      flex-direction: row;
  }
+ .searchs{
+    background-color: #CA0C2A;
+    border: none;
+    color: white;
+    width: 10rem;
+    height: 7vh;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+ @media screen and (max-width: 1200px) {
+     .pagenav{
+         width: 60%;
+         margin-left: 2%;
+         margin-bottom: 10%;
+     }
+     .title{
+        
+         font-size: small;
+     }
+     .caurosel{
+         margin-top: 10%;
+         margin-bottom: 5%;
+     }
+     .titlenfilter{
+         margin-top: 5%;
+         margin-bottom: 5%;
+         padding-left: 5%;
+     }
+     .entertainmentholder{
+         flex-direction: column;
+     }
+     .row1{
+         flex-direction: column;
+         padding-left: 5%;
+     }
+     .main{
+         padding-top: 15%;
+        padding-left: 0%;
+    flex-direction: column;
+    padding-right: 5%; 
+    margin-left: 0px ;
+    margin-right: 0px;
+     } .searchs{
+        background-color: #CA0C2A;
+        border: none;
+        color: white;
+        width: 17rem;
+        height: 7vh;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+     .searchbox{
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+padding:10%;
+height: 45vh;
+margin-bottom: 5%;
+        justify-content:center;
+        align-items: flex-start;
+        }
+        .cimg{
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+ }

@@ -9,7 +9,7 @@ function NavItem(props) {
   return (
     <ul className="navitem">
       <a onClick={() => setOpen(!open)} className={styles.title}>
-        Select Category
+        {props.title}
         </a>
 
       {open && props.children}
@@ -39,9 +39,9 @@ function DropdownMenu() {
     </div>
   )
 }
-function Drop() {
+function Drop(props) {
   return (
-    <NavItem>
+    <NavItem title={props.title}>
       <DropdownMenu>
 
       </DropdownMenu>

@@ -3,14 +3,16 @@ import Card from '../components/Card'
 import styles from './AllEvents.module.css'
 import { Carousel } from 'antd';
 import Drop from '../components/dropdown'
-import {FilterOutlined } from '@ant-design/icons'
-import {Button,Dropdown,Menu} from 'antd'
+import {FilterOutlined,LeftOutlined,RightOutlined } from '@ant-design/icons'
+
 class AllEvents extends Component {
    
     render() {
         return (
             <div className={styles.main}>
               <div className={styles.caurosel}>
+                <div className={styles.arrows}> <LeftOutlined style={{ fontSize: "25px" ,color:'white'}} /></div>
+             <div className={styles.c}>
               <Carousel>
     <div>
       <div className={styles.cimg}></div>
@@ -24,20 +26,22 @@ class AllEvents extends Component {
     <div>
     <div className={styles.cimg}></div>
     </div>
-  </Carousel>
+  </Carousel></div>
+  <div className={styles.arrows} onClick={Carousel.next}> <RightOutlined style={{ fontSize: "30px" ,color:'white'}} /></div>
               </div>
                      <div className={styles.searchbox}>
+                  
           <div className={styles.whatholder}>
             <h3 className={styles.searchind} >WHAT</h3>
-            <Drop/>
+            <Drop title={'Select Category'}/>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHEN</h3>
-            <Drop/>
+            <Drop title={'Select Category'}/>
             </div>
             <div className={styles.whatholder}>
             <h3 className={styles.searchind}>WHERE</h3>
-            <Drop/>
+            <Drop title={'Select Category'}/>
             </div>
             <div className={styles.whatholder_}>
             <h3 className={styles.searchind}>KEYWORD</h3>
@@ -54,7 +58,9 @@ class AllEvents extends Component {
                   <h1  className={styles.title}>Simple Layout</h1>
                   <div className={styles.fbuttons}>
                   <button className={styles.fbutton_} ><FilterOutlined /> </button>
-                    <button className={styles.fbutton}>FILTER </button>
+                    <Drop title={'filter'} />
+
+
                     <button className={styles.fbutton}>SORT BY: Relevance</button>
                     </div>
                   </div>

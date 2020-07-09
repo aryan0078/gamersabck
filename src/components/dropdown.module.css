@@ -33,6 +33,7 @@
     position: absolute;
     top: 50px;
     width: 200px;
+    z-index: 100;
     transform: translateX(-5%);
     background-color: var(--bg);
     border: var(--border);

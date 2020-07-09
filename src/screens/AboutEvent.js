@@ -39,8 +39,8 @@ class AboutEvent extends Component {
         </Modal>
 
         <Link to="/payment">
-          {" "}
           <button className={styles.booknowf}>Book Now</button>
+       
         </Link>
         <h1 className={styles.eventname}>
           Sesame Street Live! Make Your Magic
@@ -52,16 +52,21 @@ class AboutEvent extends Component {
             </div>
             <h1 className={styles.eventnametop}>Vira Mount Fest</h1>
             <h1 className={styles.eventnametop_}>bla bla</h1>
+            <div className={styles.buttonsofc}> 
+            <button className={styles.booknowb} onClick={this.c}>
+             Book Now
+            </button>
             <button className={styles.omodal} onClick={this.c}>
               Contact Organizer
             </button>
+</div>
           </div>
           <div className={styles.rowp2}>
             <div className={styles.row1}>
               <div className={styles.icons}>
                 <CalendarFilled style={{ fontSize: "30px" }} />
               </div>
-              <h1 className={styles.date}>26 September</h1>
+              <h1 className={styles.date}>Event start date </h1>
               <h1 className={styles.time}>7:00 pm</h1>
               <h1 className={styles.button}>View All Dates</h1>
             </div>
@@ -69,13 +74,35 @@ class AboutEvent extends Component {
               <div className={styles.icons}>
                 <CalendarFilled style={{ fontSize: "30px" }} />
               </div>
-              <h1 className={styles.date}>Grand Chapiteau</h1>
+              <h1 className={styles.date}>event end date</h1>
+              <h1 className={styles.time}>New York</h1>
+            </div>
+            <div className={styles.row2}>
+              <div className={styles.icons}>
+                <CalendarFilled style={{ fontSize: "30px" }} />
+              </div>
+              <h1 className={styles.date}>Location </h1>
+              <h1 className={styles.time}>New York</h1>
+            </div>
+            <div className={styles.row2}>
+              <div className={styles.icons}>
+                <CalendarFilled style={{ fontSize: "30px" }} />
+              </div>
+              <h1 className={styles.date}>Mode</h1>
+              <h1 className={styles.time}>New York</h1>
+            </div>
+            <div className={styles.row2}>
+              <div className={styles.icons}>
+                <CalendarFilled style={{ fontSize: "30px" }} />
+              </div>
+              <h1 className={styles.date}>Price </h1>
               <h1 className={styles.time}>New York</h1>
             </div>
             <div className={styles.row3}>
               <div className={styles.icons}>
                 <CalendarFilled style={{ fontSize: "30px" }} />
               </div>
+              <h1 className={styles.date}>Slot left </h1>
               <h1 className={styles.date}>$45</h1>
             </div>
           </div>
@@ -84,6 +111,7 @@ class AboutEvent extends Component {
           <div className={styles.title}>
             <h1 className={styles.titleofc}>Browse categorys
               </h1>
+              <a className={styles.vbtn}> View All</a>
           </div>
           <div className={styles.imggalleryh1_}>
             {/* <div className={styles.leftBox}></div> */}

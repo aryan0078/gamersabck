@@ -18,7 +18,8 @@
 }
 .titleofc{
     color:white;
-    font-size: 25px;
+    font-size: 20px;
+    justify-content:flex-start;
 }
 .dcardsg{
     background-color: #CA0C2A;
@@ -36,8 +37,8 @@
 }
 .dcards{
 background-color: #CA0C2A;
-height: 25vh;
-width: 15%;
+height: 23vh;
+width: 13%;
 border-radius: 10px;
 display: flex;
 margin-left: 1%;
@@ -109,17 +110,19 @@ background-color: #121212;
     font-size: 28px;
     color: white;
 }
+.vbtn{
+    color: #CA0C2A;
+    font-size: small;
+}
 .title{
-    width: 2rem;
-    height: 30vh;
-    justify-content: center;
+    width: 5rem;
+    justify-content:space-around;
     align-items: center;
-    margin-top: 1%;
-    justify-content: center;
-    align-items: center;
+ height: 100%;
+flex-direction: column;
 
     display: flex;
-    flex-direction: column;
+ 
 }
 .imggalleryh{
     width: 100%;
@@ -158,7 +161,7 @@ background-color: #121212;
 }
 .time{
     color: white;
-    font-size: 20px
+    font-size: 15px
 }
 .eventname{
     color: white;
@@ -200,9 +203,9 @@ top: 10px;
     border-width: 0px;
     color: white;
     border-radius: 5px;
-    font-size: small;
-    padding: 1%;
-    width: 10rem;
+    font-size: x-small;
+margin-left: 10px;
+    width: 8rem;
     height: 4rem;
     font-family: mont;
 
@@ -261,7 +264,7 @@ flex-direction: column;
 background-color: #121212;
 }
 .row1,.row2,.row3{
-    padding: 5%;
+    padding: 1%;
     display: flex;
 
     flex-direction: column;
@@ -305,10 +308,21 @@ border-width: 0px;
     background-color: #121212 !important;
     border-width: 0px !important;
     color: white !important;
+    font-size: large;
 }
 
 
-
+.booknowb{
+    color: white;
+    width: 7rem;
+    height: 4rem;
+ padding-bottom: 4px;
+    font-size: small;
+    font-family: mont;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: #CA0C2A;
+}
 .corholder{
   
     width: 120%;
@@ -375,6 +389,12 @@ padding-left: 5%;
 padding-right: 10%;
 }
 @media screen and (max-width: 1200px) {
+    .eventnametop,.eventnametop_{
+        font-size: medium;
+    }
+    .rowp2{
+        flex-direction: column;
+    }
     .main{
         margin: 0px !important;
         padding: 0px !important;
@@ -384,7 +404,8 @@ padding-right: 10%;
         font-size:medium;
     }
     .detailbox{
-        width: 80%;
+        width: 90%;
+        margin-right: 0px;
         margin-left: 0px !important;
     }
     .rowp1{
@@ -394,8 +415,43 @@ padding-right: 10%;
         width: 40% !important;
         background-repeat: no-repeat;
     }
+    .imggalleryh1{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 250vh;
+        margin-left: 0px;
+    }
+    .booknowf{
+        width: 6rem;
+        height: 3rem;
+        font-size: small;
+    }
+    .imggalleryh1_{
+     margin-bottom: 5%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .rowofg{
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .dcardsg{
+        width: 90% !important;
+    }
     .logoc{
         flex-direction: column !important;
+        margin-bottom: 5%;
+    }
+    .booknowb{
+        width: 8rem;
+    }
+    .buttonsofc{
+        width: 100%;
+        margin-bottom: 5%;
+        justify-content: space-between;
+        display: flex;
     }
     .rowofc{
         flex-direction: column;

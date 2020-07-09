@@ -374,3 +374,38 @@ width: 100%;
 padding-left: 5%;
 padding-right: 10%;
 }
+@media screen and (max-width: 1200px) {
+    .main{
+        margin: 0px !important;
+        padding: 0px !important;
+
+    }
+    .eventname{
+        font-size:medium;
+    }
+    .detailbox{
+        width: 80%;
+        margin-left: 0px !important;
+    }
+    .rowp1{
+        flex-direction: column;
+    }
+    .elogo{
+        width: 40% !important;
+        background-repeat: no-repeat;
+    }
+    .logoc{
+        flex-direction: column !important;
+    }
+    .rowofc{
+        flex-direction: column;
+    }
+    .dcards{
+        width:30%;
+        height: 10vh;
+        margin-bottom: 2%;
+    }
+    .parentDiv{
+        flex-direction: column;
+    }
+}

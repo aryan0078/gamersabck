@@ -46,7 +46,7 @@ class AllEvents extends Component {
 
             </div>
             <div>
-              <Button type="primary" danger style={{width:'10em',height:'4em',marginRight:'2em'}}>Search</Button>
+            <button className={styles.searchs}>Search</button>
             </div>
         </div>
 

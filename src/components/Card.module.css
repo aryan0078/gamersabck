@@ -17,11 +17,7 @@ margin-left: 1em;
     background-repeat: no-repeat;
     transition: all 0.5s;
 }
-@media (min-width:600px){
- .cardholder{
-     width: 90%;
- }   
-}
+
 .exp{
     color: white;
   
@@ -135,7 +131,7 @@ background-color: transparent;
     font-size: medium;
     font-family: mont;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .cardholder{
         width: 100% !important;
         margin-bottom: 5% !important;

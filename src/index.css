@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb {
     /* border-color: #40a9ff; */
     border-right-width: 1px !important;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
 .ant-layout-sider-children,.ant-layout-sider ,.ant-layout-sider-dark,.ant-layout-sider-collapsed{
   display: none !important;
 }.ant-select,.ant-select-lg,.ant-select-single,.ant-select-show-arrow{
@@ -105,5 +105,5 @@ height: 5vh !important;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 110% !important;
+  width: 100% !important;
 }

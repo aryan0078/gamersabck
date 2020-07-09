@@ -1,34 +1,24 @@
-
-.branding{
-
-background-color: pink;
-display: flex;
-
-flex-direction:column;
-
-
+.branding {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
 }
-.l1{
-    color: white;
-    font-size: small;
-    position: absolute;
-    top:-9px;
-    font-weight: bolder;
-  
-    left: 4.2%;
-
-
+.l1 {
+  color: white;
+  font-size: small;
+  position: absolute;
+  top: -9px;
+  font-weight: bolder;
+  left: 4.2%;
 }
-.topheader{
-    width: 100%;
-    display: flex;
- 
+.topheader {
+  width: 100%;
+  display: flex;
 }
-.l2{
-    color:white;
-    position: absolute;
-    top: 6px;
- left: 4.2%;
-    
-    font-size: 10px;
+.l2 {
+  color: white;
+  position: absolute;
+  top: 6px;
+  left: 4.2%;
+  font-size: 10px;
 }

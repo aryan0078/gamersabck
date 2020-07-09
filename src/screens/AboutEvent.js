@@ -82,8 +82,7 @@ class AboutEvent extends Component {
         </div>
         <div className={styles.parentDiv_}>
           <div className={styles.title}>
-            <h1 className={styles.titleofc}>Browse categorys
-              </h1>
+            <h1 className={styles.titleofc}>Browse categorys</h1>
           </div>
           <div className={styles.imggalleryh1_}>
             {/* <div className={styles.leftBox}></div> */}
@@ -122,11 +121,8 @@ class AboutEvent extends Component {
               </div>
             </Carousel>
           </div>
-
-
         </div>
         <div className={styles.content}>
-
           <div className={styles.orow2}>
             <h1 className={styles.eventname_}>VIBRA MAHOU FEST</h1>
             <p className={styles.desc}>
@@ -143,72 +139,111 @@ class AboutEvent extends Component {
           </div>
         </div>
         <div className={styles.parentDiv}>
-
           <div className={styles.imggalleryh1}>
             {/* <div className={styles.leftBox}></div> */}
-            <Carousel dots={false} draggable={true} easing autoplay  >
+            <Carousel dots={false} draggable={true} easing autoplay>
               <div>
                 <div className={styles.rowofg}>
-                  <div className={styles.dcardsg} style={{ width: '26%' }}>
+                  <div className={styles.dcardsg} style={{ width: "26%" }}>
                     <h1 className={styles.titleofg}> Image Gallery</h1>
                     <h1 className={styles.titleofg}> Events Images</h1>
                   </div>
-                  <div className={styles.dcardsg} style={{ width: '30%' }}></div>
-                  <div className={styles.dcardsg}></div><div className={styles.dcardsg}></div>
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "30%" }}
+                  ></div>
+                  <div className={styles.dcardsg}></div>
+                  <div className={styles.dcardsg}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
                   <div className={styles.dcardsg}></div>
 
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
-                  <div className={styles.dcardsg}></div>
-                </div>
-              </div>
-              <div>
-                <div className={styles.rowofg}>
-                  <div className={styles.dcardsg} style={{ width: '26%' }}>
-
-                  </div>
-                  <div className={styles.dcardsg} style={{ width: '30%' }}></div>
-                  <div className={styles.dcardsg}></div><div className={styles.dcardsg}></div>
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
-                  <div className={styles.dcardsg}></div>
-
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
                   <div className={styles.dcardsg}></div>
                 </div>
               </div>
               <div>
                 <div className={styles.rowofg}>
-                  <div className={styles.dcardsg} style={{ width: '26%' }}>
-
-                  </div>
-                  <div className={styles.dcardsg} style={{ width: '30%' }}></div>
-                  <div className={styles.dcardsg}></div><div className={styles.dcardsg}></div>
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "26%" }}
+                  ></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "30%" }}
+                  ></div>
+                  <div className={styles.dcardsg}></div>
+                  <div className={styles.dcardsg}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
                   <div className={styles.dcardsg}></div>
 
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
                   <div className={styles.dcardsg}></div>
-
                 </div>
               </div>
               <div>
                 <div className={styles.rowofg}>
-                  <div className={styles.dcardsg} style={{ width: '26%' }}>
-
-                  </div>
-                  <div className={styles.dcardsg} style={{ width: '30%' }}></div>
-                  <div className={styles.dcardsg}></div><div className={styles.dcardsg}></div>
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "26%" }}
+                  ></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "30%" }}
+                  ></div>
+                  <div className={styles.dcardsg}></div>
+                  <div className={styles.dcardsg}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
                   <div className={styles.dcardsg}></div>
 
-                  <div className={styles.dcardsg} style={{ width: '28%' }}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
+                  <div className={styles.dcardsg}></div>
+                </div>
+              </div>
+              <div>
+                <div className={styles.rowofg}>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "26%" }}
+                  ></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "30%" }}
+                  ></div>
+                  <div className={styles.dcardsg}></div>
+                  <div className={styles.dcardsg}></div>
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
+                  <div className={styles.dcardsg}></div>
+
+                  <div
+                    className={styles.dcardsg}
+                    style={{ width: "28%" }}
+                  ></div>
                   <div className={styles.dcardsg}></div>
                 </div>
               </div>
             </Carousel>
           </div>
-
-
         </div>
       </div>
     );

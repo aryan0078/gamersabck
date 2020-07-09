@@ -1,80 +1,77 @@
 :root {
-    --bg:  #242526;
-    --bg-accent: #484a4d;
-    --text-color: #dadce1;
-    --nav-size: 60px;
-    --border: 1px solid #474a4d;
-    --border-radius: 8px;
-    --speed: 500ms; 
-  }
-  
-  .navitem {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Icon Button */
-  .iconbutton {
-  
-  }
-  
-  .iconbutton:hover {
-    filter: brightness(1.2);
-  }
-  
-  .iconbutton svg { 
-    fill: var(--text-color);
-    width: 20px;
-    height: 20px;
-  }
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon Button */
+.iconbutton {
+}
+
+.iconbutton:hover {
+  filter: brightness(1.2);
+}
+
+.iconbutton svg {
+  fill: var(--text-color);
+  width: 20px;
+  height: 20px;
+}
 .dropdown {
-    position: absolute;
-    top: 50px;
-    width: 200px;
-    transform: translateX(-5%);
-    background-color: var(--bg);
-    border: var(--border);
-    border-radius: var(--border-radius);
-    padding: 0.5rem;
-    overflow: hidden;
-    transition: height var(--speed) ease;
-  }
-  
-  .menu {
-    width: 100%;
-  }
-  
-  .menuitem {
-    height: 35px;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    border-radius: var(--border-radius);
-    transition: background var(--speed);
-    padding: 0.5rem;
-    color: white;
-  }
-  
-  .menuitem .iconbutton {
-    margin-right: 0.5rem;
-  }
-  
-  
-  .menuitem .iconbutton:hover {
-    filter: none;
-  }
-  
-  .menuitem:hover {
-    color: white;
-    background-color: #CA0C2A;
-  }
-  
-  .iconright {
-    margin-left: auto;
-  }  
-  .title{
-color: white;
-padding: 0px;
-  }
+  position: absolute;
+  top: 50px;
+  width: 200px;
+  transform: translateX(-5%);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  overflow: hidden;
+  transition: height var(--speed) ease;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menuitem {
+  height: 35px;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+  color: white;
+}
+
+.menuitem .iconbutton {
+  margin-right: 0.5rem;
+}
+
+.menuitem .iconbutton:hover {
+  filter: none;
+}
+
+.menuitem:hover {
+  color: white;
+  background-color: #ca0c2a;
+}
+
+.iconright {
+  margin-left: auto;
+}
+.title {
+  color: white;
+  padding: 0px;
+}

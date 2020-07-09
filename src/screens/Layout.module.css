@@ -1,124 +1,123 @@
-.logo{
-    width: 4em;
-    height: 3.2em;
-    top:10px;
-    left: -3em;
-    position: relative;
-    background-image: url('../components/new.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-    .eventname{
-        font-size: medium;
-        color: white;
-    }
-    .place{
-        color:white;
-    }
-    .date{
-        font-size: small;
-        color: white;
-    }
-    .textontop{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .lableoflogin{
-        color:white;
-
-
-        font-size: xx-large;
-       
-        font-weight: bold;
-    }
-.login{
-    background-color: transparent;
-    display: flex;
-    height: 85vh;
-z-index: 11000;
-    width: 100%;
-background-color: transparent;
-    border-radius: 25px;
-    flex-direction: row;
+.logo {
+  width: 4em;
+  height: 3.2em;
+  top: 10px;
+  left: -3em;
+  position: relative;
+  background-image: url("../components/new.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.loginformforgot{
-    font-size: 15px;
-    color: #AA0020;
-    font-weight: bolder;
+.eventname {
+  font-size: medium;
+  color: white;
 }
-.loginformreg{
-    font-size: 12px;
-    color: #AA0020;
-    font-weight: bolder;
+.place {
+  color: white;
 }
-.loginbutton{
-    color: white;
-    background-color: #AA0020;
-    border-width: 0px;
-    border-radius: 5px;
-    width: 40%;
-    height: 50px;
-    font-size: medium;
+.date {
+  font-size: small;
+  color: white;
 }
-.image{display: flex;
-width: 50%;
-color: white;
-height: 100%;
-justify-content: center;
-align-items: center;
-background-size: cover;
-background: url('../components/b1.jpg');
-}
-.loginholder{
-    display: flex;
-    width: 50%;
-    flex:1;
-    color: white;
-    flex-direction: column;
+.textontop {
+  display: flex;
   justify-content: center;
-    align-items: center;
-    background-color: #121212;
+  align-items: center;
+  flex-direction: column;
 }
-.loginregbtn{
-    position: relative;
-    right: 0px;
-    color: grey;
-    font-size: medium;
-    font-weight: bolder;
-    font-family: mont;
-    background-color: #121212;
-border-width: 0px;  
- 
-}
-.createevent{
-    display: flex;
-    color: white;
-    font-size: small;
-    font-weight: bolder;
-    font-family: mont;
-    background-color: #121212;
-    border-width: 0px;
-    align-self: flex-start;
-    width: 160px;
-    height: 99%;
-    background-color: #AA0020;margin-right: 10px;
-    justify-content: center;
-    align-items: center;
+.lableoflogin {
+  color: white;
 
+  font-size: xx-large;
+
+  font-weight: bold;
+}
+.login {
+  background-color: transparent;
+  display: flex;
+  height: 85vh;
+  z-index: 11000;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 25px;
+  flex-direction: row;
+}
+.loginformforgot {
+  font-size: 15px;
+  color: #aa0020;
+  font-weight: bolder;
+}
+.loginformreg {
+  font-size: 12px;
+  color: #aa0020;
+  font-weight: bolder;
+}
+.loginbutton {
+  color: white;
+  background-color: #aa0020;
+  border-width: 0px;
+  border-radius: 5px;
+  width: 40%;
+  height: 50px;
+  font-size: medium;
+}
+.image {
+  display: flex;
+  width: 50%;
+  color: white;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background: url("../components/b1.jpg");
+}
+.loginholder {
+  display: flex;
+  width: 50%;
+  flex: 1;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+.loginregbtn {
+  position: relative;
+  right: 0px;
+  color: grey;
+  font-size: medium;
+  font-weight: bolder;
+  font-family: mont;
+  background-color: #121212;
+  border-width: 0px;
+}
+.createevent {
+  display: flex;
+  color: white;
+  font-size: small;
+  font-weight: bolder;
+  font-family: mont;
+  background-color: #121212;
+  border-width: 0px;
+  align-self: flex-start;
+  width: 160px;
+  height: 99%;
+  background-color: #aa0020;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 800px) {
-     .logo{
-   display: none;
-    }
-    .createevent{
-        display: none;
-        
-    }.loginregbtn{
-     display: none;
-     
-    }.textontop{
-        font-size: x-small;
-    }
+  .logo {
+    display: none;
   }
+  .createevent {
+    display: none;
+  }
+  .loginregbtn {
+    display: none;
+  }
+  .textontop {
+    font-size: x-small;
+  }
+}

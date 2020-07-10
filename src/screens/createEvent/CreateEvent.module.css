@@ -1,0 +1,145 @@
+/* The style sheet for the CreateEvent component
+ at the route: /createevent */
+
+@font-face {
+  font-family: mont;
+  src: url("../../components/fonts/Montserrat-Regular.ttf");
+}
+
+.createEventWrapper {
+  width: 100%;
+  height: 100vh;
+  /* background: url("../assets/r6.jpg"); */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.createEventWrapper li {
+  list-style: none;
+}
+
+.createEventWrapper ul,
+a {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  color: white;
+}
+
+.createEventInnerWrapper {
+  padding: 5% 10%;
+  display: flex;
+}
+
+.createEventInnerWrapper .createEventNav {
+  width: 20%;
+}
+
+.createEventNav .createEventNavList {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.createEventInnerWrapper .createEventInnerComponents {
+  color: white;
+  font-family: mont, sans-serif;
+  width: 80%;
+}
+
+.createEventInnerComponents .label {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.componentHeader {
+  margin-top: 1%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.innerComponent {
+  margin: 3%;
+}
+
+.innerComponent form {
+  margin: 0 5%;
+}
+
+.innerComponent input[type="text"] {
+  width: 100%;
+  border: 2px solid #282828;
+  background-color: #131313;
+  margin: 1.5% 0;
+  padding-left: 2%;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.innerComponent input[type="text"]:focus {
+  outline: none;
+}
+
+.innerComponent input[type="submit"] {
+  color: black;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.innerComponent input[type="submit"]:focus {
+  outline: none;
+}
+
+.innerComponent input[type="radio"] {
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+.createEventInfoSubmitButton {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.eventDescription {
+  width: 100%;
+  border: 2px solid #282828;
+  background-color: #131313;
+  margin: 1.5% 0;
+  padding: 2% 0 0 2%;
+  height: 50px;
+  border-radius: 30px;
+  resize: none;
+  height: 250px;
+}
+
+.eventDescription:focus {
+  outline: none;
+}
+
+.eventDates,
+.ticketInfo,
+.regInfo,
+.playersInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.startDate,
+.endDate,
+.tName,
+.tFee,
+.regStartDate,
+.regEndDate,
+.nPlayers,
+.nSubs {
+  width: 40%;
+}

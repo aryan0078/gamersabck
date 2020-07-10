@@ -65,8 +65,15 @@ export default class Home extends Component {
           <h1 className={styles.btitle}>around you.</h1>
           <div className={styles.searchbox}>
             <div className={styles.whatholder}>
+<<<<<<< HEAD
               <h3 className={styles.searchind}>WHAT</h3>
               <Drop></Drop>
+=======
+              <h3 className={styles.searchind} >WHAT</h3>
+              <Drop title={'Filter'} >
+
+              </Drop>
+>>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHEN</h3>

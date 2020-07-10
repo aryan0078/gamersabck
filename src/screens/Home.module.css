@@ -252,6 +252,7 @@
   background-color: #0a0a0a;
   align-self: center;
 }
+<<<<<<< HEAD
 .lableholder {
   display: flex;
   justify-self: flex-start;
@@ -272,6 +273,45 @@
   justify-content: center;
   margin-top: 8%;
   transition: all ease 0.5s;
+=======
+.textcontainer{
+    background-color: honeydew;
+    width: 60%;
+    height: 25em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+padding:5%;
+z-index: 150;
+overflow: hidden;
+    justify-content: center;
+    margin-top: 8%;
+    transition: all ease 0.5s;
+}
+p{
+    transition: all ease 1s;
+    font-family: mont;
+}
+.sellticketlongtext{
+    align-self: center;
+justify-self: center;
+font-size: x-large;
+transition: all ease 1.5s;
+font-size: large;
+overflow: hidden;
+width: 100%;
+word-wrap:break-word;
+}
+.allthebuttons{
+    align-self: flex-start;
+    justify-self: end;
+flex-direction: row;
+    z-index: 1;
+    width: 100%;
+    margin-top: 8%;
+  
+ 
+>>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb
 }
 p {
   transition: all ease 1s;
@@ -372,11 +412,19 @@ p {
 
   position: relative;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 400px) {
   .cardholderblog {
     flex-direction: column;
     display: flex;
     margin-top: 2.5%;
+=======
+@media screen and (max-width: 1200px) {
+    .cardholderblog{
+        flex-direction: column;
+        display: flex;
+        margin-top: 2.5%;
+>>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb
     align-items: center;
     justify-content: center;
     display: flex;
@@ -477,6 +525,7 @@ p {
   flex-direction: column;
   margin: 0.5%;
 
+<<<<<<< HEAD
   height: 17em;
   justify-content: center;
   align-items: left;
@@ -492,6 +541,35 @@ p {
   height: 10vh;
   margin-right: 5%;
   margin-top: 5%;
+=======
+}
+.dropdown{
+    background-color: black;
+    width: 15em;
+}
+.testnomialcards{
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   margin: 0.5%;
+
+    height: 17em;
+justify-content: center;
+align-items: left;
+padding-left: 1%;
+text-align: left;
+    background-color: #121212;
+}
+.searchs{
+    background-color: #CA0C2A;
+    border: none;
+    color: white;
+    width: 20vh;
+    height: 10vh;
+    margin-right: 5%;
+    margin-top: 5%;
+>>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb
 }
 .row1test {
   display: flex;
@@ -511,6 +589,7 @@ p {
 .alltestcardholder {
   margin-top: 5%;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 800px) {
   .main {
     padding-left: 20px;
@@ -549,6 +628,76 @@ p {
   .searchbox {
     width: 100%;
     padding: 0px;
+=======
+@media screen and (max-width: 1200px) {
+
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        background-image: url('./assets/r6.jpg');
+background-size:cover;
+background-repeat: no-repeat;
+   
+    }
+    .btitle,.animationtext,.entertainmenl2,.entertainmenl2{
+        font-size: xx-large;
+        
+    }.upcoming,.entertainmenl2{
+        font-size: medium;
+    }
+    .grabdealnowbtn{
+        width: 60%;
+        justify-self: flex-end;
+    }
+    .searchs{
+        background-color: #CA0C2A;
+        border: none;
+        color: white;
+        width: 17rem;
+        height: 7vh;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+    .cardholder{
+        padding: 0px;
+    }
+    .searchbox{
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+padding:10%;
+height: 40vh;
+margin-bottom: 5%;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    .dropdown{
+        font-size: x-large
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .sideimageofsell{
+       display: none;
+    }
+    .textcontainer{
+        width: 100%;
+    }
+    .allthebuttons{
+        flex-direction: row;
+        position: relative;
+        bottom: 0px;
+        margin-top: 50%;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+        padding: 0px;
+    }
+    .sellticketbutton{
+        font-size: 8px;
+    }
+.cardhoderblog{
+>>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb
     flex-direction: column;
     padding: 10%;
     height: 35vh;

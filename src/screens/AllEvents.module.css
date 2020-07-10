@@ -7,15 +7,47 @@
   padding-right: 5%;
   background-color: black;
 }
-.pagenav {
-  background-color: #282828;
-  padding: 1.4%;
-  border-radius: 5px;
-  margin-left: 1%;
-  align-self: start;
-  margin-top: 5%;
+.c {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2%;
+}
+.arrows {
+  height: 18rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caurosel {
+  margin-bottom: 2%;
   flex-direction: row;
+  display: flex;
+
+  margin-top: -5%;
+  border-radius: 10px;
+  width: 95%;
+}
+.titlenfilter {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cimg {
+  height: 18em;
+  width: 100%;
+  border-radius: 10px;
+  background: url("./assets/cypher.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dropdown {
+  background-color: #121212;
+  color: white;
+  border-width: 0px;
 }
 .bnav {
   color: white;
@@ -42,8 +74,35 @@
   font-size: smaller;
   text-align: left;
 }
-.caurosel {
-  padding: 2%;
+.searchind {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px;
+  color: white;
+}
+.searchbox {
+  margin-bottom: 5%;
+  background-color: #121212;
+  width: 100%;
+  height: 130px;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #4b4a4a;
+  flex-direction: row;
+  border-radius: 10px;
+  align-self: start;
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.fbuttons {
+  flex-direction: row;
+  display: flex;
+  height: 100%;
+  margin-bottom: 1%;
 
   margin-top: -5%;
   border-radius: 10px;
@@ -157,4 +216,76 @@
   margin-top: 1%;
   display: flex;
   flex-direction: row;
+}
+.searchs {
+  background-color: #ca0c2a;
+  border: none;
+  color: white;
+  width: 10rem;
+  height: 7vh;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+@media screen and (max-width: 1200px) {
+  .caurosel {
+    width: 100%;
+  }
+  .arrows {
+    display: none;
+  }
+  .pagenav {
+    width: 60%;
+    margin-left: 2%;
+    margin-bottom: 10%;
+  }
+  .title {
+    font-size: small;
+  }
+  .caurosel {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .titlenfilter {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+  }
+  .entertainmentholder {
+    flex-direction: column;
+  }
+  .row1 {
+    flex-direction: column;
+    padding-left: 5%;
+  }
+  .main {
+    padding-top: 15%;
+    padding-left: 5% !important;
+    flex-direction: column;
+    padding-right: 5%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .searchs {
+    background-color: #ca0c2a;
+    border: none;
+    color: white;
+    width: 17rem;
+    height: 7vh;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  .searchbox {
+    width: 100%;
+    padding: 0px;
+    flex-direction: column;
+    padding: 10%;
+    height: 50vh;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .cimg {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }

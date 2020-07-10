@@ -17,7 +17,6 @@
   background-repeat: no-repeat;
   transition: all 0.5s;
 }
-<<<<<<< HEAD
 @media (min-width: 600px) {
   .cardholder {
     width: 90%;
@@ -25,13 +24,6 @@
 }
 .exp {
   color: white;
-=======
-
-.exp{
-    color: white;
-  
-    position: absolute;
->>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb
 
   position: absolute;
 
@@ -131,20 +123,11 @@
   font-size: medium;
   font-family: mont;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1200px) {
   .cardholder {
     width: 100% !important;
     margin-bottom: 5% !important;
     margin: 0px;
   }
 }
-=======
-@media screen and (max-width: 1200px) {
-    .cardholder{
-        width: 100% !important;
-        margin-bottom: 5% !important;
-        margin: 0px;
-    }
-}
->>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb

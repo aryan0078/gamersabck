@@ -365,8 +365,79 @@ h1 {
   margin-right: 15px;
   margin-top: -6px;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+  .main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+  .x {
+    font-size: medium;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+
+    justify-self: center;
+  }
+  .iconntitle {
+    padding-top: 0px;
+    padding: 1%;
+  }
+  .dropdown {
+  }
+  .row5,
+  .row6 {
+    width: 80%;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .row6 {
+    margin-bottom: 30px;
+  }
+  .placeorder {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .paypal,
+  .cc,
+  .payfast {
+    width: 100%;
+    margin: 0px !important;
+  }
+  .cardsholder {
+    height: 30vh;
+    margin-top: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .frstname {
+    font-size: small;
+    padding-bottom: 10px !important;
+  }
+  .phno {
+    font-size: small;
+    padding-bottom: 10px !important;
+  }
+  .paymenttitile {
+    font-size: large;
+  }
+  .row2form {
+    padding-top: 0px !important;
+  }
+  .email {
+    margin-top: 5% !important;
+  }
+  .titleofp {
+    font-size: x-large;
+    margin-top: 5%;
+  }
+  .paymentcontainer {
+    margin-bottom: 10% !important;
+  }
   .email {
     width: 100%;
   }
@@ -415,123 +486,3 @@ h1 {
     padding: 0px !important;
   }
 }
-=======
-@media screen and (max-width: 1000px) {
-    .main{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        text-align: center;
-    }
-    .x{
-        font-size: medium;
-        justify-content: center;
-        align-self: center;
-        display: flex;
-        
-        justify-self: center;
-    }
-    .iconntitle{
-        padding-top: 0px;
-        padding: 1%;
-    }
-    .dropdown{
-   
-    }
-    .row5,.row6{
-        width: 80%;
-        padding: 5%;
-    text-align: center;
-    }
-    
-    .row6{
-        margin-bottom: 30px;
-    }
-    .placeorder{
-        width: 100%;
-        margin-bottom: 10%;
-    }
-    .paypal,.cc,.payfast{
-        width: 100%;
-        margin: 0px !important;
-
-    }
-    .cardsholder{
-        height: 30vh;
-        margin-top: 5%;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-    .frstname{
-        font-size: small;
-        padding-bottom: 10px !important;
-    }
-    .phno{
-        font-size: small;
-        padding-bottom: 10px !important;
-    }
-    .paymenttitile{
-        font-size: large;
-    }
-    .row2form{
-        padding-top: 0px !important;
-    }
-    .email{
-        margin-top: 5% !important;
-    }
-    .titleofp{
-        font-size: x-large;
-        margin-top: 5%;
-    }
-    .paymentcontainer{
-        margin-bottom: 10% !important;
-    }
-    .email{
-        width: 100%;
-    }
-    .frstnameinpe,.frstnameinpp,.phno{
-        width: 100%;
-        margin: 0px !important;
-    }
-    .row2form{
-        flex-direction: column;
-    }
-    .main{
-        padding: 0px !important;
-    }
-    .title{
-        font-size: xx-large;
-        margin-bottom: 5%;
-    }
-    .row1{
-        flex-direction: column;
-        padding: 5%;
-        justify-content: center;
-    }
-   .event{
-       font-size: x-large;
-       margin-bottom: 4%;
-   }
-   .quantityinput{
-       margin-top: 10%;
-   }
-   .eventname{
-       margin-bottom: 10%;
-   }
-   .paymentbox{
-       flex-direction: column;
-       width: 90%;
-       margin-top: 0px;
-       padding-left: 0px;
-       margin-left: 0px;
-       padding-top: 0px;
-       padding-right: 0px;
-       padding-bottom: 0px;
-   }
-   .paymentdetails{
-       padding: 0px !important;
-   }
-}
->>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb

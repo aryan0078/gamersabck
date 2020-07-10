@@ -68,58 +68,9 @@ class Payment extends Component {
             <div className={styles.row1form}>
               <h1 className={styles.titleofp}>Payment Details</h1>
             </div>
-<<<<<<< HEAD
             <div className={styles.row1form}>
               <label className={styles.frstname}>FULL NAME</label>
               <input type="text" className={styles.frstnameinp} />
-=======
-							<div className={styles.row1form}>
-                                <label className={styles.frstname}>FULL NAME</label>
-                                <input type="text" className={styles.frstnameinp} />
-                            </div>
-                            <div className={styles.row2form}>
-                                <div className={styles.email}>
-                                <label className={styles.frstname}>EMAIL ADDRESS</label>
-                                <input type="text" className={styles.frstnameinpe} />
-                                </div>
-                                <div className={styles.divider}></div>
-                                <div className={styles.email}>
-                                <label className={styles.phno}>PHONE NUMBER</label>
-                                <input type="text" className={styles.frstnameinpp} />
-                                </div>
-                                
-                            </div>
-                            <div className={styles.row3form}>
-                                <h1 className={styles.paymenttitile}>Payment Method</h1>
-                                <div className={styles.cardsholder}>
-<div className={styles.paypal}></div>
-<div className={styles.cc}></div>
-<div className={styles.payfast}></div>
-                                </div>
-                            </div>
-                            <div className={styles.row4}>
-                                <button className={styles.placeorder}>PLACE ORDER</button>
-                            </div></div>
-                            <div className={styles.row5}>
-                                <div className={styles.iconntitle}>
-                             
-                                   <h1 className={styles.x}>Your Information is Safe</h1>
-                                </div>
-                                <p className={styles.longtext}>
-                                We respect your privacy and do not tolerate spam and will never sell, rent, lease or give away your information to any third party. Nor will we send you unsolicited email.
-                                </p>
-                            </div>
-                            <div className={styles.row6}>
-                            <div className={styles.iconntitle}>
-                                   
-                                   <h1 className={styles.x}>Secure Checkout</h1>
-                                </div>
-                                <p className={styles.longtext}>
-                                All information is encrypted and transmitted without risk using a Secure Sockets Layer protocol. You can trust us!
-                                </p>
-                            </div>
-                </div>
->>>>>>> 94165e6f42cd261a38aca8f3913d7f644704fecb
             </div>
             <div className={styles.row2form}>
               <div className={styles.email}>

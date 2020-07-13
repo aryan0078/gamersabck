@@ -115,11 +115,8 @@ class AboutEvent extends Component {
           </div>
          
             
-          <div class="scrollmenu">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+          <div className={styles.horscroll}>
+  <div className={styles.dcards}></div>
 
           </div>
 

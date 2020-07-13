@@ -5,8 +5,8 @@ import { Layout,Menu,Modal } from 'antd';
 import styles from './Layout.module.css'
 
 import TopHeader from '../components/TopHeader';
-import { Form, Input, Button, Checkbox } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { Form, Input, Button, Checkbox,Drawer } from 'antd';
+import { UserOutlined, LockOutlined,MenuOutlined } from '@ant-design/icons';
 import CFooter from '../components/footer'
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -14,7 +14,7 @@ const { Header, Footer, Sider, Content } = Layout;
 export default class Landing extends Component {
     constructor(props){
         super(props)
-        this.state={login:false,collapsed:true}
+        this.state={login:false,collapsed:true,visible:false}
     }
     login=()=>{
       if(this.state.login){
@@ -33,6 +33,7 @@ export default class Landing extends Component {
         <Header  style={{ display:'flex',justifyContent:'flex-start',position: 'fixed', zIndex: 1001, width: '100%',backgroundColor:'#121212' }}>
         <div className={styles.logo}  ></div>
          <TopHeader/>
+         <button className={styles.drawer} onClick={()=>{if(this.state.visible){this.setState({visible:false})}else{this.setState({visible:true})};}}><MenuOutlined /></button>
          <button className={styles.createevent} onClick={this.login}>
   Create An Event
 </button>
@@ -65,6 +66,17 @@ export default class Landing extends Component {
         </Sider></div>
           <Content > 
 <Home/>
+<Drawer
+        title="Basic Drawer"
+        placement="right"
+        closable={false}
+   
+        visible={this.state.visible}
+      >
+        <p>some .......</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Drawer>
       <Modal
     visible={this.state.login}
    

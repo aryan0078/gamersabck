@@ -48,7 +48,7 @@ export default class Home extends Component {
           <div className={styles.searchbox}>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind} >WHAT</h3>
-              <Drop title={'Filter'} >
+              <Drop title={'Select Category'} >
 
               </Drop>
             </div>
@@ -58,9 +58,9 @@ export default class Home extends Component {
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHERE</h3>
-              <Drop  >
+              <Drop title={'Select Category'} >
 
-              </Drop>
+</Drop>
             </div>
             <div>
               <button className={styles.searchs}>Search</button>

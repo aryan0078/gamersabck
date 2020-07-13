@@ -44,6 +44,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #CA0C2A;
   border-radius: 10px;
 }
+.ant-drawer-body{
+  background-color: #121212;
+  color: white;
+}
 .ant-picker:hover, .ant-picker-focused {
     /* border-color: #40a9ff; */
     border-right-width: 1px !important;
@@ -78,6 +82,11 @@ height: 5vh !important;
   padding-right: 0em !important;
   padding-left: 0em !important;
 
+}
+.ant-drawer-body{
+  background-color: #121212;
+  color: white;
+ 
 }
 }
 .ant-picker{

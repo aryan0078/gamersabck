@@ -48,8 +48,8 @@ margin-left: 1em;
    
 }
 .cardholder:hover{
-    background-position-x:-10px;
-
+    background-position-x:-6px;
+background-color: black ;
     filter: grayscale(20%);
 }
 .eventp{

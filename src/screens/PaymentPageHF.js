@@ -5,7 +5,7 @@ import { Layout,Menu,Modal } from 'antd';
 import styles from './Layout.module.css'
 
 import TopHeader from '../components/TopHeader';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox,Drawer } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import CFooter from '../components/footer'
 
@@ -65,6 +65,17 @@ export default class PaymentP extends Component {
         </Sider></div>
           <Content > 
 <Payment/>
+<Drawer
+        title="Basic Drawer"
+        placement="right"
+        closable={false}
+   
+        visible={this.state.visible}
+      >
+        <p>some .......</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Drawer>
       <Modal
     visible={this.state.login}
    

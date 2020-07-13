@@ -108,6 +108,9 @@ border-width: 0px;
     align-items: center;
 
 }
+.drawer{
+    display: none;
+}
 @media screen and (max-width: 1200px) {
      .logo{
    display: none;
@@ -120,5 +123,20 @@ border-width: 0px;
      
     }.textontop{
         font-size: x-small;
+    }
+    .drawer{
+        background-color: transparent;
+        border-width: 1px;
+        border-color: grey;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+margin-top: 5px;
+margin-right: -40px;
     }
   }

@@ -113,42 +113,14 @@ class AboutEvent extends Component {
               </h1>
               <a className={styles.vbtn}> View All</a>
           </div>
-          <div className={styles.imggalleryh1_}>
-            {/* <div className={styles.leftBox}></div> */}
-            <Carousel dots={false} draggable={true}>
-              <div>
-                <div className={styles.rowofc}>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                </div>
-              </div>
-              <div>
-                <div className={styles.rowofc}>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                </div>
-              </div>
-              <div>
-                <div className={styles.rowofc}>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                </div>
-              </div>
-              <div>
-                <div className={styles.rowofc}>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                  <div className={styles.dcards}></div>
-                </div>
-              </div>
-            </Carousel>
+         
+            
+          <div class="scrollmenu">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+
           </div>
 
 

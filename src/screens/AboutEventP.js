@@ -6,15 +6,15 @@ import styles from './Layout.module.css'
 import {Link} from 'react-router-dom'
 import TopHeader from '../components/TopHeader';
 import { Form, Input, Button, Checkbox } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { UserOutlined, LockOutlined,MenuOutlined } from '@ant-design/icons';
 import CFooter from '../components/footer'
-
+import { Drawer} from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class PaymentP extends Component {
     constructor(props){
         super(props)
-        this.state={login:false,collapsed:true}
+        this.state={login:false,collapsed:true,visible:false}
     }
     login=()=>{
       if(this.state.login){
@@ -36,6 +36,7 @@ export default class PaymentP extends Component {
          <Link >     <button className={styles.createevent} >
  Create An Event
 </button></Link>
+<button className={styles.drawer} onClick={()=>{if(this.state.visible){this.setState({visible:false})}else{this.setState({visible:true})};}}><MenuOutlined /></button>
          <button className={styles.loginregbtn} onClick={this.login}>
   Login/Register
 </button>
@@ -65,6 +66,17 @@ export default class PaymentP extends Component {
         </Sider></div>
           <Content > 
 <AboutEvent/>
+<Drawer
+        title="Basic Drawer"
+        placement="right"
+        closable={false}
+   
+        visible={this.state.visible}
+      >
+        <p>some .......</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Drawer>
       <Modal
     visible={this.state.login}
    

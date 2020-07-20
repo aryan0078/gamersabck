@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Collapse } from "antd";
 
 import * as styles from "./CreateEvent.module.css";
 import TicketRow from "./TicketRow";
@@ -369,7 +370,7 @@ class CreateEventAbout extends React.Component {
             return (
               <div>
                 <div className={styles.labelBg}>game events</div> <br />
-                {this.renderGameContent()}
+                <Collapse accordion>{this.renderGameContent()}</Collapse>
                 <div className={styles.rowAddDeleteButton}>
                   <button
                     onClick={() => {

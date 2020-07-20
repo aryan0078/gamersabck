@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { DatePicker } from "antd";
+import { Collapse, DatePicker } from "antd";
 
 import * as styles from "./CreateEvent.module.css";
 
 const { RangePicker } = DatePicker;
+const { Panel } = Collapse;
 
 const TicketRow = props => {
   const [ticketType, setTicketType] = useState("Paid");
@@ -74,7 +75,7 @@ const TicketRow = props => {
   };
 
   return (
-    <div>
+    <Panel header={`Ticket-${props.idd}`} key={props.idd}>
       <div className={styles.TicketRowWrapper}>
         <div>
           <label htmlFor="ticketType" className={styles.label}>
@@ -178,9 +179,7 @@ const TicketRow = props => {
         autoComplete="off"
       />
       <br />
-      <hr />
-      <br />
-    </div>
+    </Panel>
   );
 };
 

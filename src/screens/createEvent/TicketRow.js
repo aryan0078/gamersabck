@@ -3,6 +3,8 @@ import { DatePicker } from "antd";
 
 import * as styles from "./CreateEvent.module.css";
 
+const { RangePicker } = DatePicker;
+
 const TicketRow = props => {
   const [ticketType, setTicketType] = useState("Paid");
   const [ticketName, setTicketName] = useState(null);
@@ -45,6 +47,11 @@ const TicketRow = props => {
       endRegDate,
     ]
   );
+
+  const onDateChange = (dates, dateStrings) => {
+    setStartRegDate(dateStrings[0]);
+    setEndRegDate(dateStrings[1]);
+  };
 
   const handleClick = item => {
     setTicketType(item);
@@ -149,24 +156,13 @@ const TicketRow = props => {
       />
       <br />
 
-      <div className={styles.eventDates}>
-        <div className={styles.startDate}>
-          <label htmlFor="Start-Reg-Date" className={styles.label}>
-            Start Date
-          </label>
-          <br />
-          <DatePicker className={styles.datePicker} />
-        </div>
-
-        <div className={styles.endDate}>
-          <label htmlFor="end-reg-date" className={styles.label}>
-            end Date
-          </label>
-          <br />
-          <DatePicker className={styles.datePicker} />
-        </div>
-      </div>
+      <label htmlFor="Start-Reg-Date" className={styles.label}>
+        Dates
+      </label>
       <br />
+      <RangePicker className={styles.datePicker} onChange={onDateChange} />
+      <br />
+
       <label htmlFor="tDesc" className={styles.label}>
         Ticket Description
       </label>

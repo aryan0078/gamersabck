@@ -209,6 +209,7 @@ input::-webkit-inner-spin-button {
   height: 50px;
   padding-left: 2%;
   width: 100%;
+  margin-bottom: 3% !important;
 }
 
 .innerComponent input[type="submit"] {

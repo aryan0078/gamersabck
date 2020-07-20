@@ -33,6 +33,13 @@ class CreateEventGeneral extends React.Component {
     },
   ];
 
+  onDateChange = (dates, dateStrings) => {
+    this.setState({
+      startDate: dateStrings[0],
+      endDate: dateStrings[1],
+    });
+  };
+
   handleOnClick = item => {
     if (!this.state.types.some(current => current.id === item.id)) {
       this.setState({
@@ -121,24 +128,14 @@ class CreateEventGeneral extends React.Component {
               autoComplete="off"
             />
             <br />
-
-            <div className={styles.eventDates}>
-              <div className={styles.startDate}>
-                <label htmlFor="Start Date" className={styles.label}>
-                  Start Date
-                </label>
-                <br />
-                <DatePicker className={styles.datePicker} />
-              </div>
-
-              <div className={styles.endDate}>
-                <label htmlFor="end-date" className={styles.label}>
-                  end Date
-                </label>
-                <br />
-                <DatePicker className={styles.datePicker} />
-              </div>
-            </div>
+            <label htmlFor="Start Date" className={styles.label}>
+              Dates
+            </label>
+            <br />
+            <RangePicker
+              className={styles.datePicker}
+              onChange={this.onDateChange}
+            />
             <br />
             <label htmlFor="event-type" className={styles.label}>
               Select Type(s)

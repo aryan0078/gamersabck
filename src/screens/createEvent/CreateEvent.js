@@ -1,57 +1,51 @@
 import React from "react";
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import * as styles from "./CreateEvent.module.css";
+import CreateEventNav from "./CreateEventNav";
 import CreateEventGeneral from "./CreateEventGeneral";
 import CreateEventAbout from "./CreateEventAbout";
+import CreateEventRules from "./CreateEventRules";
+import CreateEventPrizes from "./CreateEventPrizes";
+import CreateEventOrganiserDetails from "./CreateEventOrganiserDetails";
+import CreateEventBankDetails from "./CreateEventBankDetails";
+import CreateEventPlayerInfo from "./CreateEventPlayerInfo";
+import CreateEventAdditional from "./CreateEventAdditional";
 
 const CreateEvent = () => {
   return (
     <BrowserRouter>
       <div className={styles.createEventWrapper}>
+        <div className={styles.createEventBanner}>Let's Create Your Event</div>
         <div className={styles.createEventInnerWrapper}>
           {/* NavBar placed on the left side of the page. */}
-          <nav className={styles.createEventNav}>
-            <ul className={styles.createEventNavList}>
-              <li>
-                <NavLink to="/createevent/general">general</NavLink>
-              </li>
-              <li>
-                <NavLink to="/createevent/about">about</NavLink>
-              </li>
-              <li>
-                <NavLink to="/createevent/rules-regulations">
-                  Rules & Regulations
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/createevent/player-mode">Player Mode</NavLink>
-              </li>
-              <li>
-                <NavLink to="/createevent/monetary">
-                  Entry Fee and Prize
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/createevent/schedule-structure">
-                  Schedule/Structure
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/createevent/additional-features">
-                  Additional Features
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/createevent/select-menu">Select the Menu</NavLink>
-              </li>
-            </ul>
-          </nav>
+          <CreateEventNav />
 
           {/* Section to display all the content for creating the event */}
           <div className={styles.createEventInnerComponents}>
             <Route path="/createevent/general" component={CreateEventGeneral} />
             <Route path="/createevent/about" component={CreateEventAbout} />
+            <Route
+              path="/createevent/rules-regulations"
+              component={CreateEventRules}
+            />
+            <Route
+              path="/createevent/additional-features"
+              component={CreateEventAdditional}
+            />
+            <Route
+              path="/createevent/organiser-details"
+              component={CreateEventOrganiserDetails}
+            />
+            <Route
+              path="/createevent/bank-details"
+              component={CreateEventBankDetails}
+            />
+            <Route path="/createevent/prizes" component={CreateEventPrizes} />
+            <Route
+              path="/createevent/player-details"
+              component={CreateEventPlayerInfo}
+            />
           </div>
         </div>
       </div>

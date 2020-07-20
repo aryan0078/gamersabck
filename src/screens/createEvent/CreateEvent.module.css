@@ -6,14 +6,29 @@
   src: url("../../components/fonts/Montserrat-Regular.ttf");
 }
 
+.mgB {
+  margin-bottom: 15%;
+}
+
 .createEventWrapper {
   width: 100%;
   height: 100vh;
-  /* background: url("../assets/r6.jpg"); */
   background-color: black;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow: auto;
+}
+
+.createEventBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 80px;
+  background-color: #aa0020;
+  letter-spacing: 1px;
 }
 
 .createEventWrapper li {
@@ -25,11 +40,10 @@ a {
   padding: 0;
   margin: 0;
   text-transform: capitalize;
-  color: white;
 }
 
 .createEventInnerWrapper {
-  padding: 5% 10%;
+  padding: 5% 6%;
   display: flex;
 }
 
@@ -38,21 +52,66 @@ a {
 }
 
 .createEventNav .createEventNavList {
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.createEventNavList .createEventNavCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 3%;
+  border: 0.1px solid #121212;
+  background-color: #121212;
+}
+
+.link {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  color: #de2358;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.active {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #aa0020;
+  transition: 0.3s;
+}
+
+.createEventNavList .active .createEventNavCircle {
+  width: 30px;
+  height: 30px;
+  background-color: #aa0020;
+  transition: 0.3s;
 }
 
 .createEventInnerWrapper .createEventInnerComponents {
   color: white;
   font-family: mont, sans-serif;
   width: 80%;
+  background-color: #121212;
+  border-radius: 5px;
+  border: 1px solid #4b4a4a;
+  padding: 1% 1% 5%;
 }
 
 .createEventInnerComponents .label {
-  font-size: 20px;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.createEventInnerComponents .labelBg {
+  font-size: 25px;
   text-transform: capitalize;
+  display: flex;
 }
 
 .componentHeader {
@@ -60,6 +119,7 @@ a {
   text-align: center;
   text-transform: capitalize;
   font-size: 40px;
+  font-weight: bolder;
 }
 
 .innerComponent {
@@ -70,29 +130,101 @@ a {
   margin: 0 5%;
 }
 
-.innerComponent input[type="text"] {
-  width: 100%;
-  border: 2px solid #282828;
-  background-color: #131313;
-  margin: 1.5% 0;
-  padding-left: 2%;
-  height: 50px;
-  border-radius: 30px;
+.rowAddDeleteButton {
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: black;
 }
 
-.innerComponent input[type="text"]:focus {
+.rowAddDeleteButton button {
+  width: 10%;
+  background-color: #aa0020;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rowAddDeleteButton button:focus {
   outline: none;
 }
 
-.innerComponent input[type="submit"] {
+.rowAddDeleteButton button:hover {
+  background-color: #de2358;
+}
+
+.innerComponent input[type="text"],
+.innerComponent input[type="email"] {
   color: black;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  width: 120px;
+  width: 100%;
+  border: 2px solid #282828;
+  margin: 1.5% 0 3% 0;
+  padding-left: 2%;
   height: 50px;
-  border-radius: 30px;
-  font-size: 20px;
+  border-radius: 5px;
+}
+
+.innerComponent input[type="text"],
+.innerComponent input[type="email"] :focus {
+  outline: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.innerComponent input[type="number"] {
+  color: black;
+  width: 100%;
+  border: 2px solid #282828;
+  margin: 1.5% 0 3% 0;
+  padding-left: 2%;
+  height: 50px;
+  border-radius: 5px;
+  -moz-appearance: textfield;
+}
+
+.innerComponent input[type="Number"]:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.innerComponent input[type="date"] {
+  color: black;
+  height: 50px;
+  padding-left: 2%;
+  width: 100%;
+}
+
+.datePicker {
+  color: black;
+  height: 50px;
+  padding-left: 2%;
+  width: 100%;
+}
+
+.innerComponent input[type="submit"] {
+  border-radius: 5px;
+  background-color: #aa0020;
+  color: #fff;
+  height: 4rem;
+  width: 40%;
+  border-width: 0;
+  font-size: larger;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.innerComponent input[type="submit"]:hover {
+  background-color: #de2358;
 }
 
 .innerComponent input[type="submit"]:focus {
@@ -104,19 +236,64 @@ a {
   margin-bottom: 1%;
 }
 
+.innerComponent input[type="checkbox"] {
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+.dropDownSelect {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #282828;
+  margin: 1.5% 0 0 0;
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropDownMenu {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #282828;
+  margin: 0 0 1.5% 0;
+}
+
+.dropDownMenuItem {
+  margin: 1%;
+  padding: 1%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.selectedDropDownMenuItem {
+  background-color: #aa0020;
+  color: white;
+  transition: 0.2s;
+}
+
+.addtionalFeature {
+  font-size: 18px;
+}
+
 .createEventInfoSubmitButton {
   text-align: center;
   margin-top: 3%;
 }
 
 .eventDescription {
+  color: black;
   width: 100%;
   border: 2px solid #282828;
-  background-color: #131313;
-  margin: 1.5% 0;
+  margin: 1.5% 0 3% 0;
   padding: 2% 0 0 2%;
   height: 50px;
-  border-radius: 30px;
+  border-radius: 5px;
   resize: none;
   height: 250px;
 }
@@ -125,11 +302,25 @@ a {
   outline: none;
 }
 
+.rowNum {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+  border-radius: 5px;
+}
+
 .eventDates,
 .ticketInfo,
 .regInfo,
-.playersInfo {
+.playersInfo,
+.TicketRowWrapper,
+.rowAddDeleteButton {
   display: flex;
+  margin-bottom: 1%;
   justify-content: space-between;
 }
 

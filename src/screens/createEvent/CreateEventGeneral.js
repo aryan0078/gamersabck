@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import cx from "classnames";
+import { DatePicker } from "antd";
 
 import * as styles from "./CreateEvent.module.css";
+
+const { RangePicker } = DatePicker;
 
 class CreateEventGeneral extends React.Component {
   state = {
@@ -10,6 +14,66 @@ class CreateEventGeneral extends React.Component {
     startDate: "",
     endDate: "",
     location: "",
+    types: [],
+    open: false,
+  };
+
+  gameTypeOption = [
+    {
+      id: 1,
+      option: "Game Tournament",
+    },
+    {
+      id: 2,
+      option: "Webinar",
+    },
+    {
+      id: 3,
+      option: "Workshop",
+    },
+  ];
+
+  handleOnClick = item => {
+    if (!this.state.types.some(current => current.id === item.id)) {
+      this.setState({
+        types: [...this.state.types, item],
+      });
+    } else {
+      let selectionAfterRemoval = this.state.types;
+      selectionAfterRemoval = selectionAfterRemoval.filter(
+        current => current.id !== item.id
+      );
+      this.setState({
+        types: [...selectionAfterRemoval],
+      });
+    }
+  };
+
+  isItemSelected = item => {
+    if (this.state.types.some(current => current.id === item.id)) {
+      return true;
+    }
+    return false;
+  };
+
+  dropDown = () => {
+    return (
+      <div className={styles.dropDownMenu}>
+        {this.gameTypeOption.map(item => (
+          <div
+            className={
+              this.isItemSelected(item)
+                ? cx(styles.dropDownMenuItem, styles.selectedDropDownMenuItem)
+                : styles.dropDownMenuItem
+            }
+            key={item.id}
+            onClick={() => this.handleOnClick(item)}
+          >
+            {item.option}
+          </div>
+        ))}
+      </div>
+    );
   };
 
   render() {
@@ -23,7 +87,7 @@ class CreateEventGeneral extends React.Component {
             }}
           >
             <label htmlFor="tournament-name" className={styles.label}>
-              Tournament/Event Name
+              Event Name
             </label>
             <br />
             <input
@@ -49,7 +113,7 @@ class CreateEventGeneral extends React.Component {
               className={styles.eventDescription}
               onChange={event => {
                 this.setState({
-                  eventName: event.target.value,
+                  eventDesc: event.target.value,
                 });
               }}
               value={this.state.eventDesc}
@@ -64,17 +128,7 @@ class CreateEventGeneral extends React.Component {
                   Start Date
                 </label>
                 <br />
-                <input
-                  type="text"
-                  onChange={event => {
-                    this.setState({
-                      startDate: event.target.value,
-                    });
-                  }}
-                  value={this.state.startDate}
-                  placeholder="Enter Date in dd-mm-yyy format."
-                  autoComplete="off"
-                />
+                <DatePicker className={styles.datePicker} />
               </div>
 
               <div className={styles.endDate}>
@@ -82,21 +136,23 @@ class CreateEventGeneral extends React.Component {
                   end Date
                 </label>
                 <br />
-                <input
-                  type="text"
-                  onChange={event => {
-                    this.setState({
-                      endDate: event.target.value,
-                    });
-                  }}
-                  value={this.state.endDate}
-                  placeholder="Enter Date in dd-mm-yyy format."
-                  autoComplete="off"
-                />
+                <DatePicker className={styles.datePicker} />
               </div>
             </div>
             <br />
-
+            <label htmlFor="event-type" className={styles.label}>
+              Select Type(s)
+            </label>
+            <div
+              className={styles.dropDownSelect}
+              onClick={() => {
+                this.setState({ open: !this.state.open });
+              }}
+            >
+              Select the type of event(s)
+            </div>
+            {this.state.open && this.dropDown()}
+            <br />
             <label htmlFor="event-location" className={styles.label}>
               Location
             </label>

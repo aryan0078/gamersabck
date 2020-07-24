@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import { app } from '../firebase'
 import Modal from 'antd/lib/modal/Modal';
 import styles from './Register.module.css'
-import { DatePicker, Alert } from 'antd'
-import { Menu, Dropdown, message } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+
 import { Spin } from 'antd';
+import { useAsync } from 'react-async';
 import { LoadingOutlined } from '@ant-design/icons';
-import { Result, Button } from 'antd';
+
 import Register from './Register';
 import { Redirect } from 'react-router-dom';
-import { auth } from 'firebase';
+
 export default class Login extends Component {
     constructor(props) {
         super(props)
         this.log = this.log.bind(this)
+        this.reg = this.reg.bind(this)
         this.state = {
             loading: false,
             email: '', password: '', error: false, serror: false, fullname: '', loggedin: false, register: false
@@ -25,10 +25,10 @@ export default class Login extends Component {
 
 
 
-    reg = () => {
+    async reg() {
         var database = app.database()
         var db = app.firestore()
-        app.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((c) => {
+        await app.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((c) => {
             db.collection('users').doc(c.user.uid).get().then(doc => {
 
                 console.log(doc.data())
@@ -47,6 +47,8 @@ export default class Login extends Component {
         if (this.state.email == '' || this.state.password == '') {
             alert('Please fill all fields')
             return null
+        } else {
+            return 3
         }
     }
     async log() {
@@ -54,8 +56,9 @@ export default class Login extends Component {
             return null
         }
         this.setState({ loading: true })
-        this.reg()
+        var p = await this.reg()
         this.setState({ loading: false })
+
         this.setState({ loggedin: true })
         console.log(this.state.fullname)
     }
@@ -103,11 +106,10 @@ export default class Login extends Component {
                             <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
                         </div>
 
-                        <div className={styles.login}>
 
-                            <Spin indicator={this.antIcon} spinning={this.state.loading} />
-                            <button onClick={this.log} className={styles.reg}>Sign in </button></div>
+                        {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}
                         <button onClick={() => this.setState({ register: true })} className={styles.reg}>Register </button>
+
 
                     </div>
 

@@ -117,7 +117,17 @@ class AboutEvent extends Component {
             
           <div className={styles.horscroll}>
   <div className={styles.dcards}></div>
-
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
+  <div className={styles.dcards}></div>
           </div>
 
 

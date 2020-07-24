@@ -33,6 +33,28 @@
        
         font-weight: bold;
     }
+    .b1m,.cevent{
+        background-color: #292929;
+        height: 2.5rem;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom:10px;
+    }
+    .cevent{
+        background-color: #AA0020;
+    }
+    .cevent:hover{
+        background-color: tomato;
+        cursor: pointer;
+    }
+    .b1m:hover{
+        background-color: #222222;
+        cursor: pointer;
+    }
 .login{
     background-color: transparent;
     display: flex;

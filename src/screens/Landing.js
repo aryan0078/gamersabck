@@ -112,7 +112,7 @@ export default class Landing extends Component {
               <SideHeader />
             </Sider></div>
           <Content >
-            <Home />
+
             <Drawer
               title="Basic Drawer"
               placement="right"
@@ -130,7 +130,7 @@ export default class Landing extends Component {
             </Drawer>
             {this.state.login ? <Login visible={true} /> : null}
 
-            <CFooter />
+
           </Content>
 
         </Layout>

@@ -9,8 +9,9 @@ import { Link } from 'react-router-dom'
 import { UserOutlined, DownOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import Card from '../components/Card'
 import { Rate } from 'antd';
-import {DatePicker} from 'antd'
+import { DatePicker } from 'antd'
 import Typewriter from 'typewriter-effect';
+import Landing from './Landing';
 export default class Home extends Component {
 
   constructor(props) {
@@ -27,7 +28,7 @@ export default class Home extends Component {
     return (
       <>
 
-
+        <Landing />
 
 
         <div className={styles.main}>
@@ -54,13 +55,13 @@ export default class Home extends Component {
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHEN</h3>
-             <DatePicker className={styles.date}></DatePicker>
+              <DatePicker className={styles.date}></DatePicker>
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHERE</h3>
               <Drop title={'Select Category'} >
 
-</Drop>
+              </Drop>
             </div>
             <div>
               <button className={styles.searchs}>Search</button>

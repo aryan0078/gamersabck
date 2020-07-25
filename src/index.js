@@ -14,17 +14,20 @@ import AboutEvent from "./screens/AboutEvent";
 import Payment from './screens/Payment'
 import AllEvents from './screens/AboutEvent'
 import AboutEventP from './screens/AboutEventP'
+import Home from './screens/Home'
+import Dashboard from './screens/Dashboard';
 const routing = (
   <Router>
-    <div>
-      <Landing>
-        <Route exact path="/payment" component={Payment} />
-        <Route exact path="/aboutevents" component={AboutEvent} />
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/allevents" component={AllEvents} />
-        <Route exact path="/createevent" component={CreateEvent} />
-      </Landing>
-    </div>
+
+
+    <Route exact path="/aboutevents" component={AboutEvent} />
+    <Route exact path="/payment" component={Payment} />
+    <Route exact path="/allevents" component={AllEvents} />
+    <Route exact path='/Dashboard' component={Dashboard} />
+
+    <Route exact path="/createevent" component={CreateEvent} />
+    <Route exact path="/" component={Home} />
+
   </Router>
 )
 

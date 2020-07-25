@@ -62,6 +62,13 @@ export default class Register extends Component {
             }).then(() => {
                 this.setState({ loading: false })
                 alert('Registration Done!')
+                localStorage.setItem('fullname', this.state.fullname)
+                localStorage.setItem('username', this.state.username)
+                localStorage.setItem('gender', this.state.gender)
+                localStorage.setItem('dob', this.state.dob)
+                localStorage.setItem('email', this.state.email)
+
+                window.location.reload()
             })
         }).catch((e) => {
             this.setState({ loading: false })
@@ -123,10 +130,10 @@ export default class Register extends Component {
                             <input className={styles.inp} value={this.state.fullname} onChange={(e) => this.setState({ fullname: e.target.value })} />
                         </div>
                         <div className={styles.login}>
+                            {this.state.loading ? <Spin indicator={this.antIcon} /> : <button onClick={this.reg} className={styles.reg}>SignUp </button>}
 
+                        </div>
 
-                            <button onClick={this.reg}>Sign in </button></div>
-                        {this.state.loading ? <Spin indicator={this.antIcon} /> : null}
                     </div>
 
                 </Modal>

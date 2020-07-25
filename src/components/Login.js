@@ -44,6 +44,10 @@ export default class Login extends Component {
                 localStorage.setItem('email', doc.data().email)
                 localStorage.setItem('loggedin', false)
 
+            }).then(() => {
+                this.setState({ loading: false })
+                this.setState({ login: false })
+                window.location.reload()
             })
 
             /*  alert('Login done')*/
@@ -68,10 +72,10 @@ export default class Login extends Component {
             return null
         }
         this.setState({ loading: true })
-        var p = await this.reg()
-        this.setState({ loading: false })
+        await this.reg()
 
-        this.setState({ login: false })
+
+
         if (this.state.loggedin) { }
 
     }
@@ -92,7 +96,7 @@ export default class Login extends Component {
                     visible={this.state.login}
                     style={{ borderRadius: '26px', top: '30vh', backgroundColor: 'transparent' }}
 
-                    onCancel={() => { this.setState({ login: false }); window.location.reload() }}
+                    onCancel={() => { this.setState({ login: false }) }}
                     bodyStyle={{ padding: '0' }}
                     footer={null}
                     width={420}

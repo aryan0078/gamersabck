@@ -42,18 +42,11 @@ export default class Register extends Component {
         </Menu>
     );
     reg = () => {
-        if (this.state.error) {
-            alert('Something is wrong in the form please check the form And try again')
-            return null
-        }
+
         var database = app.database()
         var db = app.firestore()
-        this.usernamecheck()
-        if (this.state.error) {
-            return null
-        } else {
-            console.log('done')
-        }
+
+
         this.setState({ loading: true })
         app.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then(cred => {
             db.collection('users').doc(cred.user.uid).set({
@@ -67,13 +60,13 @@ export default class Register extends Component {
                 db.collection('usernames').doc(this.state.username).set({
                     username: this.state.username
                 })
-                alert('Registration Done!')
+
                 localStorage.setItem('fullname', this.state.fullname)
                 localStorage.setItem('username', this.state.username)
                 localStorage.setItem('gender', this.state.gender)
                 localStorage.setItem('dob', this.state.dob)
                 localStorage.setItem('email', this.state.email)
-
+                alert('Registration Done!')
                 window.location.reload()
             })
         }).catch((e) => {

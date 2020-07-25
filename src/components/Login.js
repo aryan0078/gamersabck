@@ -72,9 +72,7 @@ export default class Login extends Component {
                 this.setState({ login: false })
                 window.location.reload()
             })
-            db.collection('usernames').doc(this.state.username).set({
-                username: this.state.username
-            })
+
             /*  alert('Login done')*/
         }).catch((e) => {
             this.setState({ loading: false })

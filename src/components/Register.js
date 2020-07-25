@@ -12,7 +12,7 @@ export default class Register extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            loading: false,
+            loading: false, exists: false, errorm: 'Username is Already Taken',
             visible: true, date: '', username: '', email: '', password: '', fullname: '', gender: 'Gender', error: false, serror: false
         }
     }
@@ -42,6 +42,10 @@ export default class Register extends Component {
         </Menu>
     );
     reg = () => {
+        if (this.state.error) {
+            alert('Something is wrong in the form please check the form And try again')
+            return null
+        }
         var database = app.database()
         var db = app.firestore()
         this.usernamecheck()
@@ -60,7 +64,9 @@ export default class Register extends Component {
                 email: this.state.email,
                 password: this.state.password
             }).then(() => {
-                this.setState({ loading: false })
+                db.collection('usernames').doc(this.state.username).set({
+                    username: this.state.username
+                })
                 alert('Registration Done!')
                 localStorage.setItem('fullname', this.state.fullname)
                 localStorage.setItem('username', this.state.username)
@@ -76,7 +82,25 @@ export default class Register extends Component {
         })
 
     }
+    usernamecheck = (l) => {
+        if (l == "") {
+            this.setState({ errorm: 'Username is Empty' })
+            this.setState({ error: true })
+            return null
+        }
+        var db = app.firestore()
+        db.collection('usernames').doc(l).get().then(doc => {
+            if (doc.data() != null) {
+                this.setState({ exists: true })
+                this.setState({ errorm: 'Username is Already registered' })
+            } else {
+                this.setState({ exists: false })
+            }
+        }).then(() => {
 
+
+        })
+    }
 
     render() {
         const error = this.state.error
@@ -105,8 +129,8 @@ export default class Register extends Component {
                         </div>
                         <div className={styles.login}>
                             <label>Username</label>
-                            <input className={styles.inp} value={this.state.username} onBlur={() => this.setState({ error: false })} onChange={(e) => this.setState({ username: e.target.value })} />
-                            {error ? <label className={styles.error}>Username is already Registerd</label> : null}
+                            <input className={styles.inp} value={this.state.username} onChange={(e) => { this.setState({ username: e.target.value }); this.usernamecheck(e.target.value) }} />
+                            {this.state.exists ? <label className={styles.error}>{this.state.errorm}</label> : null}
                         </div>
                         <div className={styles.login}>
                             <label>Email</label>

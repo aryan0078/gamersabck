@@ -15,9 +15,14 @@ export default class Login extends Component {
         super(props)
         this.log = this.log.bind(this)
         this.reg = this.reg.bind(this)
+
+        var log = this.props.visible
+
+        console.log(log)
         this.state = {
             loading: false,
             email: '', password: '', error: false, serror: false, fullname: '', loggedin: false, register: false
+            , login: log
         }
     }
     antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
@@ -31,8 +36,14 @@ export default class Login extends Component {
         await app.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((c) => {
             db.collection('users').doc(c.user.uid).get().then(doc => {
 
-                console.log(doc.data())
-                this.setState({ fullname: doc.data()['fullname'] })
+                /* console.log(doc.data())*/
+                localStorage.setItem('fullname', doc.data().fullname)
+                localStorage.setItem('username', doc.data().username)
+                localStorage.setItem('gender', doc.data().gender)
+                localStorage.setItem('dob', doc.data().dob)
+                localStorage.setItem('email', doc.data().email)
+                localStorage.setItem('loggedin', false)
+
             })
 
             /*  alert('Login done')*/
@@ -41,7 +52,7 @@ export default class Login extends Component {
             alert(e.message)
         })
 
-
+        await this.setState({ loggedin: true })
     }
     validation = () => {
         if (this.state.email == '' || this.state.password == '') {
@@ -51,6 +62,7 @@ export default class Login extends Component {
             return 3
         }
     }
+
     async log() {
         if (this.validation() == null) {
             return null
@@ -59,17 +71,15 @@ export default class Login extends Component {
         var p = await this.reg()
         this.setState({ loading: false })
 
-        this.setState({ loggedin: true })
-        console.log(this.state.fullname)
+        this.setState({ login: false })
+        if (this.state.loggedin) { }
+
     }
+
     render() {
         var visible = this.props.visible
         const error = this.state.error
-        if (this.state.loggedin) {
-            return (
-                <Redirect to="/" />
-            )
-        }
+
         if (this.state.register) {
             return (
                 <Register />
@@ -79,10 +89,10 @@ export default class Login extends Component {
             <>
 
                 <Modal
-                    visible={visible}
+                    visible={this.state.login}
                     style={{ borderRadius: '26px', top: '30vh', backgroundColor: 'transparent' }}
 
-                    onCancel={() => { visible = false }}
+                    onCancel={() => { this.setState({ login: false }); window.location.reload() }}
                     bodyStyle={{ padding: '0' }}
                     footer={null}
                     width={420}

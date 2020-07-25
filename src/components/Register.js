@@ -56,7 +56,9 @@ export default class Register extends Component {
                 fullname: this.state.fullname,
                 username: this.state.username,
                 gender: this.state.gender,
-                dob: this.state.date
+                dob: this.state.date,
+                email: this.state.email,
+                password: this.state.password
             }).then(() => {
                 this.setState({ loading: false })
                 alert('Registration Done!')
@@ -81,7 +83,7 @@ export default class Register extends Component {
                 <Modal
                     visible={this.state.visible}
                     style={{ borderRadius: '26px', top: '20', backgroundColor: 'transparent' }}
-
+                    afterClose={() => window.location.reload()}
                     onCancel={() => this.setState({ visible: false })}
                     bodyStyle={{ padding: '0' }}
                     footer={null}

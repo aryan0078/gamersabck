@@ -32,6 +32,10 @@
         font-size: xx-large;
        
         font-weight: bold;
+    }.b1m{
+        height: 8rem !important;
+        flex-direction: column;
+        padding: 2% !important;
     }
     .b1m,.cevent{
         background-color: #292929;
@@ -44,6 +48,7 @@
         text-align: center;
         margin-bottom:10px;
     }
+    
     .cevent{
         background-color: #AA0020;
     }
@@ -130,10 +135,37 @@ border-width: 0px;
     align-items: center;
 
 }
+.dropitem{
+    font-size: smaller;
+   
+   color: black !important;
+    border-radius: 2px;
+}
+.drop{
+    color: aliceblue;
+    font-size: small;
+}
+.dropitem:hover{
+    background-color: #AA0020;
+    color: white !important;
+}
 .drawer{
     display: none;
 }
+.user{
+    width: 10rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #292929;
+    border-radius: 5px;
+    height: 100%;
+}
 @media screen and (max-width: 1200px) {
+    .user{
+        display: none;
+    }
      .logo{
    display: none;
     }

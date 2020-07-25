@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import SideHeader from '../components/SideHeader'
 import Home from './Home'
-import { Layout, Menu, Modal } from 'antd';
+import { Layout, Modal } from 'antd';
 import styles from './Layout.module.css'
+import { Avatar } from 'antd';
 
 import TopHeader from '../components/TopHeader';
 import Login from "../components/Login";
 import Register from "../components/Register";
-import { Form, Input, Button, Checkbox, Drawer } from 'antd';
-import { UserOutlined, LockOutlined, MenuOutlined } from '@ant-design/icons';
+import { Menu, Dropdown, Drawer } from 'antd';
+import { UserOutlined, DownOutlined, MenuOutlined } from '@ant-design/icons';
 import CFooter from '../components/footer'
 import { app } from '../firebase'
+import { Redirect } from 'react-router-dom';
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class Landing extends Component {
@@ -18,23 +20,54 @@ export default class Landing extends Component {
     super(props)
     this.state = { login: false, collapsed: true, visible: false, register: false }
   }
+
   login = () => {
-    if (this.state.login) {
-      this.setState({ login: false })
-    } else {
-      this.setState({ login: true })
-    }
-  }
-  auth = () => {
+
+    this.setState({ login: true })
 
 
   }
+
+  menu = (
+    <Menu>
+      <Menu.Item key="0">
+        <a className={styles.dropitem}>
+          Dashboard
+        </a>
+      </Menu.Item>
+      <Menu.Item key="0">
+        <a className={styles.dropitem}>
+          Help
+        </a>
+      </Menu.Item>
+      <Menu.Item key="0">
+        <a className={styles.dropitem} onClick={() => {
+          localStorage.removeItem('fullname')
+          localStorage.removeItem('username')
+          localStorage.removeItem('email')
+          localStorage.removeItem('gender')
+          localStorage.removeItem('dob')
+          window.location.reload()
+        }}>
+          Log out
+        </a>
+      </Menu.Item>
+      <Menu.Item key="1">
+        <a className={styles.dropitem}>
+          Bookmark events
+        </a>
+      </Menu.Item>
+
+
+    </Menu>
+  );
   toggle = () => {
     this.setState({
       collapsed: !this.state.collapsed,
     });
   };
   render() {
+
     return (
       <Layout>
         <Header style={{ display: 'flex', justifyContent: 'flex-start', position: 'fixed', zIndex: 1001, width: '100%', backgroundColor: '#121212' }}>
@@ -44,9 +77,15 @@ export default class Landing extends Component {
           <button className={styles.createevent} onClick={this.login}>
             Create An Event
 </button>
-          <button className={styles.loginregbtn} onClick={this.login}>
-            Login/Register
-</button>
+          {localStorage.getItem('fullname') ? <div className={styles.user}> <Dropdown overlay={this.menu}>
+            <a className={styles.drop} >
+              {localStorage.getItem('fullname')} <DownOutlined />
+            </a>
+          </Dropdown> </div> :
+            <button className={styles.loginregbtn} onClick={this.login}>
+              Login/Register
+   </button>}
+
 
 
 
@@ -81,15 +120,15 @@ export default class Landing extends Component {
 
               visible={this.state.visible}
             >
-
-              <div className={styles.b1m} onClick={() => this.setState({ login: true, visible: false })}>
-                Login/Register
-             </div>
+              {localStorage.getItem('fullname') ? <div className={styles.b1m}>  <Avatar size={64} icon={<UserOutlined />} /> {localStorage.getItem('fullname')} </div> :
+                <div className={styles.b1m} onClick={() => { this.setState({ login: true, visible: false }); }}>
+                  Login/Register
+             </div>}
               <div className={styles.cevent}>
                 Create Event
              </div>
             </Drawer>
-            <Login visible={this.state.login} />
+            {this.state.login ? <Login visible={true} /> : null}
 
             <CFooter />
           </Content>

@@ -7,26 +7,30 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css'
 import Landing from './screens/Landing'
-import AppLayout from  './Layout'
+import AppLayout from './Layout'
 import AllEventsP from './screens/AllEventsP'
 import PaymentP from './screens/PaymentPageHF'
-
+import AboutEvent from "./screens/AboutEvent";
+import Payment from './screens/Payment'
+import AllEvents from './screens/AboutEvent'
 import AboutEventP from './screens/AboutEventP'
 const routing = (
   <Router>
     <div>
-      <Route exact path="/payment" component={PaymentP} />
-       <Route exact path="/aboutevents" component={AboutEventP} />
-      <Route exact path="/" component={Landing} />
-     <Route exact path="/allevents" component={AllEventsP} />
-     <Route exact path="/createevent" component={CreateEvent} />
+      <Landing>
+        <Route exact path="/payment" component={Payment} />
+        <Route exact path="/aboutevents" component={AboutEvent} />
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/allevents" component={AllEvents} />
+        <Route exact path="/createevent" component={CreateEvent} />
+      </Landing>
     </div>
   </Router>
 )
 
 ReactDOM.render(
-routing
-,
+  routing
+  ,
   document.getElementById('root')
 );
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Collapse } from "antd";
 
 import * as styles from "./CreateEvent.module.css";
 import TicketRow from "./TicketRow";
@@ -370,21 +369,19 @@ class CreateEventAbout extends React.Component {
             return (
               <div>
                 <div className={styles.labelBg}>game events</div> <br />
-                <Collapse accordion>{this.renderGameContent()}</Collapse>
+                <div>{this.renderGameContent()}</div>
                 <div className={styles.rowAddDeleteButton}>
                   <button
                     onClick={() => {
                       this.addTicketRow("game");
-                    }}
-                  >
+                    }}>
                     +
                   </button>
                   {this.state.game.gTicketTypeNos > 1 && (
                     <button
                       onClick={() => {
                         this.removeTicketRow("game");
-                      }}
-                    >
+                      }}>
                       -
                     </button>
                   )}
@@ -401,16 +398,14 @@ class CreateEventAbout extends React.Component {
                   <button
                     onClick={() => {
                       this.addTicketRow("webinar");
-                    }}
-                  >
+                    }}>
                     +
                   </button>
                   {this.state.webinar.wbTicketTypeNos > 1 && (
                     <button
                       onClick={() => {
                         this.removeTicketRow("webinar");
-                      }}
-                    >
+                      }}>
                       -
                     </button>
                   )}
@@ -428,16 +423,14 @@ class CreateEventAbout extends React.Component {
                     <button
                       onClick={() => {
                         this.addTicketRow("workshop");
-                      }}
-                    >
+                      }}>
                       +
                     </button>
                     {this.state.workshop.wsTicketTypeNos > 1 && (
                       <button
                         onClick={() => {
                           this.removeTicketRow("workshop");
-                        }}
-                      >
+                        }}>
                         -
                       </button>
                     )}
@@ -459,8 +452,7 @@ class CreateEventAbout extends React.Component {
           <form
             onSubmit={event => {
               event.preventDefault();
-            }}
-          >
+            }}>
             {this.renderContent()}
             <div className={styles.createEventInfoSubmitButton}>
               <Link to="/createevent/rules-regulations">

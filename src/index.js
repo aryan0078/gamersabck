@@ -16,10 +16,10 @@ import Dashboard from './screens/Dashboard';
 const routing = (
   <Router>
     <Route exact path='/dashboard' component={Dashboard} />
-
+    <Route exact path="/allevents" component={AllEvents} />
     <Route exact path="/aboutevents" component={AboutEvent} />
     <Route exact path="/payment" component={Payment} />
-    <Route exact path="/allevents" component={AllEvents} />
+
     <Route exact path="/home" component={Home} />
 
     <Route exact path="/createevent" component={CreateEvent} />

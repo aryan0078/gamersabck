@@ -63,9 +63,9 @@ export default class Home extends Component {
 
               </Drop>
             </div>
-            <div>
-              <button className={styles.searchs}>Search</button>
-            </div>
+
+            <button className={styles.searchs}>Search</button>
+
           </div>
           <div className={styles.upcomingholder}>
 
@@ -175,8 +175,8 @@ export default class Home extends Component {
                 <div >
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white' }}>Awesom dude</h1>
-                      <p style={{ color: 'white' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar size={60} icon={<UserOutlined />} style={{ marginTop: '6%' }} />
                         <div className={styles.nametimestar}>
@@ -199,8 +199,8 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white' }}>Awesom dude</h1>
-                      <p style={{ color: 'white' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar size={60} icon={<UserOutlined />} style={{ marginTop: '6%' }} />
                         <div className={styles.nametimestar}>
@@ -216,8 +216,8 @@ export default class Home extends Component {
                 <div >
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white' }}>Awesom dude</h1>
-                      <p style={{ color: 'white' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar size={60} icon={<UserOutlined />} style={{ marginTop: '6%' }} />
                         <div className={styles.nametimestar}>
@@ -228,8 +228,8 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white' }}>Awesom dude</h1>
-                      <p style={{ color: 'white' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar size={60} icon={<UserOutlined />} style={{ marginTop: '6%' }} />
                         <div className={styles.nametimestar}>
@@ -240,8 +240,8 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white' }}>Awesom dude</h1>
-                      <p style={{ color: 'white' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar size={60} icon={<UserOutlined />} style={{ marginTop: '6%' }} />
                         <div className={styles.nametimestar}>

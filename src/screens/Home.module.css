@@ -1,5 +1,6 @@
 
 .main{
+    overflow: hidden;
     padding-top:7%;
   padding-left: 8%;
   padding-right: 6%;
@@ -66,6 +67,7 @@ padding: 0px;
     border-radius: 10px;
     align-self: start;
 border-width: 0.5px;
+
 border-style: solid;
  border-color: #4b4a4a;
     display: flex;
@@ -525,6 +527,7 @@ text-align: left;
     border: none;
     color: white;
     width: 20vh;
+    margin-bottom: 5%;
     height: 10vh;
     margin-right: 5%;
     margin-top: 5%;
@@ -553,11 +556,16 @@ flex-direction: row;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 100px;
+        overflow: hidden;
         background-image: url('./assets/r6.jpg');
 background-size:cover;
 background-repeat: no-repeat;
    
     }
+    .btitle,.animationtext{
+        margin-top: 3%;
+    }
+    
     .btitle,.animationtext,.entertainmenl2,.entertainmenl2{
         font-size: xx-large;
         
@@ -572,7 +580,7 @@ background-repeat: no-repeat;
         background-color: #CA0C2A;
         border: none;
         color: white;
-        width: 17rem;
+        width: 100%;
         height: 7vh;
         border-radius: 10px;
         margin-top: 5%;
@@ -585,7 +593,7 @@ background-repeat: no-repeat;
         padding: 0px;
         flex-direction: column;
 padding:10%;
-height: 40vh;
+height:90%;
 margin-bottom: 5%;
         justify-content:center;
         align-items: flex-start;
@@ -627,8 +635,10 @@ margin-bottom: 5%;
     flex-direction: column;
 }
 .testnomialcards{
-    width: 90%;
+    width: 100%;
     padding: 3%;
+    overflow: hidden;
+    padding: 5%;
 }
    .viewallbtn{
        width: 100%;

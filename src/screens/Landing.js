@@ -12,7 +12,7 @@ import { Menu, Dropdown, Drawer } from 'antd';
 import { UserOutlined, DownOutlined, MenuOutlined } from '@ant-design/icons';
 import CFooter from '../components/footer'
 import { app } from '../firebase'
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class Landing extends Component {
@@ -30,15 +30,16 @@ export default class Landing extends Component {
 
   menu = (
     <Menu>
+
       <Menu.Item key="0">
-        <a className={styles.dropitem}>
+        <Link to='/dashboard'>    <a className={styles.dropitem}>
           Dashboard
-        </a>
+        </a></Link>
       </Menu.Item>
       <Menu.Item key="0">
-        <a className={styles.dropitem}>
+        <Link to='/dashboard'>    <a className={styles.dropitem}>
           Help
-        </a>
+        </a></Link>
       </Menu.Item>
       <Menu.Item key="0">
         <a className={styles.dropitem} onClick={() => {
@@ -53,9 +54,9 @@ export default class Landing extends Component {
         </a>
       </Menu.Item>
       <Menu.Item key="1">
-        <a className={styles.dropitem}>
+        <Link to='/'>    <a className={styles.dropitem}>
           Bookmark events
-        </a>
+        </a></Link>
       </Menu.Item>
 
 

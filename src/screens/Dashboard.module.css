@@ -2,17 +2,104 @@
     background-color: black;
     display: flex;
     width: 100%;
-    height: 100vh;
+   
     padding-left: 7%;
     padding-top: 7%;
     padding-right: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.timelinep{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -300px;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.card1{
+    height: 40vh;
+    width: 30%;
+
+    display: flex;
+    background-color: #292929;
+    border-radius: 5px;
+}
+.content{
+ border-radius: 5px;
+    width: 100%;
+    margin-top: 5%;
+    background-color: #121212;
+    display: flex;
+}
+.username{
+    font-size: small;
+    margin-top: -10px;
+    font-weight: 400;
+    color: gainsboro;
+}
+
+.name{
+    font-size: large;
+    margin-top: 20px;
+    color: white;
+}
+.nav{
+    padding-top: 5%;
+    background-color: #121212;
+    justify-content:center;
+    align-items: flex-end;
+    width: 100%;
+    display: flex;
+  padding-bottom: 2%;
+
+  
+   border-radius: 5px;
+
+}
+
+.timeline{
+    flex-direction: column;
+    cursor: pointer;
+}
+.timeline_{
+    display: flex;
+    flex-direction: column;
+}
+.timeline,.timeline_{
+    height: 5rem;
+    width: 20%;display: flex;
+    justify-content: center;
+    align-items: center;
+color: white;
+
 }
 .profilepic{
     background-image: url('https://picsum.photos/id/237/200/300');
-    height: 70vh;
+    height: 60vh !important;
     width: 100%;
 border-radius: 5px;
     background-size: cover;
-    background-repeat: no-repeat;
+   
 
+}
+.profilepics{
+    background-color: blue;
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://picsum.photos/200');
 }

@@ -77,10 +77,12 @@ const TicketRow = props => {
       <div className={styles.TicketRowWrapper}>
         <div>
           <label htmlFor="ticketType" className={styles.label}>
-            Ticket Type
+            Type
           </label>
           <br />
-          <div className={styles.dropDownSelect} onClick={() => setOpen(!open)}>
+          <div
+            className={styles.dropDownSelectTRow}
+            onClick={() => setOpen(!open)}>
             {ticketType}
           </div>
           {open && dropDown(ticketTypes)}

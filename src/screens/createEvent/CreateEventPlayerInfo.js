@@ -1,95 +1,115 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Modal from "react-awesome-modal";
 import cx from "classnames";
 
 import * as styles from "./CreateEvent.module.css";
+import { playerInfoOptions } from "./playerInfoOptions";
 import CreateEventCustomOptions from "./CreateEventCustomOptions";
 
 class CreateEventPlayerInfo extends Component {
   state = {
+    customFieldName: "",
+    customFieldType: "Text",
+    customFieldTypeOptions: {
+      1: "",
+      2: "",
+      3: "",
+    },
+    isCustomFieldTypeOptions: false,
     playerInfo: [],
+    visible: false,
+    openDd: false,
   };
-  playerInfoOptions = [
+
+  playerInfoOptions = playerInfoOptions;
+
+  customFieldTypeOption = [
     {
       id: 1,
-      option: "Name",
-      icon: "fas fa-signature",
+      option: "Text",
+      options: false,
     },
     {
       id: 2,
-      option: "Phone Number",
-      icon: "fas fa-mobile",
+      option: "Text Area",
+      options: false,
     },
     {
       id: 3,
-      option: "Address",
-      icon: "fas fa-map-marked-alt",
+      option: "Dropdown",
+      options: true,
     },
     {
       id: 4,
-      option: "Facebook",
-      icon: "fab fa-facebook-f",
+      option: "Radio Options",
+      options: true,
     },
     {
       id: 5,
-      option: "Instagram",
-      icon: "fab fa-instagram",
+      option: "Check Boxes",
+      options: true,
     },
     {
       id: 6,
-      option: "Birthday",
-      icon: "fas fa-birthday-cake",
+      option: "Date",
+      options: false,
     },
     {
       id: 7,
-      option: "Email",
-      icon: "fas fa-at",
-    },
-    {
-      id: 8,
-      option: "Snapchat",
-      icon: "fab fa-snapchat-ghost",
-    },
-    {
-      id: 9,
-      option: "Twitch",
-      icon: "fab fa-twitch",
-    },
-    {
-      id: 10,
-      option: "Twitter",
-      icon: "fab fa-twitter",
-    },
-    {
-      id: 11,
-      option: "Vimeo",
-      icon: "fab fa-vimeo-v",
-    },
-    {
-      id: 12,
-      option: "Website",
-      icon: "fas fa-globe",
-    },
-    {
-      id: 13,
-      option: "Youtube",
-      icon: "fab fa-youtube",
-    },
-    {
-      id: 14,
-      option: "Gender",
-      icon: "fas fa-transgender-alt",
-    },
-    {
-      id: 15,
-      option: "Age",
-      icon: "fas fa-child",
+      option: "File Upload",
+      options: false,
     },
   ];
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(this.state);
+    console.log(this.playerInfoOptions);
   }
+
+  openModal() {
+    this.setState({
+      visible: true,
+    });
+  }
+
+  closeModal() {
+    this.setState({
+      visible: false,
+    });
+  }
+
+  saveModal = () => {
+    if (this.state.customFieldName) {
+      this.playerInfoOptions.push({
+        id: this.playerInfoOptions.length + 1,
+        option: this.state.customFieldName,
+        icon: "fas fa-cog",
+        optionsGiven: this.state.customFieldTypeOptions,
+        fieldType: this.state.customFieldType,
+      });
+
+      this.setState({
+        customFieldName: "",
+        customFieldType: "Text",
+        customFieldTypeOptions: {
+          1: "",
+          2: "",
+          3: "",
+        },
+        isCustomFieldTypeOptions: false,
+      });
+    }
+
+    this.closeModal();
+  };
+
+  handleDdClick = item => {
+    this.setState({
+      customFieldType: item.option,
+      isCustomFieldTypeOptions: item.options,
+      openDd: false,
+    });
+  };
 
   handleClick = item => {
     if (!this.state.playerInfo.some(current => current.id === item.id)) {
@@ -114,12 +134,62 @@ class CreateEventPlayerInfo extends Component {
     return false;
   };
 
+  dropDown = () => {
+    return (
+      <div className={styles.dropDownMenu}>
+        {this.customFieldTypeOption.map(item => (
+          <div
+            className={styles.dropDownMenuItem}
+            key={item.id}
+            onClick={() => this.handleDdClick(item)}>
+            {item.option}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  renderModalOptions = () => {
+    return (
+      <div>
+        <div className={styles.labelBg}>Choose Upto 3 options</div>
+        <br />
+        {Object.keys(this.state.customFieldTypeOptions).map(key => {
+          return (
+            <div>
+              <label htmlFor="option" className={styles.label}>
+                Option-{key}
+              </label>
+              <br />
+              <input
+                name="option"
+                type="text"
+                onChange={event => {
+                  this.setState({
+                    customFieldTypeOptions: {
+                      ...this.state.customFieldTypeOptions,
+                      [key]: event.target.value,
+                    },
+                  });
+                }}
+                value={this.state.customFieldTypeOptions[key]}
+                placeholder="Enter Option"
+                autoComplete="off"
+              />
+              <br />
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
   render() {
     return (
       <div>
         <div className={styles.componentHeader}>Player Details</div>
         <div className={styles.innerComponent}>
-          <div className={styles.label}>
+          <div className={styles.labelBg}>
             choose all the details you will need from the player
           </div>
           <form
@@ -148,8 +218,77 @@ class CreateEventPlayerInfo extends Component {
                   />
                 </div>
               ))}
+              <div
+                className={cx(
+                  styles.playerInfoOptionCard,
+                  styles.playerOptionCardNonSelected
+                )}
+                onClick={() => this.openModal()}>
+                <CreateEventCustomOptions
+                  title="Make Custom Field"
+                  icon="fas fa-cog"
+                />
+              </div>
             </div>
             <br />
+
+            <Modal
+              visible={this.state.visible}
+              width="50%"
+              height="90%"
+              effect="fadeInUp"
+              onClickAway={() => this.closeModal()}>
+              <div className={styles.CreateEventPlayerInfoModal}>
+                <div className={styles.labelBg}>Make Custom Input Field</div>
+                <br />
+
+                <label htmlFor="custom-field-name" className={styles.label}>
+                  Field Name
+                </label>
+                <br />
+                <input
+                  name="custom-field-name"
+                  type="text"
+                  onChange={event => {
+                    this.setState({
+                      customFieldName: event.target.value,
+                    });
+                  }}
+                  value={this.state.customFieldName}
+                  placeholder="Enter the Name of Custom Field"
+                  autoComplete="off"
+                />
+                <br />
+
+                <label htmlFor="custom-field-type" className={styles.label}>
+                  Field Type
+                </label>
+                <br />
+                <div
+                  className={styles.dropDownSelect}
+                  onClick={() => {
+                    this.setState({
+                      openDd: !this.state.openDd,
+                    });
+                  }}>
+                  {this.state.customFieldType}
+                </div>
+
+                {this.state.openDd && this.dropDown()}
+
+                <br />
+
+                {this.state.isCustomFieldTypeOptions &&
+                  this.renderModalOptions()}
+
+                <button
+                  className={styles.saveModal}
+                  onClick={() => this.saveModal()}>
+                  Close
+                </button>
+              </div>
+            </Modal>
+
             <div className={styles.createEventInfoSubmitButton}>
               <Link to="/createevent/additional-features">
                 <input type="submit" value="Next" />

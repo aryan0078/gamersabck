@@ -256,6 +256,20 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+.dropDownSelectTRow {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #282828;
+  margin: 1.5% 0 0 0;
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .dropDownMenu {
   width: 100%;
   border-radius: 5px;
@@ -323,6 +337,7 @@ input::-webkit-inner-spin-button {
 .prizeRow {
   display: flex;
   margin-bottom: 1%;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -388,10 +403,173 @@ input::-webkit-inner-spin-button {
 
 .playerInfoIcon {
   font-size: 28px;
-  font-weight: 400;
 }
 
 .playerInfoOptionCardTitle {
   font-size: 18px;
   font-weight: bold;
+}
+
+.CreateEventPlayerInfoModal {
+  padding: 5%;
+  height: 100%;
+  background-color: #121212;
+  border-radius: 5px;
+  border: 1px solid #4b4a4a;
+  overflow: auto;
+}
+
+.saveModal {
+  border-radius: 5px;
+  background-color: #aa0020;
+  color: #fff;
+  height: 4rem;
+  width: 40%;
+  border-width: 0;
+  font-size: larger;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.saveModal:hover {
+  background-color: #de2358;
+}
+
+.saveModal:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .playerInfoOptionCard {
+    width: 45%;
+  }
+
+  .playerInfoOptionCard .playerInfoIcon {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .createEventNav .link,
+  .createEventInnerComponents .label {
+    font-size: 15px;
+  }
+
+  .dropDownSelectTRow {
+    width: 100px;
+  }
+
+  .eventDescription {
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .innerComponent input[type="text"] {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .innerComponent input[type="number"] {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .dropDownSelect {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .dropDownMenu .dropDownMenuItem {
+    font-size: 12px;
+  }
+
+  .dropDownSelectTRow {
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .createEventNavList .createEventNavCircle {
+    height: 18px;
+    width: 18px;
+  }
+
+  .createEventNav .active {
+    font-size: 20px;
+  }
+
+  .createEventInnerWrapper .createEventNav {
+    width: 30%;
+  }
+
+  .createEventInnerWrapper .createEventInnerComponents {
+    width: 70%;
+  }
+
+  .createEventInnerComponents .labelBg {
+    font-size: 20px;
+  }
+
+  .dropDownSelectTrow {
+    width: 50px;
+  }
+
+  .playerInfoOptionCard {
+    width: 70%;
+    height: 150px;
+  }
+
+  .addtionalFeature {
+    font-size: 14px;
+  }
+
+  .startDate,
+  .endDate,
+  .tName,
+  .tFee,
+  .regStartDate,
+  .regEndDate,
+  .nPlayers,
+  .nSubs,
+  .prizeRowField {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .createEventNav .link,
+  .createEventInnerComponents .label {
+    font-size: 13px;
+  }
+
+  .componentHeader {
+    font-size: 30px;
+  }
+
+  .createEventNavList .createEventNavCircle {
+    display: none;
+  }
+
+  .createEventInnerWrapper .createEventNav {
+    width: 25%;
+  }
+
+  .createEventInnerWrapper .createEventInnerComponents {
+    width: 75%;
+  }
+
+  .rowAddDeleteButton button {
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 10%;
+  }
+
+  .playerInfoOptionCardTitle {
+    font-size: 15px;
+  }
+
+  .playerInfoOptionCard .playerInfoIcon {
+    font-size: 18px;
+  }
 }

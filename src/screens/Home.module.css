@@ -1,5 +1,7 @@
-.main {
-  padding-top: 7%;
+
+.main{
+    overflow: hidden;
+    padding-top:7%;
   padding-left: 8%;
   padding-right: 6%;
   flex-direction: column;
@@ -9,68 +11,78 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-.dropbtn {
-  text-align: left;
-  padding: 0px;
-  background-color: #121212;
-  color: white;
-  border-width: 0px;
+.dropbtn{
+text-align: left;
+padding: 0px;
+    background-color:#121212;
+    color:white;
+    border-width:0px;
+
 }
-.emptyspace {
-  height: 10%;
+.emptyspace{
+   
+    height: 10%;
 }
-.btitleholder {
-  display: flex;
-  flex-direction: row;
-  align-self: start;
-  margin-bottom: -5%;
+.btitleholder{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    margin-bottom: -5%;
 }
-.animationtext {
-  color: #ca0c2a;
-  font-size: 57.5px;
-  font-weight: 700;
-  margin-left: 10px;
+.animationtext{
+    color:#CA0C2A;
+    font-size: 57.5px;
+    font-weight: 700;
+  
+
+    margin-left:10px;
 }
-.title {
-  align-self: start;
-  font-size: 15px;
-  font-weight: 600;
-  color: white;
+.title{
+    align-self: start;
+   
+    font-size: 15px;
+    font-weight: 600;
+  
+    color: white;
 }
-.btitle {
-  align-self: start;
-  display: inline-flex;
-  font-size: 57.5px;
-  font-weight: 700;
-  color: white;
+.btitle{
+    align-self: start;
+    display: inline-flex;
+    font-size: 57.5px;
+    font-weight: 700;
+
+    color: white;
+
 }
-.searchbox {
-  margin-bottom: 5em;
-  background-color: #121212;
-  width: 80%;
-  height: 130px;
-  flex-direction: row;
-  border-radius: 10px;
-  align-self: start;
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: #4b4a4a;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+.searchbox{
+ margin-bottom: 5em;
+    background-color: #121212;
+    width: 80%;
+    height: 130px;
+    flex-direction: row;
+    border-radius: 10px;
+    align-self: start;
+border-width: 0.5px;
+
+border-style: solid;
+ border-color: #4b4a4a;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
-.whatholder {
-  color: white;
-  position: relative;
-  width: 25%;
-  justify-content: center;
-  align-items: left;
-  font-size: smaller;
-  text-align: left;
+.whatholder{
+color: white;
+    position: relative;
+    width: 25%;
+    justify-content: center;
+    align-items: left;
+   
+    font-size: smaller;
+    text-align: left;
 }
 
 .dropdown {
@@ -564,28 +576,104 @@ p {
     background-color: #ca0c2a;
     border: none;
     color: white;
-    width: 17rem;
-    height: 7vh;
-    border-radius: 10px;
-    margin-top: 5%;
-  }
-  .cardholder {
-    padding: 0px;
-  }
-  .searchbox {
-    width: 100%;
-    padding: 0px;
-    flex-direction: column;
-    padding: 10%;
-    height: 40vh;
+    width: 20vh;
     margin-bottom: 5%;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .dropdown {
-    font-size: x-large;
-  }
-  .row1 {
+    height: 10vh;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.row1test{
+display: flex;
+width: 100%;
+flex-direction: row;
+}
+.imgstarandname{
+display: flex;
+margin-top: 2.5%;
+flex-direction: row;
+}
+.nametimestar{
+    font-family: mont;
+    color: white;
+    margin-left: 5%;
+}
+.alltestcardholder{
+    margin-top:5%;
+}
+}
+@media screen and (max-width: 1200px) {
+
+    .main{
+     
+        padding-right: 20px;
+        padding-top: 100px;
+        overflow: hidden;
+        background-image: url('./assets/r6.jpg');
+background-size:cover;
+background-repeat: no-repeat;
+   
+    }
+    .btitle,.animationtext{
+        margin-top: 3%;
+    }
+    
+    .btitle,.animationtext,.entertainmenl2,.entertainmenl2{
+        font-size: xx-large;
+        
+    }.upcoming,.entertainmenl2{
+        font-size: medium;
+    }
+    .grabdealnowbtn{
+        width: 60%;
+        justify-self: flex-end;
+    }
+    .searchs{
+        background-color: #CA0C2A;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 7vh;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+    .cardholder{
+        padding: 0px;
+    }
+    .searchbox{
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+padding:10%;
+height:90%;
+margin-bottom: 5%;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    .dropdown{
+        font-size: x-large
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .sideimageofsell{
+       display: none;
+    }
+    .textcontainer{
+        width: 100%;
+    }
+    .allthebuttons{
+        flex-direction: row;
+        position: relative;
+        bottom: 0px;
+        margin-top: 50%;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+        padding: 0px;
+    }
+    .sellticketbutton{
+        font-size: 8px;
+    }
+.cardhoderblog{
     flex-direction: column;
   }
   .sideimageofsell {
@@ -646,13 +734,10 @@ p {
   }
   .row1test {
     flex-direction: column;
-  }
-  .testnomialcards {
-    width: 90%;
-    padding: 3%;
-  }
-  .viewallbtn {
+}
+.testnomialcards{
     width: 100%;
-    font-size: x-small;
-  }
+    padding: 3%;
+    overflow: hidden;
+    padding: 5%;
 }

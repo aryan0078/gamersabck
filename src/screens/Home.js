@@ -1,20 +1,17 @@
-import React, { Component } from "react";
-import styles from "./Home.module.css";
-import { Carousel } from "antd";
-import { Menu, Button } from "antd";
-import Drop from "../components/dropdown";
-import { Col, Row } from "antd";
-import { Avatar } from "antd";
-import { Link } from "react-router-dom";
-import {
-  UserOutlined,
-  DownOutlined,
-  ArrowRightOutlined,
-} from "@ant-design/icons";
-import Card from "../components/Card";
-import { Rate } from "antd";
-import { DatePicker } from "antd";
-import Typewriter from "typewriter-effect";
+import React, { Component } from 'react';
+import styles from './Home.module.css'
+import { Carousel } from 'antd';
+import { Menu, Button } from 'antd';
+import Drop from '../components/dropdown'
+import { Col, Row } from 'antd';
+import { Avatar } from 'antd';
+import { Link } from 'react-router-dom'
+import { UserOutlined, DownOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import Card from '../components/Card'
+import { Rate } from 'antd';
+import { DatePicker } from 'antd'
+import Typewriter from 'typewriter-effect';
+import Landing from './Landing';
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -47,6 +44,10 @@ export default class Home extends Component {
   render() {
     return (
       <>
+
+        <Landing />
+
+
         <div className={styles.main}>
           <span className={styles.emptyspace}></span>
           <p className={styles.title}>ALL FUN START HERE</p>
@@ -65,8 +66,10 @@ export default class Home extends Component {
           <h1 className={styles.btitle}>around you.</h1>
           <div className={styles.searchbox}>
             <div className={styles.whatholder}>
-              <h3 className={styles.searchind}>WHAT</h3>
-              <Drop title={"Filter"}></Drop>
+              <h3 className={styles.searchind} >WHAT</h3>
+              <Drop title={'Select Category'} >
+
+              </Drop>
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHEN</h3>
@@ -74,11 +77,13 @@ export default class Home extends Component {
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHERE</h3>
-              <Drop></Drop>
+              <Drop title={'Select Category'} >
+
+              </Drop>
             </div>
-            <div>
-              <button className={styles.searchs}>Search</button>
-            </div>
+
+            <button className={styles.searchs}>Search</button>
+
           </div>
           <div className={styles.upcomingholder}>
             <h3 style={{ color: "white", alignSelf: "flex-start" }}>
@@ -221,11 +226,8 @@ export default class Home extends Component {
                 <div>
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white" }}>Awesom dude</h1>
-                      <p style={{ color: "white" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -261,11 +263,8 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white" }}>Awesom dude</h1>
-                      <p style={{ color: "white" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -284,11 +283,8 @@ export default class Home extends Component {
                 <div>
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white" }}>Awesom dude</h1>
-                      <p style={{ color: "white" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -303,11 +299,8 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white" }}>Awesom dude</h1>
-                      <p style={{ color: "white" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -322,11 +315,8 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white" }}>Awesom dude</h1>
-                      <p style={{ color: "white" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
+                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
+                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}

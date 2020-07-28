@@ -1,45 +1,48 @@
-.main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10%;
-  background: url("./assets/r6.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: black;
+.main{
+overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    background: url('./assets/r6.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
 }
-.rowofc {
-  display: flex;
-  flex-wrap: wrap;
-  width: 120%;
+.rowofc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 120%;
 }
-.titleofc {
-  color: white;
-  font-size: 20px;
-  justify-content: flex-start;
+.titleofc{
+    color:white;
+    font-size: 20px;
+    justify-content:flex-start;
 }
-.dcardsg {
-  background-color: #ca0c2a;
-  height: 28vh;
-  width: 18.5%;
-  margin-left: 2vh;
-  margin-top: 2.5vh;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.dcardsg{
+    background-color: #CA0C2A;
+    height: 28vh;
+    width: 18.5%;
+    margin-left: 2vh;
+    margin-top: 2.5vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
-.dcards {
-  background-color: #ca0c2a;
-  height: 23vh;
-  width: 13%;
-  border-radius: 10px;
-  display: flex;
-  margin-left: 1%;
-  margin-right: 1%;
+.dcards{
+background-color: #CA0C2A;
+height: 23vh;
+width: 13%;
+border-radius: 10px;
+display: flex;
+margin-left: 1%;
+margin-right: 1%;
 }
 /* Rahuls dummy CSS starts here */
 .imggalleryh1 {
@@ -576,13 +579,211 @@
   }
   .rowofc {
     flex-direction: column;
-  }
-  .dcards {
-    width: 30%;
-    height: 10vh;
-    margin-bottom: 2%;
-  }
-  .parentDiv {
+
+}
+
+.row1{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.row2{
+
+}
+.book{
+background-color: #CA0C2A;
+color: white;
+border-radius: 5px;
+width: 10rem;
+font-size: large;
+margin-top: 10px;
+height: 4rem;
+border-width: 0px;
+}
+
+.content{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    padding: 1%;
+    margin-left: 5%;
     flex-direction: column;
   }
+}
+.sep{
+    width: 4px;
+}
+.desc{
+    color: white;
+    text-align: left;
+}
+.date{
+    background-color: #121212 !important;
+    border-width: 0px !important;
+    color: white !important;
+    font-size: large;
+}
+
+.horscroll{
+ 
+    height: 30vh;
+    flex-direction: row;
+    display: flex;
+
+    overflow: auto;
+    white-space: nowrap
+}
+.booknowb{
+    color: white;
+    width: 7rem;
+    height: 4rem;
+ padding-bottom: 4px;
+    font-size: small;
+    font-family: mont;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: #CA0C2A;
+}
+.corholder{
+  
+    width: 120%;
+    justify-content: center;
+  
+margin-left: -10%;
+  
+}
+.corsel{
+    width: 100%;
+    margin-left: 5%;
+    flex-direction: row;
+
+
+
+flex-wrap: wrap;}
+.eventname_{
+    color: #CA0C2A;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.cardin{
+    font-size: x-large;
+    color: white;
+}
+.cardsholder{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 5%;
+margin-left: 7%;
+
+}
+.crow1{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+justify-content: space-between;
+display: flex;
+
+}
+.card{
+    width: 20%;
+  border-radius: 10px;
+ height: 10em;
+    color: white;
+    justify-content: center;
+display: flex;
+align-items: center;
+    background-color: #CA0C2A;
+}
+.titleofg{
+    color: white;
+    font-size: x-large;
+
+}
+.rowofg{
+display: flex;
+flex-wrap: wrap;
+overflow-x: hidden;
+width: 100%;
+padding-left: 5%;
+padding-right: 10%;
+}
+@media screen and (max-width: 1200px) {
+    .eventnametop,.eventnametop_{
+        font-size: medium;
+    }
+    .rowp2{
+        flex-direction: column;
+    }
+    .main{
+        margin: 0px !important;
+        padding: 0px !important;
+
+    }
+    .eventname{
+        font-size:medium;
+    }
+    .detailbox{
+        width: 90%;
+        margin-right: 0px;
+        margin-left: 0px !important;
+    }
+    .rowp1{
+        flex-direction: column;
+    }
+    .elogo{
+        width: 40% !important;
+        background-repeat: no-repeat;
+    }
+    .imggalleryh1{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 250vh;
+        margin-left: 0px;
+    }
+    .booknowf{
+        width: 6rem;
+        height: 3rem;
+        right: 10px;
+        font-size: small;
+    }
+    .imggalleryh1_{
+     margin-bottom: 5%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .rowofg{
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .dcardsg{
+        width: 90% !important;
+    }
+    .logoc{
+        flex-direction: column !important;
+        margin-bottom: 5%;
+    }
+    .booknowb{
+        width: 8rem;
+    }
+    .buttonsofc{
+        width: 100%;
+        margin-bottom: 5%;
+        justify-content: space-between;
+        display: flex;
+    }
+    .rowofc{
+        flex-direction: column;
+    }
+    .dcards{
+        width:30%;
+        height: 10vh;
+        margin-bottom: 2%;
+    }
+    .parentDiv{
+        flex-direction: column;
+    }
 }

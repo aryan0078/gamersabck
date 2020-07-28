@@ -1,0 +1,81 @@
+.mainl{
+    display: flex;
+    height: 55vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #121212;
+  padding: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+.reg{
+    background-color: #222222;
+    color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: small;
+    width: 5rem;
+    border-color: tomato;
+    border-style: solid;
+height: 2rem;
+}
+.main{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #121212;
+  padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.gender{
+    font-size: small;
+    color: white;
+}
+.inp{
+   border-radius: 5px;
+   border-width: 0px; 
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    background-color: #222222;
+
+}
+.ant-picker-input{
+    color: white !important;
+}
+.error{
+    font-size: 10px;
+    margin-top: 4px;
+    color: tomato;
+    align-self: center;
+}
+.datepick{
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    transition: all ease 0.4s;
+}
+
+.title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+h1{
+    color: white;
+}
+label{
+    color: white;
+}
+.login{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}

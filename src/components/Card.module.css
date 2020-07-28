@@ -17,62 +17,56 @@
   background-repeat: no-repeat;
   transition: all 0.5s;
 }
+
 @media (min-width: 600px) {
   .cardholder {
     width: 90%;
   }
 }
+
 .exp {
   color: white;
-
   position: absolute;
-
   margin: 0 auto;
   bottom: 0px;
   text-align: center;
-
   font-size: medium;
   font-family: mont;
 }
-.imgholder {
-}
+
 .buttonndstuff {
   width: 50%;
   display: flex;
   flex-direction: row;
 }
-.img {
-}
-.cardholder:hover {
-  background-position-x: -10px;
 
+.cardholder:hover{
+  background-position-x:-6px;
+  background-color: black ;
   filter: grayscale(20%);
 }
 .eventp {
   color: white;
-
   position: absolute;
-
   margin: 0 auto;
   left: 5%;
   top: 60%; /* Adjust this value to move the positioned div up and down */
   text-align: center;
-
   font-size: medium;
   font-family: mont;
 }
+
 .eventn {
   color: white;
   position: absolute;
-
   margin: 0 auto;
   left: 5%;
   top: 70%; /* Adjust this value to move the positioned div up and down */
   text-align: center;
-
   font-size: 30px;
   font-family: mont;
 }
+
 .eventl {
   color: white;
   position: absolute;
@@ -86,14 +80,17 @@
   font-size: medium;
   font-family: mont;
 }
+
 .eventll {
   display: none;
   transition: all 1s;
 }
+
 @font-face {
   font-family: mont;
   src: url("./fonts/Montserrat-Regular.ttf");
 }
+
 .booknow {
   color: white;
   position: absolute;
@@ -108,6 +105,7 @@
   font-size: medium;
   font-family: mont;
 }
+
 .booknowl {
   transition: all 1s;
   display: none;

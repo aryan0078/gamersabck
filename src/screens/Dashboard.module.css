@@ -1,0 +1,194 @@
+.main{
+    background-color: black;
+    display: flex;
+    width: 100%;
+   overflow: hidden;
+    padding-left: 7%;
+    padding-top: 7%;
+    padding-right: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.timelinep{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.card1{
+    height: 40vh;
+    width: 30%;
+
+    display: flex;
+    background-color: #292929;
+    border-radius: 5px;
+}
+.content{
+ border-radius: 5px;
+    width: 100%;
+    margin-top: 5%;
+    background-color: #121212;
+    display: flex;
+}
+.username{
+    font-size: small;
+    margin-top: -10px;
+    font-weight: 400;
+    color: gainsboro;
+}
+
+.name{
+    font-size: large;
+    margin-top: 20px;
+    color: white;
+}
+.nav{
+    padding-top: 5%;
+    background-color: #121212;
+   
+    
+    width: 100%;
+    display: flex;
+  padding-bottom: 2%;
+
+  
+   border-radius: 5px;
+
+}
+
+.timeline{
+    flex-direction: column;
+    cursor: pointer;
+}
+.timeline_{
+    display: flex;
+    flex-direction: column;
+}
+.timeline,.timeline_{
+    height: 5rem;
+    width: 100%;display: flex;
+    justify-content: space-between;
+    align-items: center;
+color: white;
+
+}
+.profilepic{
+    background-image: url('https://picsum.photos/id/237/200/300');
+    height: 60vh !important;
+    width: 100%;
+border-radius: 5px;
+    background-size: cover;
+   
+
+}
+.right{
+    display: flex;
+    width: 100%;
+    flex-direction: row !important;
+}
+.left{
+    display: flex;
+    width: 100%;
+    flex-direction: row !important;
+}
+.profilepics{
+    background-color: blue;
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://picsum.photos/200');
+}
+@media screen and (max-width: 1200px) {
+    .right{
+        display: flex;
+        width: 40%;
+        flex-direction: column !important;
+    }
+    .timelinep{
+        z-index: 10;
+        margin-top:100px;
+    }
+   .timeline_{
+       height: 2rem !important;
+       width: 20% !important;
+   }
+    .timeline{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem !important;
+        flex-direction: row;
+    }
+    .timelinep{
+        height: 150px !important;
+        border-radius: 100px !important;
+        width:100px !important;
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    .timeline{
+        height: 5rem;
+        width: 100%;
+        flex-direction: column;
+    }
+    .profilepics{
+        background-color: blue;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        z-index: 1;
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size: contain;
+        z-index: 10;
+        margin-top: 10;
+        border-radius: 100px;
+    }
+    .main{
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0px !important;
+        width: 100%;
+    }
+    .username{
+        font-size: xx-small;
+        margin-top: 0.01px;
+
+    }
+    .name{
+        font-size: x-small;
+    }
+    .nav{
+justify-content: space-between;
+    }
+    .icons{
+        font-size: 10px !important;
+    }
+.left{
+    display: flex;
+    flex-direction: column !important;
+width: 40%;
+}
+}

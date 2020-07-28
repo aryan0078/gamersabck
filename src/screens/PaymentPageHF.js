@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import SideHeader from '../components/SideHeader'
-import Payment from './Payment'
-import { Layout,Menu,Modal } from 'antd';
-import styles from './Layout.module.css'
+import React, { Component } from "react";
+import SideHeader from "../components/SideHeader";
+import Payment from "./Payment";
+import { Layout, Menu, Modal } from "antd";
+import styles from "./Layout.module.css";
 
 import TopHeader from '../components/TopHeader';
 import { Form, Input, Button, Checkbox,Drawer } from 'antd';
@@ -12,36 +12,43 @@ import CFooter from '../components/footer'
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class PaymentP extends Component {
-    constructor(props){
-        super(props)
-        this.state={login:false,collapsed:true}
+  constructor(props) {
+    super(props);
+    this.state = { login: false, collapsed: true };
+  }
+  login = () => {
+    if (this.state.login) {
+      this.setState({ login: false });
+    } else {
+      this.setState({ login: true });
     }
-    login=()=>{
-      if(this.state.login){
-        this.setState({login:false})
-      }else{
-      this.setState({login:true})
-    }}
-    toggle = () => {
-        this.setState({
-          collapsed: !this.state.collapsed,
-        });
-      };
+  };
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
+  };
   render() {
     return (
-        <Layout>
-        <Header  style={{ display:'flex',justifyContent:'flex-start',position: 'fixed', zIndex: 1001, width: '100%',backgroundColor:'#121212' }}>
-        <div className={styles.logo}  ></div>
-         <TopHeader/>
-         <button className={styles.createevent} onClick={this.login}>
-  Create An Event
-</button>
-         <button className={styles.loginregbtn} onClick={this.login}>
-  Login/Register
-</button>
-
-      
-
+      <Layout>
+        <Header
+          style={{
+            display: "flex",
+            justifyContent: "flex-start",
+            position: "fixed",
+            zIndex: 1001,
+            width: "100%",
+            backgroundColor: "#121212",
+          }}
+        >
+          <div className={styles.logo}></div>
+          <TopHeader />
+          <button className={styles.createevent} onClick={this.login}>
+            Create An Event
+          </button>
+          <button className={styles.loginregbtn} onClick={this.login}>
+            Login/Register
+          </button>
         </Header>
         <Layout>
           <div>
@@ -124,26 +131,22 @@ export default class PaymentP extends Component {
           <Checkbox style={{color:"white"}}>REMEMBER ME</Checkbox>
         </Form.Item>
 
-        <a className={styles.loginformforgot} href="">
-          Forgot password
-        </a>
-      </Form.Item>
+                      <a className={styles.loginformforgot} href="">
+                        Forgot password
+                      </a>
+                    </Form.Item>
 
-      <Form.Item>
-        <button className={styles.loginbutton}>
-          LOGIN
-        </button>
-         <a className={styles.loginformreg}> Or Register now</a>
-      </Form.Item>
-    </Form>
-       </div>
-    </div>
-</Modal>
-      <CFooter/>
-      </Content>
-  
+                    <Form.Item>
+                      <button className={styles.loginbutton}>LOGIN</button>
+                      <a className={styles.loginformreg}> Or Register now</a>
+                    </Form.Item>
+                  </Form>
+                </div>
+              </div>
+            </Modal>
+            <CFooter />
+          </Content>
         </Layout>
-    
       </Layout>
     );
   }

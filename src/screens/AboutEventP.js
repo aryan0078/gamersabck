@@ -16,17 +16,12 @@ export default class PaymentP extends Component {
         super(props)
         this.state={login:false,collapsed:true,visible:false}
     }
-    login=()=>{
-      if(this.state.login){
-        this.setState({login:false})
-      }else{
-      this.setState({login:true})
-    }}
-    toggle = () => {
-        this.setState({
-          collapsed: !this.state.collapsed,
-        });
-      };
+  };
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
+  };
   render() {
     return (
         <Layout>
@@ -125,26 +120,22 @@ export default class PaymentP extends Component {
           <Checkbox style={{color:"white"}}>REMEMBER ME</Checkbox>
         </Form.Item>
 
-        <a className={styles.loginformforgot} href="">
-          Forgot password
-        </a>
-      </Form.Item>
+                      <a className={styles.loginformforgot} href="">
+                        Forgot password
+                      </a>
+                    </Form.Item>
 
-      <Form.Item>
-        <button className={styles.loginbutton}>
-          LOGIN
-        </button>
-         <a className={styles.loginformreg}> Or Register now</a>
-      </Form.Item>
-    </Form>
-       </div>
-    </div>
-</Modal>
-      <CFooter/>
-      </Content>
-  
+                    <Form.Item>
+                      <button className={styles.loginbutton}>LOGIN</button>
+                      <a className={styles.loginformreg}> Or Register now</a>
+                    </Form.Item>
+                  </Form>
+                </div>
+              </div>
+            </Modal>
+            <CFooter />
+          </Content>
         </Layout>
-    
       </Layout>
     );
   }

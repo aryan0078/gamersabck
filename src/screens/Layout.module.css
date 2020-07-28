@@ -63,6 +63,7 @@
     .lableoflogin{
         color:white;
 
+  font-size: xx-large;
 
         font-size: xx-large;
        
@@ -105,43 +106,44 @@ background-color: transparent;
     border-radius: 25px;
     flex-direction: row;
 }
-.loginformforgot{
-    font-size: 15px;
-    color: #AA0020;
-    font-weight: bolder;
+.login {
+  background-color: transparent;
+  display: flex;
+  height: 85vh;
+  z-index: 11000;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 25px;
+  flex-direction: row;
 }
-.loginformreg{
-    font-size: 12px;
-    color: #AA0020;
-    font-weight: bolder;
+.loginformforgot {
+  font-size: 15px;
+  color: #aa0020;
+  font-weight: bolder;
 }
-.loginbutton{
-    color: white;
-    background-color: #AA0020;
-    border-width: 0px;
-    border-radius: 5px;
-    width: 40%;
-    height: 50px;
-    font-size: medium;
+.loginformreg {
+  font-size: 12px;
+  color: #aa0020;
+  font-weight: bolder;
 }
-.image{display: flex;
-width: 50%;
-color: white;
-height: 100%;
-justify-content: center;
-align-items: center;
-background-size: cover;
-background: url('../components/b1.jpg');
+.loginbutton {
+  color: white;
+  background-color: #aa0020;
+  border-width: 0px;
+  border-radius: 5px;
+  width: 40%;
+  height: 50px;
+  font-size: medium;
 }
-.loginholder{
-    display: flex;
-    width: 50%;
-    flex:1;
-    color: white;
-    flex-direction: column;
+.image {
+  display: flex;
+  width: 50%;
+  color: white;
+  height: 100%;
   justify-content: center;
-    align-items: center;
-    background-color: #121212;
+  align-items: center;
+  background-size: cover;
+  background: url("../components/b1.jpg");
 }
 .loginregbtn{
     position: relative;
@@ -221,9 +223,6 @@ width: 100%;
     }.loginregbtn{
      display: none;
      
-    }.textontop{
-
-       
     }
     .drawer{
         background-color: transparent;

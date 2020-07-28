@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 select:active, select:hover {
   outline: none
 }
@@ -57,6 +58,9 @@ body::-webkit-scrollbar-thumb {
   display: none !important;
 }.ant-select,.ant-select-lg,.ant-select-single,.ant-select-show-arrow{
 width: 40vh !important;
+}
+.anticon ,.anticon-delete{
+  font-size: 15px !important;
 }
 .ant-btn ,.ant-btn-primary,.ant-btn-dangerous{
 margin: 0em !important;

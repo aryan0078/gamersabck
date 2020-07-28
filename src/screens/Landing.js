@@ -72,23 +72,32 @@ export default class Landing extends Component {
     return (
       <Layout>
         <Header style={{ display: 'flex', justifyContent: 'flex-start', position: 'fixed', zIndex: 1001, width: '100%', backgroundColor: '#121212' }}>
-          <div className={styles.logo}  ></div>
-          <TopHeader />
-          <button className={styles.drawer} onClick={() => { if (this.state.visible) { this.setState({ visible: false }) } else { this.setState({ visible: true }) }; }}><MenuOutlined /></button>
-          <button className={styles.createevent} onClick={this.login}>
-            Create An Event
+          <div className={styles.top}>
+            <div className={styles.brandingstuff}>
+
+              <div className={styles.logo}  ></div>
+              <div className={styles.labels}>
+                <label className={styles.l1}>Gamersback</label>
+                <label className={styles.l2}>Unleash the gamer in you</label></div>
+            </div>
+            <div className={styles.log}>
+              <button className={styles.drawer} onClick={() => { if (this.state.visible) { this.setState({ visible: false }) } else { this.setState({ visible: true }) }; }}><MenuOutlined /></button>
+              <button className={styles.createevent} onClick={this.login}>
+                Create An Event
 </button>
-          {localStorage.getItem('fullname') ? <div className={styles.user}> <Dropdown overlay={this.menu}>
-            <a className={styles.drop} >
-              {localStorage.getItem('fullname')} <DownOutlined />
-            </a>
-          </Dropdown> </div> :
-            <button className={styles.loginregbtn} onClick={this.login}>
-              Login/Register
+              {localStorage.getItem('fullname') ? <div className={styles.user}> <Dropdown overlay={this.menu}>
+                <a className={styles.drop} >
+                  <Avatar size={40} icon={<UserOutlined />} />
+                  {localStorage.getItem('fullname')}
+
+                </a>
+              </Dropdown> </div> :
+                <button className={styles.loginregbtn} onClick={this.login}>
+                  Login/Register
    </button>}
 
-
-
+            </div>
+          </div>
 
         </Header>
         <Layout>

@@ -553,7 +553,7 @@ flex-direction: row;
 @media screen and (max-width: 1200px) {
 
     .main{
-        padding-left: 20px;
+     
         padding-right: 20px;
         padding-top: 100px;
         overflow: hidden;

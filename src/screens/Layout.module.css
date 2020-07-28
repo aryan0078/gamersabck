@@ -1,12 +1,47 @@
 .logo{
     width: 4em;
-    height: 3.2em;
-    top:10px;
-    left: -3em;
-    position: relative;
+    height: 3.8em;
+ position:absolute;
+ left: 0px;
     background-image: url('../components/new.png');
     background-size: cover;
     background-repeat: no-repeat;
+    }.labels{
+        justify-content: left;
+        text-align: left;
+        align-items: flex-start;
+        display: flex;
+        position: absolute;
+        left: 4rem;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+    .top{
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .l1,.l2{
+        font-size: smaller;
+        height: 15px;
+        margin: 0px !important;
+        padding: 0px;
+    }
+    .brandingstuff{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .log{
+        position: absolute;
+        overflow: hidden;
+        right: 0px;
+      
+     
+        display: flex;
+        flex-direction: row;
     }
     .eventname{
         font-size: medium;
@@ -117,7 +152,8 @@ background: url('../components/b1.jpg');
     font-family: mont;
     background-color: #121212;
 border-width: 0px;  
- 
+margin-right: 10px;
+
 }
 .createevent{
     display: flex;
@@ -129,7 +165,7 @@ border-width: 0px;
     border-width: 0px;
     align-self: flex-start;
     width: 160px;
-    height: 99%;
+    height: 65px !important;
     background-color: #AA0020;margin-right: 10px;
     justify-content: center;
     align-items: center;
@@ -137,13 +173,20 @@ border-width: 0px;
 }
 .dropitem{
     font-size: smaller;
-   
+
    color: black !important;
     border-radius: 2px;
 }
 .drop{
+   
+    height: 65px;
+width: 100%;
+    display: flex;
+    flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
     color: aliceblue;
-    font-size: small;
+    font-size: x-small;
 }
 .dropitem:hover{
     background-color: #AA0020;
@@ -157,17 +200,20 @@ border-width: 0px;
     color: white;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     display: flex;
     background-color: #292929;
     border-radius: 5px;
+    width: 200px;
+    
     height: 100%;
 }
 @media screen and (max-width: 1200px) {
     .user{
         display: none;
     }
-     .logo{
-   display: none;
+     .labels{
+  bottom: 40px;
     }
     .createevent{
         display: none;
@@ -176,7 +222,8 @@ border-width: 0px;
      display: none;
      
     }.textontop{
-        font-size: x-small;
+
+       
     }
     .drawer{
         background-color: transparent;
@@ -191,6 +238,6 @@ border-width: 0px;
         justify-content: center;
         align-items: center;
 margin-top: 5px;
-margin-right: -40px;
+margin-right: 20px;
     }
   }

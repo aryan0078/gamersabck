@@ -1,5 +1,5 @@
 .main{
-
+overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -434,6 +434,7 @@ padding-right: 10%;
     .booknowf{
         width: 6rem;
         height: 3rem;
+        right: 10px;
         font-size: small;
     }
     .imggalleryh1_{

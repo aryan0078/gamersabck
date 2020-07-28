@@ -122,22 +122,47 @@ export default class Landing extends Component {
               <SideHeader />
             </Sider></div>
           <Content >
+            {this.props.cp ?
+              <Drawer
+                title="f"
+                placement="right"
+                collapsible={true}
+                visible={this.state.visible}
+              >
+                <div className={styles.cevent}>
+                  Overview
+           </div>
+                <div className={styles.cevent}>
+                  Booked Tickets
+           </div>
+                <div className={styles.cevent}>
+                  Cancellation
+           </div>
+                <div className={styles.cevent}>
+                  Current Events
+           </div>
+                <div className={styles.cevent}>
+                  Create Events
+           </div>
+                <div className={styles.cevent}>
+                  Previous Events
+           </div></Drawer>
+              :
+              <Drawer
+                title="Basic Drawer"
+                placement="right"
+                closable={false}
 
-            <Drawer
-              title="Basic Drawer"
-              placement="right"
-              closable={false}
-
-              visible={this.state.visible}
-            >
-              {localStorage.getItem('fullname') ? <div className={styles.b1m}>  <Avatar size={64} icon={<UserOutlined />} /> {localStorage.getItem('fullname')} </div> :
-                <div className={styles.b1m} onClick={() => { this.setState({ login: true, visible: false }); }}>
-                  Login/Register
+                visible={this.state.visible}
+              >
+                {localStorage.getItem('fullname') ? <div className={styles.b1m}>  <Avatar size={64} icon={<UserOutlined />} /> {localStorage.getItem('fullname')} </div> :
+                  <div className={styles.b1m} onClick={() => { this.setState({ login: true, visible: false }); }}>
+                    Login/Register
              </div>}
-              <div className={styles.cevent}>
-                Create Event
+                <div className={styles.cevent}>
+                  Create Event
              </div>
-            </Drawer>
+              </Drawer>}
             {this.state.login ? <Login visible={true} /> : null}
 
 

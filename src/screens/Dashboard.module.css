@@ -29,9 +29,12 @@
 .content{
  border-radius: 5px;
     width: 100%;
-    margin-top: 2%;
+   margin-top: 2%;
+   border-radius: 5px;
     background-color: #121212;
     display: flex;
+    height: auto;
+    margin-bottom: 5%;
 }
 .username{
     font-size: small;
@@ -82,6 +85,8 @@ padding-bottom: 15px;
 
 @media screen and (max-width: 1200px) {
     
-    
+    .nav{
+        display: none;
+    }
 
 }

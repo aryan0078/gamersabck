@@ -83,8 +83,8 @@ export default class Landing extends Component {
             <div className={styles.log}>
               <button className={styles.drawer} onClick={() => { if (this.state.visible) { this.setState({ visible: false }) } else { this.setState({ visible: true }) }; }}><MenuOutlined /></button>
               <button className={styles.createevent} onClick={this.login}>
-                Create An Event
-</button>
+                <Link to='/createevent'>  <a style={{ color: 'white', fontSize: 'small' }}>   Create An Event</a></Link>
+              </button>
               {localStorage.getItem('fullname') ? <div className={styles.user}> <Dropdown overlay={this.menu}>
                 <a className={styles.drop} >
                   <Avatar size={40} icon={<UserOutlined />} />

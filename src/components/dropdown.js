@@ -12,9 +12,9 @@ function NavItem(props) {
 
   return (
     <ul className="navitem">
-      <a onClick={() => setOpen(!open)} className={styles.title}>
+      <div onClick={() => setOpen(!open)} className={styles.title}>
         {props.title}
-      </a>
+      </div>
 
       {open && props.children}
     </ul>
@@ -25,13 +25,11 @@ function DropdownMenu() {
 
   function DropdownItem(props) {
     return (
-      <a
-        href="#"
+      <div
         className={styles.menuitem}
-        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
-      >
+        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
         {props.children}
-      </a>
+      </div>
     );
   }
 
@@ -48,7 +46,7 @@ function DropdownMenu() {
 function Drop(props) {
   return (
     <NavItem title={props.title}>
-      <DropdownMenu></DropdownMenu>
+      <DropdownMenu />
     </NavItem>
   );
 }

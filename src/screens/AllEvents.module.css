@@ -7,6 +7,14 @@
   padding-right: 5%;
   background-color: black;
 }
+.pagenav {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  display: flex;
+  justify-content: start;
+}
 .c {
   display: flex;
   flex-direction: column;
@@ -27,11 +35,12 @@
 
   margin-top: -5%;
   border-radius: 10px;
-  width: 95%;
+  width: 100%;
 }
 .titlenfilter {
   display: flex;
   width: 100%;
+  padding: 0px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -108,13 +117,7 @@
   border-radius: 10px;
   width: 104%;
 }
-.titlenfilter {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .cimg {
   height: 18em;
   width: 100%;
@@ -174,6 +177,7 @@
   display: flex;
   height: 100%;
   margin-bottom: 1%;
+  width: auto;
 }
 .fbutton_ {
   background-color: #0000;
@@ -183,6 +187,8 @@
   font-family: mont;
   font-size: small;
   display: flex;
+  width: 80%;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -199,7 +205,6 @@
 .title {
   color: #ffffff;
   font-size: 40px;
-  padding-left: 2%;
 }
 .entertainmentholder {
   flex-direction: column;
@@ -217,12 +222,13 @@
   display: flex;
   flex-direction: row;
 }
+
 .searchs {
   background-color: #ca0c2a;
   border: none;
   color: white;
   width: 10rem;
-  height: 7vh;
+  height: 4rem;
   border-radius: 10px;
   margin-top: 5%;
 }
@@ -252,16 +258,20 @@
   }
   .entertainmentholder {
     flex-direction: column;
+    margin-left: -10px;
+    margin-right: 0px;
   }
   .row1 {
     flex-direction: column;
     padding-left: 5%;
   }
   .main {
+    overflow: hidden;
     padding-top: 15%;
-    padding-left: 5% !important;
+
     flex-direction: column;
-    padding-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -269,8 +279,9 @@
     background-color: #ca0c2a;
     border: none;
     color: white;
-    width: 17rem;
-    height: 7vh;
+    width: 100%;
+    margin-left: 0px;
+    height: auto;
     border-radius: 10px;
     margin-top: 5%;
   }
@@ -278,9 +289,11 @@
     width: 100%;
     padding: 0px;
     flex-direction: column;
-    padding: 10%;
-    height: 50vh;
-    margin-bottom: 5%;
+    padding: 5%;
+
+    height: auto;
+    margin-left: 0px;
+    margin-right: 10px;
     justify-content: center;
     align-items: flex-start;
   }

@@ -3,15 +3,27 @@ import Landing from './Landing'
 import styles from './Dashboard.module.css'
 import { Tabs } from 'antd';
 import { HomeOutlined, SecurityScanOutlined, ShoppingOutlined, DeleteOutlined, UnorderedListOutlined, CreditCardOutlined } from '@ant-design/icons'
-import { Redirect } from 'react-router-dom';
+import { Redirect, NavLink } from 'react-router-dom';
+import Overview from './Dashboard/Overview';
+import BookedTickets from "./Dashboard/BookedTickets";
+import CurrentEvents from "./Dashboard/CurrentEvents";
 const { TabPane } = Tabs;
 export default class Dashboard extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            page: <Overview />
+        }
+    }
     callback = (key) => {
         console.log(key)
     }
     change = (e) => {
-        if (e.target.innerText == 'Timeline') {
+        if (e.target.innerText == 'Booked Tickets') {
+            this.setState({ page: <BookedTickets /> })
 
+        } else if (e.target.innerText == 'Current Events') {
+            this.setState({ page: <CurrentEvents /> })
         }
     }
     render() {
@@ -20,57 +32,44 @@ export default class Dashboard extends Component {
         }
         return (
             <>
-                <Landing />
-                <div className={styles.main}>
-                    <div className={styles.profilepic}>
+                <Landing cp={true} />
 
-                    </div>
+                <div className={styles.main}>
+
 
                     <div className={styles.nav}>
-                        <div className={styles.left}>
-                            <div className={styles.timeline} key='3'>
-                                <HomeOutlined style={{ fontSize: '28px' }} />
-                                <h1 className={styles.name}>  Overview</h1>
-                            </div>
-                            <div className={styles.timeline} key='3'>
-                                <ShoppingOutlined style={{ fontSize: '28px' }} />
-                                <h1 className={styles.name}>  Booked Tickets</h1>
-                            </div>
-                            <div className={styles.timeline} key='3'>
-                                <DeleteOutlined style={{ fontSize: '28px' }} />
-                                <h1 className={styles.name}>Cancellation</h1>
-                            </div>
 
+                        <div className={styles.timeline} key='3' onClick={this.change}>
+                            <HomeOutlined style={{ fontSize: '20px' }} />
+                            <h1 className={styles.name}>  Overview</h1>
                         </div>
-                        <div className={styles.timelinep}>
-                            <div className={styles.profilepics}>
-                            </div>
-                            <h1 className={styles.name}> {localStorage.getItem('fullname')}</h1>
-                            <h1 className={styles.username}>{localStorage.getItem('username')}</h1>
-                            <h1 className={styles.username}>{localStorage.getItem('dob')}</h1>
-                            <h1 className={styles.username}>{localStorage.getItem('gender')}</h1>
+                        <div className={styles.timeline} key='3' onClick={this.change}>
+                            <ShoppingOutlined style={{ fontSize: '20px' }} />
+                            <h1 className={styles.name}>  Booked Tickets</h1>
                         </div>
-                        <div className={styles.right}>
-                            <div className={styles.timeline} key='3'>
-                                <SecurityScanOutlined style={{ fontSize: '28px' }} />
-                                <h1 className={styles.name}> Current Events</h1>
-                            </div>
-                            <div className={styles.timeline} onClick={this.change}>
-                                <CreditCardOutlined style={{ fontSize: '28px' }} />
-                                <h1 className={styles.name} value='1'>  Create Events</h1>
-                            </div>
+                        <div className={styles.timeline} key='3' onClick={this.change}>
+                            <DeleteOutlined style={{ fontSize: '20px' }} />
+                            <h1 className={styles.name}>Cancellation</h1>
+                        </div>
 
-                            <div className={styles.timeline} key='3'>
-                                <UnorderedListOutlined style={{ fontSize: '28px' }} />
-                                <h1 className={styles.name}>  Previous Events</h1>
-                            </div></div>
+
+                        <div className={styles.timeline} key='3' onClick={this.change}>
+                            <SecurityScanOutlined style={{ fontSize: '20px' }} />
+                            <h1 className={styles.name}> Current Events</h1>
+                        </div>
+                        <div className={styles.timeline} onClick={this.change}>
+                            <CreditCardOutlined style={{ fontSize: '20px' }} />
+                            <h1 className={styles.name} value='1'>  Create Events</h1>
+                        </div>
+
+                        <div className={styles.timeline} key='3' onClick={this.change}>
+                            <UnorderedListOutlined style={{ fontSize: '20px' }} />
+                            <h1 className={styles.name}>  Previous Events</h1>
+                        </div>
 
                     </div>
                     <div className={styles.content}>
-                        <div className={styles.row1}>
-                            <div className={styles.card1}></div>
-                            <div className={styles.card1}></div>
-                        </div>
+                        {this.state.page}
                     </div>
                 </div>
             </>

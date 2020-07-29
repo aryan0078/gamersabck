@@ -11,10 +11,12 @@ import CreateEventOrganiserDetails from "./CreateEventOrganiserDetails";
 import CreateEventBankDetails from "./CreateEventBankDetails";
 import CreateEventPlayerInfo from "./CreateEventPlayerInfo";
 import CreateEventAdditional from "./CreateEventAdditional";
+import Landing from "../Landing";
 
 const CreateEvent = () => {
   return (
     <BrowserRouter>
+      <Landing />
       <div className={styles.createEventWrapper}>
         <div className={styles.createEventBanner}>Let's Create Your Event</div>
         <div className={styles.createEventInnerWrapper}>

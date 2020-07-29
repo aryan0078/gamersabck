@@ -1,7 +1,6 @@
-
-.main{
-    overflow: hidden;
-    padding-top:7%;
+.main {
+  overflow: hidden;
+  padding-top: 7%;
   padding-left: 8%;
   padding-right: 6%;
   flex-direction: column;
@@ -10,79 +9,76 @@
   background-image: url("./assets/r6.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+
   width: 100%;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.dropbtn{
-text-align: left;
-padding: 0px;
-    background-color:#121212;
-    color:white;
-    border-width:0px;
+.dropbtn {
+  text-align: left;
+  padding: 0px;
+  background-color: #121212;
+  color: white;
+  border-width: 0px;
+}
+.emptyspace {
+  height: 10%;
+}
+.btitleholder {
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+  margin-bottom: -5%;
+}
+.animationtext {
+  color: #ca0c2a;
+  font-size: 57.5px;
+  font-weight: 700;
 
+  margin-left: 10px;
 }
-.emptyspace{
-   
-    height: 10%;
-}
-.btitleholder{
-    display: flex;
-    flex-direction: row;
-    align-self: start;
-    margin-bottom: -5%;
-}
-.animationtext{
-    color:#CA0C2A;
-    font-size: 57.5px;
-    font-weight: 700;
-  
+.title {
+  align-self: start;
 
-    margin-left:10px;
-}
-.title{
-    align-self: start;
-   
-    font-size: 15px;
-    font-weight: 600;
-  
-    color: white;
-}
-.btitle{
-    align-self: start;
-    display: inline-flex;
-    font-size: 57.5px;
-    font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
 
-    color: white;
-
+  color: white;
 }
-.searchbox{
- margin-bottom: 5em;
-    background-color: #121212;
-    width: 80%;
-    height: 130px;
-    flex-direction: row;
-    border-radius: 10px;
-    align-self: start;
-border-width: 0.5px;
+.btitle {
+  align-self: start;
+  display: inline-flex;
+  font-size: 57.5px;
+  font-weight: 700;
 
-border-style: solid;
- border-color: #4b4a4a;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+  color: white;
 }
-.whatholder{
-color: white;
-    position: relative;
-    width: 25%;
-    justify-content: center;
-    align-items: left;
-   
-    font-size: smaller;
-    text-align: left;
+.searchbox {
+  margin-bottom: 5em;
+  background-color: #121212;
+  width: 80%;
+  height: 130px;
+  flex-direction: row;
+  border-radius: 10px;
+  align-self: start;
+  border-width: 0.5px;
+
+  border-style: solid;
+  border-color: #4b4a4a;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.whatholder {
+  color: white;
+  position: relative;
+  width: 25%;
+  justify-content: center;
+  align-items: left;
+
+  font-size: smaller;
+  text-align: left;
 }
 
 .dropdown {
@@ -93,6 +89,7 @@ color: white;
 
 .dropitm {
   margin: 40px;
+
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -114,6 +111,7 @@ color: white;
   width: 100%;
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -188,6 +186,7 @@ color: white;
   display: flex;
   transition: all ease 0.5s;
   align-items: center;
+
   font-family: mont;
   margin-top: 10%;
   background: url("./assets/c.jpg");
@@ -196,6 +195,7 @@ color: white;
   width: 100%;
   height: 25em;
   border-radius: 10px;
+
   justify-content: center;
 }
 .dealofthedayholder:hover {
@@ -264,6 +264,13 @@ color: white;
   background-color: #0a0a0a;
   align-self: center;
 }
+.lableholder {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+
+  flex-direction: column;
+}
 .textcontainer {
   background-color: honeydew;
   width: 60%;
@@ -299,28 +306,6 @@ p {
   z-index: 1;
   width: 100%;
   margin-top: 8%;
-}
-p {
-  transition: all ease 1s;
-  font-family: mont;
-}
-.sellticketlongtext {
-  align-self: center;
-  justify-self: center;
-  font-size: x-large;
-  transition: all ease 1.5s;
-  font-size: large;
-  overflow: hidden;
-  width: 100%;
-  word-wrap: break-word;
-}
-.allthebuttons {
-  align-self: flex-start;
-  justify-self: end;
-  flex-direction: row;
-  z-index: 1;
-  width: 100%;
-  margin-top: 5%;
 }
 .viewallbtn {
   border-radius: 5px;
@@ -379,6 +364,10 @@ p {
   transform: translateY(-5px);
 }
 .blogsectionholder {
+  display: flex;
+  width: 100%;
+  position: relative;
+
   display: flex;
   width: 100%;
   position: relative;
@@ -479,10 +468,66 @@ p {
 
   margin-bottom: 5%;
 
+  padding: 3%;
+  margin-right: 3%;
+  display: flex;
+  border-radius: 10px;
   flex-direction: column;
-
-  align-self: center;
   justify-content: center;
+  align-items: flex-start;
+}
+.card2blog {
+  background-color: violet;
+  width: 50%;
+  background-image: url("../components/b1.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  height: 35em;
+  margin-right: 2%;
+}
+.blogbtn1 {
+  background-color: #ca0c2a;
+  width: 10em;
+  border-width: 0px;
+  border-radius: 5px;
+  color: white;
+  height: 2em;
+  font-size: small;
+  margin-bottom: 5%;
+}
+.blogcardt1 {
+  font-weight: 500;
+  color: white;
+  font-size: 30px;
+  font-family: mont;
+}
+.blogcardt2 {
+  font-weight: lighter;
+  color: white;
+  font-size: 18px;
+  font-family: mont;
+  line-height: 28px;
+}
+.readmorebtn {
+  border: 1px solid #c5c5c5;
+  background-color: black;
+  width: 10em;
+  height: 3em;
+  border-width: 0px;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+  position: relative;
+  margin-top: 9%;
+  transition: all 0.5s ease;
+}
+.readmorebtn:hover {
+  transform: translateY(-5px);
+}
+.testnomialsholder {
+  display: flex;
+  width: 100%;
+  position: relative;
 
   margin-top: 5%;
 }
@@ -515,6 +560,31 @@ p {
   flex-direction: column;
   margin: 0.5%;
 
+  flex-direction: column;
+
+  align-self: center;
+  justify-content: center;
+
+  margin-top: 5%;
+}
+.testnomialcardholder {
+  display: flex;
+  flex-direction: row;
+  width: 20em;
+  height: 20em;
+  border-radius: 10px;
+}
+.dropdown {
+  background-color: black;
+  width: 15em;
+}
+.testnomialcards {
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5%;
+
   height: 17em;
   justify-content: center;
   align-items: left;
@@ -527,6 +597,7 @@ p {
   border: none;
   color: white;
   width: 20vh;
+  margin-bottom: 5%;
   height: 10vh;
   margin-right: 5%;
   margin-top: 5%;
@@ -549,15 +620,21 @@ p {
 .alltestcardholder {
   margin-top: 5%;
 }
+
 @media screen and (max-width: 1200px) {
   .main {
-    padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
+    overflow: hidden;
     background-image: url("./assets/r6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .btitle,
+  .animationtext {
+    margin-top: 3%;
+  }
+
   .btitle,
   .animationtext,
   .entertainmenl2,
@@ -576,104 +653,28 @@ p {
     background-color: #ca0c2a;
     border: none;
     color: white;
-    width: 20vh;
-    margin-bottom: 5%;
-    height: 10vh;
-    margin-right: 5%;
+    width: 100%;
+    height: 7vh;
+    border-radius: 10px;
     margin-top: 5%;
-}
-.row1test{
-display: flex;
-width: 100%;
-flex-direction: row;
-}
-.imgstarandname{
-display: flex;
-margin-top: 2.5%;
-flex-direction: row;
-}
-.nametimestar{
-    font-family: mont;
-    color: white;
-    margin-left: 5%;
-}
-.alltestcardholder{
-    margin-top:5%;
-}
-}
-@media screen and (max-width: 1200px) {
-
-    .main{
-     
-        padding-right: 20px;
-        padding-top: 100px;
-        overflow: hidden;
-        background-image: url('./assets/r6.jpg');
-background-size:cover;
-background-repeat: no-repeat;
-   
-    }
-    .btitle,.animationtext{
-        margin-top: 3%;
-    }
-    
-    .btitle,.animationtext,.entertainmenl2,.entertainmenl2{
-        font-size: xx-large;
-        
-    }.upcoming,.entertainmenl2{
-        font-size: medium;
-    }
-    .grabdealnowbtn{
-        width: 60%;
-        justify-self: flex-end;
-    }
-    .searchs{
-        background-color: #CA0C2A;
-        border: none;
-        color: white;
-        width: 100%;
-        height: 7vh;
-        border-radius: 10px;
-        margin-top: 5%;
-    }
-    .cardholder{
-        padding: 0px;
-    }
-    .searchbox{
-        width: 100%;
-        padding: 0px;
-        flex-direction: column;
-padding:10%;
-height:90%;
-margin-bottom: 5%;
-        justify-content:center;
-        align-items: flex-start;
-    }
-    .dropdown{
-        font-size: x-large
-    }
-    .row1{
-        flex-direction: column;
-    }
-    .sideimageofsell{
-       display: none;
-    }
-    .textcontainer{
-        width: 100%;
-    }
-    .allthebuttons{
-        flex-direction: row;
-        position: relative;
-        bottom: 0px;
-        margin-top: 50%;
-        margin-bottom: 0px !important;
-        padding-bottom: 0px !important;
-        padding: 0px;
-    }
-    .sellticketbutton{
-        font-size: 8px;
-    }
-.cardhoderblog{
+  }
+  .cardholder {
+    padding: 0px;
+  }
+  .searchbox {
+    width: 100%;
+    padding: 0px;
+    flex-direction: column;
+    padding: 10%;
+    height: 90%;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .dropdown {
+    font-size: x-large;
+  }
+  .row1 {
     flex-direction: column;
   }
   .sideimageofsell {
@@ -696,34 +697,6 @@ margin-bottom: 5%;
   }
   .cardhoderblog {
     flex-direction: column;
-    padding: 10%;
-    height: 35vh;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .dropdown {
-    font-size: x-large;
-  }
-  .row1 {
-    flex-direction: column;
-  }
-  .sideimageofsell {
-    display: none;
-  }
-  .textcontainer {
-    width: 100%;
-  }
-  .allthebuttons {
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 0px;
-    margin-top: 40%;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-    padding: 0px;
-  }
-  .cardhoderblog {
-    flex-direction: column;
     width: 100%;
   }
   .card1blog,
@@ -734,10 +707,15 @@ margin-bottom: 5%;
   }
   .row1test {
     flex-direction: column;
-}
-.testnomialcards{
+  }
+  .testnomialcards {
     width: 100%;
     padding: 3%;
     overflow: hidden;
     padding: 5%;
+  }
+  .viewallbtn {
+    width: 100%;
+    font-size: x-small;
+  }
 }

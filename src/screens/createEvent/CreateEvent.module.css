@@ -13,6 +13,7 @@
 .createEventWrapper {
   width: 100%;
   height: 100vh;
+  padding-top: 4%;
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -440,6 +441,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 1200px) {
+  .createEventWrapper {
+    padding-top: 15%;
+  }
   .playerInfoOptionCard {
     width: 45%;
   }

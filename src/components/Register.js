@@ -99,61 +99,47 @@ export default class Register extends Component {
         const error = this.state.error
         return (
             <>
-                <Modal visible={this.state.serror} footer={null} onCancel={() => this.setState({ serror: false })}>
-                    <div style={{ color: 'white' }}>
-                        Please Fill all things
-               </div>
-                </Modal>
-                <Modal
-                    visible={this.state.visible}
-                    style={{ borderRadius: '26px', top: '20', backgroundColor: 'transparent' }}
-                    afterClose={() => window.location.reload()}
-                    onCancel={() => this.setState({ visible: false })}
-                    bodyStyle={{ padding: '0' }}
-                    footer={null}
-                    width={620}
 
-                >
-                    <div className={styles.main}>
+                <div className={styles.main}>
 
-                        <div className={styles.title}>
-                            <h1>Welcome User</h1>
-                            <p>Welcome to gamersback</p>
-                        </div>
-                        <div className={styles.login}>
-                            <label>Username</label>
-                            <input className={styles.inp} value={this.state.username} onChange={(e) => { this.setState({ username: e.target.value }); this.usernamecheck(e.target.value) }} />
-                            {this.state.exists ? <label className={styles.error}>{this.state.errorm}</label> : null}
-                        </div>
-                        <div className={styles.login}>
-                            <label>Email</label>
-                            <input className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
+                    <div className={styles.title}>
+                        <h1>Welcome User</h1>
+                        <p>Welcome to gamersback</p>
+                    </div>
+                    <div className={styles.login}>
+                        <label>Username</label>
+                        <input className={styles.inp} value={this.state.username} onChange={(e) => { this.setState({ username: e.target.value }); this.usernamecheck(e.target.value) }} />
+                        {this.state.exists ? <label className={styles.error}>{this.state.errorm}</label> : null}
+                    </div>
+                    <div className={styles.login}>
+                        <label>Email</label>
+                        <input className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
 
-                        </div>
-                        <div className={styles.login} >
-                            <Dropdown overlay={this.menu}>
-                                <a className={styles.gender} onClick={e => e.preventDefault()}>
-                                    {this.state.gender} <DownOutlined />
-                                </a>
-                            </Dropdown>
-                            <DatePicker style={{ color: 'white' }} placeholder='DOB' onChange={(b, f) => this.setState({ date: f })} />
-                        </div>
-                        <div className={styles.login}>
-                            <label>Password</label>
-                            <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
-                        </div>
-                        <div className={styles.login}>
-                            <label>Full Name</label>
-                            <input className={styles.inp} value={this.state.fullname} onChange={(e) => this.setState({ fullname: e.target.value })} />
-                        </div>
-                        <div className={styles.login}>
-                            {this.state.loading ? <Spin indicator={this.antIcon} /> : <button onClick={this.reg} className={styles.reg}>SignUp </button>}
-
-                        </div>
+                    </div>
+                    <div className={styles.login} >
+                        <Dropdown overlay={this.menu}>
+                            <a className={styles.gender} onClick={e => e.preventDefault()}>
+                                {this.state.gender} <DownOutlined />
+                            </a>
+                        </Dropdown>
+                        <DatePicker style={{ color: 'white' }} placeholder='DOB' onChange={(b, f) => this.setState({ date: f })} />
+                    </div>
+                    <div className={styles.login}>
+                        <label>Password</label>
+                        <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+                    </div>
+                    <div className={styles.login}>
+                        <label>Full Name</label>
+                        <input className={styles.inp} value={this.state.fullname} onChange={(e) => this.setState({ fullname: e.target.value })} />
+                    </div>
+                    <div className={styles.login}>
+                        {this.state.loading ? <Spin indicator={this.antIcon} /> : <button onClick={this.reg} className={styles.reg}>SignUp </button>}
 
                     </div>
 
-                </Modal>
+                </div>
+
+
             </>
         )
     }

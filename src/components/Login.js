@@ -115,42 +115,33 @@ export default class Login extends Component {
         return (
             <>
 
-                <Modal
-                    visible={this.state.login}
-                    style={{ borderRadius: '26px', top: '30vh', backgroundColor: 'transparent' }}
 
-                    onCancel={() => { this.setState({ login: false }) }}
-                    bodyStyle={{ padding: '0' }}
-                    footer={null}
-                    width={420}
+                <div className={styles.mainl}>
 
-                >
-                    <div className={styles.mainl}>
-
-                        <div className={styles.title}>
-                            <h1>Welcome Back</h1>
-                            <p>Welcome to gamersback</p>
-                        </div>
-
-                        <div className={styles.login}>
-                            <label>Email</label>
-                            <input className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
-
-                        </div>
-
-                        <div className={styles.login}>
-                            <label>Password</label>
-                            <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
-                        </div>
-
-
-                        {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}
-                        <button onClick={() => this.setState({ register: true })} className={styles.reg}>Register </button>
-
-                        {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <GoogleOutlined style={{ fontSize: '25px', color: 'white' }} onClick={this.glogin} />}
+                    <div className={styles.title}>
+                        <h1>Welcome Back</h1>
+                        <p>Welcome to gamersback</p>
                     </div>
 
-                </Modal>
+                    <div className={styles.login}>
+                        <label>Email</label>
+                        <input className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
+
+                    </div>
+
+                    <div className={styles.login}>
+                        <label>Password</label>
+                        <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+                    </div>
+
+
+                    {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}
+                    <button onClick={() => this.setState({ register: true })} className={styles.reg}>Register </button>
+
+                    {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <GoogleOutlined style={{ fontSize: '25px', color: 'white' }} onClick={this.glogin} />}
+                </div>
+
+
             </>
         )
     }

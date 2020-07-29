@@ -1,0 +1,27 @@
+.main{
+    width: 100%;
+    background-color: #121212;
+    padding: 5%;
+}
+.navs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+}
+.login{
+display: flex;
+
+   
+margin-right: 10px;
+}
+.name{
+    color: grey;
+    font-size: medium;transition: all ease 0.5s;
+}
+.namec{
+    font-size: medium;
+    border-bottom: white 1px solid;
+    color: white;transition: all ease 0.5s;
+}

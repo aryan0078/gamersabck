@@ -4,7 +4,7 @@ import Home from './Home'
 import { Layout, Modal } from 'antd';
 import styles from './Layout.module.css'
 import { Avatar } from 'antd';
-
+import Auth from '../components/auth'
 import TopHeader from '../components/TopHeader';
 import Login from "../components/Login";
 import Register from "../components/Register";
@@ -68,7 +68,11 @@ export default class Landing extends Component {
     });
   };
   render() {
-
+    if (this.state.login) {
+      return (<>
+        <Landing />
+        <Auth visible={true} /></>)
+    }
     return (
       <Layout>
         <Header style={{ display: 'flex', justifyContent: 'flex-start', position: 'fixed', zIndex: 1001, width: '100%', backgroundColor: '#121212' }}>
@@ -163,7 +167,7 @@ export default class Landing extends Component {
                   Create Event
              </div>
               </Drawer>}
-            {this.state.login ? <Login visible={true} /> : null}
+            {this.state.login ? <Auth visible={true} /> : <Auth visible={false} />}
 
 
           </Content>

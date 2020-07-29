@@ -21,6 +21,7 @@ export default class Home extends Component {
         "After the event was created you can add tickets. An event can have multiple ticket types. You can add the amount of tickets available and the date your audience can start buying them and a date when the sale ends.",
     };
   }
+
   datac = e => {
     if (e.target.value === "0") {
       this.setState({

@@ -1,21 +1,55 @@
 .main{
     width: 100%;
     background-color: #121212;
-    padding: 5%;
+  padding-top: 5%;
+  overflow: visible;
+    
 }
 .navs{
+    overflow: visible;
+    overflow-y: visible;
+    padding-right: 25%;
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-end;
 }
 .login{
+    overflow: visible;
+
 display: flex;
 
    
 margin-right: 10px;
+}.content{
+    width: 50%;
 }
+.contenth{
+    height: 100%;
+    width: 100%;
+
+  
+  padding: 0px;  display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.simg{
+position: relative;
+top: -70px;
+
+    height: 37rem !important;
+    background-image: url('./b.jpg');
+    width: 50%;
+    margin-bottom: -70px;
+    display: flex;
+
+border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
 .name{
     color: grey;
     font-size: medium;transition: all ease 0.5s;
@@ -24,4 +58,25 @@ margin-right: 10px;
     font-size: medium;
     border-bottom: white 1px solid;
     color: white;transition: all ease 0.5s;
+}
+.gender{
+    width: 50%;
+    display: flex;
+    padding:2%;
+    background-color: #222288;
+}
+@media screen and (max-width: 1200px) {
+    .navs{
+        justify-content: center;
+        padding-right: 0px;
+    }
+    .main{
+        padding-top: 10%;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .simg{
+        display: none;
+
+    }
 }

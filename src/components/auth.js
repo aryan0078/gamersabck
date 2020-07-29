@@ -20,10 +20,12 @@ export default class Auth extends Component {
     render() {
         return (
             <Modal
+                width={740}
                 bodyStyle={{ padding: '0' }}
-                style={{ backgroundColor: 'transparent' }}
+                style={{ backgroundColor: 'transparent', overflow: 'visible' }}
                 visible={this.state.visible} footer={null} onCancel={() => this.setState({ visible: false })}>
                 <div className={styles.main}>
+
                     <div className={styles.navs}>
                         <div className={styles.login} onClick={this.cp}>
                             <h1 className={this.state.cp ? styles.namec : styles.name}>Login</h1>
@@ -31,9 +33,13 @@ export default class Auth extends Component {
                         <div className={styles.login} onClick={this.cp}>
                             <h1 className={this.state.cp ? styles.name : styles.namec}>Signup</h1>
                         </div>
-                    </div><div className={styles.content}>
-                        {this.state.page}
                     </div>
+                    <div className={styles.contenth}>
+                        <div className={styles.simg}>
+                        </div>
+                        <div className={styles.content}>
+                            {this.state.page}
+                        </div></div>
                 </div>
 
             </Modal>

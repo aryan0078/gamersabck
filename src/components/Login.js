@@ -5,7 +5,7 @@ import styles from './Register.module.css'
 import firebase from 'firebase'
 import { Spin } from 'antd';
 import { useAsync } from 'react-async';
-import { LoadingOutlined, GoogleOutlined } from '@ant-design/icons';
+import { LoadingOutlined, GoogleOutlined, UserOutlined, LockOutlined } from '@ant-design/icons';
 
 import Register from './Register';
 import { Redirect } from 'react-router-dom';
@@ -20,7 +20,7 @@ export default class Login extends Component {
 
         console.log(log)
         this.state = {
-            loading: false,
+            loading: false, nav: false,
             email: '', password: '', error: false, serror: false, fullname: '', loggedin: false, register: false
             , login: log
         }
@@ -107,7 +107,7 @@ export default class Login extends Component {
         var visible = this.props.visible
         const error = this.state.error
 
-        if (this.state.register) {
+        if (this.state.nav) {
             return (
                 <Register />
             )
@@ -118,29 +118,31 @@ export default class Login extends Component {
 
                 <div className={styles.mainl}>
 
-                    <div className={styles.title}>
-                        <h1>Welcome Back</h1>
-                        <p>Welcome to gamersback</p>
-                    </div>
+
 
                     <div className={styles.login}>
-                        <label>Email</label>
-                        <input className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
+
+                        <div className={styles.icons}><UserOutlined /> </div>       <input type="email" placeholder="Email" className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
 
                     </div>
 
                     <div className={styles.login}>
-                        <label>Password</label>
-                        <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+
+                        <div className={styles.icons}><LockOutlined /> </div>  <input placeholder="Password" type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+                    </div>
+
+                    <div className={styles.loginnrem}>
+                        <div className={styles.h}>
+                            <input type="checkbox" /><h1 className={styles.rem}>Remember Me</h1></div>
+                        {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}</div>
+
+                    <div className={styles.regf}>
+                        <h1 className={styles.regn} onClick={() => this.setState({ nav: true })}>Register</h1>
+                        <h1 className={styles.forgot}>Forgot your password</h1>
                     </div>
 
 
-                    {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}
-                    <button onClick={() => this.setState({ register: true })} className={styles.reg}>Register </button>
-
-                    {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <GoogleOutlined style={{ fontSize: '25px', color: 'white' }} onClick={this.glogin} />}
                 </div>
-
 
             </>
         )

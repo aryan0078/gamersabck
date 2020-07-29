@@ -6,7 +6,7 @@ import { DatePicker, Alert } from 'antd'
 import { Menu, Dropdown, message } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { Spin } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
+import { LoadingOutlined, UserOutlined } from '@ant-design/icons';
 import Login from "../components/Login";
 export default class Register extends Component {
     constructor(props) {
@@ -102,18 +102,15 @@ export default class Register extends Component {
 
                 <div className={styles.main}>
 
-                    <div className={styles.title}>
-                        <h1>Welcome User</h1>
-                        <p>Welcome to gamersback</p>
-                    </div>
+
                     <div className={styles.login}>
-                        <label>Username</label>
-                        <input className={styles.inp} value={this.state.username} onChange={(e) => { this.setState({ username: e.target.value }); this.usernamecheck(e.target.value) }} />
+                        <div className={styles.icons}><UserOutlined /> </div>
+                        <input className={styles.inp} value={this.state.username} onChange={(e) => { this.setState({ username: e.target.value }); this.usernamecheck(e.target.value) }} placeholder="Username" />
                         {this.state.exists ? <label className={styles.error}>{this.state.errorm}</label> : null}
                     </div>
                     <div className={styles.login}>
-                        <label>Email</label>
-                        <input className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
+                        <div className={styles.icons}><UserOutlined /> </div>
+                        <input className={styles.inp} type="email" placeholder="Email" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
 
                     </div>
                     <div className={styles.login} >
@@ -125,12 +122,12 @@ export default class Register extends Component {
                         <DatePicker style={{ color: 'white' }} placeholder='DOB' onChange={(b, f) => this.setState({ date: f })} />
                     </div>
                     <div className={styles.login}>
-                        <label>Password</label>
-                        <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+                        <div className={styles.icons}><UserOutlined /> </div>
+                        <input type="password" placeholder="Password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
                     </div>
                     <div className={styles.login}>
-                        <label>Full Name</label>
-                        <input className={styles.inp} value={this.state.fullname} onChange={(e) => this.setState({ fullname: e.target.value })} />
+                        <div className={styles.icons}><UserOutlined /> </div>
+                        <input placeholder="Full Name" className={styles.inp} value={this.state.fullname} onChange={(e) => this.setState({ fullname: e.target.value })} />
                     </div>
                     <div className={styles.login}>
                         {this.state.loading ? <Spin indicator={this.antIcon} /> : <button onClick={this.reg} className={styles.reg}>SignUp </button>}

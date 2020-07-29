@@ -9,7 +9,7 @@ import 'antd/dist/antd.css'
 
 import AboutEvent from "./screens/AboutEvent";
 import Payment from './screens/Payment'
-import AllEvents from './screens/AboutEvent'
+import AllEvents from './screens/AllEvents'
 
 import Home from './screens/Home'
 import Dashboard from './screens/Dashboard';

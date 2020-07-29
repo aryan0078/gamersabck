@@ -40,30 +40,30 @@ export default class Dashboard extends Component {
                     <div className={styles.nav}>
 
                         <div className={styles.timeline} key='3' onClick={this.change}>
-                            <HomeOutlined style={{ fontSize: '28px' }} />
+                            <HomeOutlined style={{ fontSize: '20px' }} />
                             <h1 className={styles.name}>  Overview</h1>
                         </div>
                         <div className={styles.timeline} key='3' onClick={this.change}>
-                            <ShoppingOutlined style={{ fontSize: '28px' }} />
+                            <ShoppingOutlined style={{ fontSize: '20px' }} />
                             <h1 className={styles.name}>  Booked Tickets</h1>
                         </div>
                         <div className={styles.timeline} key='3' onClick={this.change}>
-                            <DeleteOutlined style={{ fontSize: '28px' }} />
+                            <DeleteOutlined style={{ fontSize: '20px' }} />
                             <h1 className={styles.name}>Cancellation</h1>
                         </div>
 
 
                         <div className={styles.timeline} key='3' onClick={this.change}>
-                            <SecurityScanOutlined style={{ fontSize: '28px' }} />
+                            <SecurityScanOutlined style={{ fontSize: '20px' }} />
                             <h1 className={styles.name}> Current Events</h1>
                         </div>
                         <div className={styles.timeline} onClick={this.change}>
-                            <CreditCardOutlined style={{ fontSize: '28px' }} />
+                            <CreditCardOutlined style={{ fontSize: '20px' }} />
                             <h1 className={styles.name} value='1'>  Create Events</h1>
                         </div>
 
                         <div className={styles.timeline} key='3' onClick={this.change}>
-                            <UnorderedListOutlined style={{ fontSize: '28px' }} />
+                            <UnorderedListOutlined style={{ fontSize: '20px' }} />
                             <h1 className={styles.name}>  Previous Events</h1>
                         </div>
 

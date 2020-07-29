@@ -7,16 +7,23 @@ import { FilterOutlined, LeftOutlined, RightOutlined } from '@ant-design/icons'
 import Landing from './Landing';
 
 class AllEvents extends Component {
+  constructor(props) {
+    super(props)
+    this.next = this.next.bind(this)
+    this.caurosel = React.createRef()
+  }
+  next = () => {
 
+  }
   render() {
     return (
       <>
         <Landing></Landing>
         <div className={styles.main}>
           <div className={styles.caurosel}>
-            <div className={styles.arrows}> <LeftOutlined style={{ fontSize: "25px", color: 'white' }} /></div>
+            <div className={styles.arrows} onClick={this.next}> <LeftOutlined style={{ fontSize: "25px", color: 'white' }} /></div>
             <div className={styles.c}>
-              <Carousel>
+              <Carousel ref={node => (this.carousel = node)} >
                 <div>
                   <div className={styles.cimg}></div>
                 </div>
@@ -30,7 +37,7 @@ class AllEvents extends Component {
                   <div className={styles.cimg}></div>
                 </div>
               </Carousel></div>
-            <div className={styles.arrows} onClick={Carousel.next}> <RightOutlined style={{ fontSize: "30px", color: 'white' }} /></div>
+            <div className={styles.arrows} > <RightOutlined style={{ fontSize: "30px", color: 'white' }} /></div>
           </div>
           <div className={styles.searchbox}>
 
@@ -60,8 +67,8 @@ class AllEvents extends Component {
           <div className={styles.titlenfilter}>
             <h1 className={styles.title}>Simple Layout</h1>
             <div className={styles.fbuttons}>
-              <button className={styles.fbutton_} ><FilterOutlined /> </button>
-              <Drop title={'filter'} />
+              <button className={styles.fbutton_} ><FilterOutlined />  <Drop title={'filter'} /> </button>
+
 
 
               <button className={styles.fbutton}>SORT BY: Relevance</button>

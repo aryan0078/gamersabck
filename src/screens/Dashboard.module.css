@@ -36,23 +36,18 @@
     height: auto;
     margin-bottom: 5%;
 }
-.username{
-    font-size: small;
-    margin-top: -10px;
-    font-weight: 400;
-    color: gainsboro;
-}
+
 
 .name{
-    font-size: large;
+    font-size: x-small;
     margin-top: 20px;
     color: white;
 }
 .nav{
  
     background-color: #121212;
-   
-   
+   display: flex;
+   justify-content: center;
     width: 100%;
     display: flex;
   
@@ -68,11 +63,13 @@ padding: 10px;
     flex-direction: column;
     cursor: pointer;
     height: 100%;
-    width: 100%;display: flex;
+   display: flex;
   text-align: center;
     align-items: center;
 color: white;
 margin-left: 10px;
+margin-right: 10px;
+padding: 5px;
 justify-content: center;
 padding-top: 15px;
 padding-bottom: 15px;

@@ -69,7 +69,15 @@ export default class Home extends Component {
           <div className={styles.searchbox}>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHAT</h3>
-              <Drop title={"Select Category"}></Drop>
+              <Drop
+                title={"Select Category"}
+                options={[
+                  { id: 1, option: "foo" },
+                  { id: 2, option: "bar" },
+                  { id: 3, option: "bar" },
+                  { id: 4, option: "bar" },
+                ]}
+              />
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHEN</h3>

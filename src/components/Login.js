@@ -5,7 +5,7 @@ import styles from './Register.module.css'
 import firebase from 'firebase'
 import { Spin } from 'antd';
 import { useAsync } from 'react-async';
-import { LoadingOutlined, GoogleOutlined, UserOutlined, LockOutlined } from '@ant-design/icons';
+import { LoadingOutlined, GoogleOutlined, UserOutlined, LockOutlined, FacebookOutlined } from '@ant-design/icons';
 
 import Register from './Register';
 import { Redirect } from 'react-router-dom';
@@ -28,15 +28,42 @@ export default class Login extends Component {
     antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
 
-    glogin = () => {
+    async glogin() {
+        var db = app.firestore()
         var provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider).then(function (result) {
+        await firebase.auth().signInWithPopup(provider).then(function (result) {
             // This gives you a Google Access Token. You can use it to access the Google API
             var token = result.credential.accessToken;
 
             // The signed-in user info.
             var user = result.user;
-            console.log(result.user)
+            var email = result.user.email
+            var fullname = result.user.displayName
+            var photo = result.user.photoURL
+            var password = result.user.getIdToken
+            var dob = '26/04/2002'
+            var gender = 'male'
+            var username = email.split('@')[0]
+            db.collection('users').doc(result.user.uid).set({
+                fullname: fullname,
+                username: username,
+                gender: gender,
+                dob: dob,
+                email: email,
+                password: 'password'
+            }).then(() => {
+                db.collection('usernames').doc(username).set({
+                    username: username
+                })
+
+                localStorage.setItem('fullname', fullname)
+                localStorage.setItem('username', username)
+                localStorage.setItem('gender', gender)
+                localStorage.setItem('dob', dob)
+                localStorage.setItem('email', email)
+                alert('Registration Done!')
+                window.location.reload()
+            })
             // ...
         }).catch(function (error) {
             // Handle Errors here.
@@ -45,7 +72,7 @@ export default class Login extends Component {
             // The email of the user's account used.
             var email = error.email;
             // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
+            var credential = error.credential; console.log(errorMessage)
             // ...
         });
     }
@@ -140,7 +167,10 @@ export default class Login extends Component {
                         <h1 className={styles.regn} onClick={() => this.setState({ nav: true })}>Register</h1>
                         <h1 className={styles.forgot}>Forgot your password</h1>
                     </div>
-
+                    <div className={styles.sociallogin}>
+                        <div className={styles.google} onClick={this.glogin}><GoogleOutlined style={{ fontSize: '40px' }} />Google</div>
+                        <div className={styles.facebook}><FacebookOutlined style={{ fontSize: '40px' }} />Facebook</div>
+                    </div>
 
                 </div>
 

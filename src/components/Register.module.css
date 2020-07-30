@@ -9,10 +9,53 @@
     justify-content: space-around;
     align-items: center;
 }
+.login_{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Dropdown{
+    display: flex;
+    width: 30%;
+    background-color: #282828;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.datepick{
+    display: flex;
+    width: 30%;
+    padding: 5px;
+    border-color: #282828;
+    background-color: #282828;
+}
 .loginstuff{
     width: 50%;
 }
+.sociallogin{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.google,.facebook{
+    display: flex;
+    width: 40%;
+    background-color: #CA0C2A;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+   margin-bottom: 10px;
+   cursor: pointer;
+    border-radius: 5px;
+}
+.facebook{
+    background-color: rgb(38, 153, 206);
+}
 .simg{
 background-image: url('./b.jpg');
 width: 100%;
@@ -66,6 +109,8 @@ height: 2rem;
     flex-direction: row;
 }
 .rem{
+    color: grey;
+    margin-left: 5px;
     font-size: x-small;
 }
 .loginnrem{

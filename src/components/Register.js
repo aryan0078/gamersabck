@@ -6,6 +6,7 @@ import { DatePicker, Alert } from 'antd'
 import { Menu, Dropdown, message } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { Spin } from 'antd';
+import Drop from './dropdown'
 import { LoadingOutlined, UserOutlined } from '@ant-design/icons';
 import Login from "../components/Login";
 export default class Register extends Component {
@@ -113,13 +114,13 @@ export default class Register extends Component {
                         <input className={styles.inp} type="email" placeholder="Email" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
 
                     </div>
-                    <div className={styles.login} >
-                        <Dropdown overlay={this.menu}>
-                            <a className={styles.gender} onClick={e => e.preventDefault()}>
-                                {this.state.gender} <DownOutlined />
-                            </a>
-                        </Dropdown>
-                        <DatePicker style={{ color: 'white' }} placeholder='DOB' onChange={(b, f) => this.setState({ date: f })} />
+                    <div className={styles.login_} >
+                        <div className={styles.Dropdown}>
+                            <Drop title={<a className={styles.gender}>Gender<DownOutlined /></a>} >
+
+                            </Drop></div>
+                        <div className={styles.datepick}>
+                            <DatePicker style={{ color: 'white' }} placeholder='DOB' onChange={(b, f) => this.setState({ date: f })} /></div>
                     </div>
                     <div className={styles.login}>
                         <div className={styles.icons}><UserOutlined /> </div>

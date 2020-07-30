@@ -37,7 +37,7 @@ function DropdownMenu() {
 
   return (
     <div className={styles.dropdown}>
-      <DropdownItem>Foo</DropdownItem>
+      <DropdownItem></DropdownItem>
       <DropdownItem>Bar</DropdownItem>
       <DropdownItem>Bar</DropdownItem>
       <DropdownItem>Bar</DropdownItem>

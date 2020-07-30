@@ -38,7 +38,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .google,.facebook{
@@ -54,7 +54,11 @@
     border-radius: 5px;
 }
 .facebook{
-    background-color: rgb(38, 153, 206);
+    background-color: #405A9A;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    margin-left: 5px;
 }
 .simg{
 background-image: url('./b.jpg');
@@ -69,10 +73,15 @@ background-size: cover;
     color: #CA0C2A;
     cursor: pointer;
 }
+.text{
+    font-size: small;
+}
 .regf{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 5px;
     flex-direction: row;
 }
 .forgot{
@@ -85,10 +94,10 @@ background-size: cover;
     
     border-radius: 5px;
     font-size: small;
-    width: 5rem;
+    width: 100%;
  
 border-width: 0px;
-height: 2rem;
+height: 3rem;
 }
 .main{
     display: flex;

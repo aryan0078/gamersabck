@@ -157,16 +157,16 @@ export default class Login extends Component {
 
                         <div className={styles.icons}><LockOutlined /> </div>  <input placeholder="Password" type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
                     </div>
-
-                    <div className={styles.loginnrem}>
-                        <div className={styles.h}>
-                            <input type="checkbox" /><h1 className={styles.rem}>Remember Me</h1></div>
-                        {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}</div>
-
                     <div className={styles.regf}>
-                        <h1 className={styles.regn} onClick={() => this.setState({ nav: true })}>Register</h1>
+                        <div style={{ display: 'flex', flexDirection: 'row' }}> <input type="checkbox" /><h1 className={styles.rem}>Remember Me</h1></div>
                         <h1 className={styles.forgot}>Forgot your password</h1>
                     </div>
+                    <div className={styles.loginnrem}>
+                        <div className={styles.h}>
+                        </div>
+                        {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}</div>
+                    <h1 className={styles.text}>Or Signin With</h1>
+
                     <div className={styles.sociallogin}>
                         <div className={styles.google} onClick={this.glogin}><GoogleOutlined style={{ fontSize: '40px' }} />Google</div>
                         <div className={styles.facebook}><FacebookOutlined style={{ fontSize: '40px' }} />Facebook</div>

@@ -7,11 +7,11 @@ export default class Auth extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            visible: this.props.visible, page: <Login visible={true} />, cp: false
+            visible: this.props.visible, page: <Login visible={true} />, cp: true
         }
     }
     cp = (e) => {
-        if (e.target.innerText == 'Signup') {
+        if (e.target.innerText == 'SignUp') {
             this.setState({ page: <Register />, cp: false })
         } else {
             this.setState({ page: <Login visible={true} />, cp: true })
@@ -28,10 +28,10 @@ export default class Auth extends Component {
 
                     <div className={styles.navs}>
                         <div className={styles.login} onClick={this.cp}>
-                            <h1 className={this.state.cp ? styles.namec : styles.name}>Login</h1>
+                            <h1 className={this.state.cp ? styles.namec : styles.name}>SignIn</h1>
                         </div>
                         <div className={styles.login} onClick={this.cp}>
-                            <h1 className={this.state.cp ? styles.name : styles.namec}>Signup</h1>
+                            <h1 className={this.state.cp ? styles.name : styles.namec}>SignUp</h1>
                         </div>
                     </div>
                     <div className={styles.contenth}>

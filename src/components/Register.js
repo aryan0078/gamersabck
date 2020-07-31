@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { app } from '../firebase'
 import Modal from 'antd/lib/modal/Modal';
+import '../styling/componentsdesign.less'
 import styles from './Register.module.css'
 import { DatePicker, Alert } from 'antd'
 import { Menu, Dropdown, message } from 'antd';
@@ -37,8 +38,8 @@ export default class Register extends Component {
     };
 
     menu = (
-        <Menu onClick={this.onClick}>
-            <Menu.Item key="Male">Male</Menu.Item>
+        <Menu onClick={this.onClick} style={{ backgroundColor: "#282828", borderRadius: '5px', color: "white", paddingLeft: '20px' }}>
+            <Menu.Item key="Male" style={{ color: 'white' }} className='drop'> Male</Menu.Item>
             <Menu.Item key="Female">Female</Menu.Item>
         </Menu>
     );
@@ -107,8 +108,9 @@ export default class Register extends Component {
                     <div className={styles.login}>
                         <div className={styles.icons}><UserOutlined /> </div>
                         <input className={styles.inp} value={this.state.username} onChange={(e) => { this.setState({ username: e.target.value }); this.usernamecheck(e.target.value) }} placeholder="Username" />
-                        {this.state.exists ? <label className={styles.error}>{this.state.errorm}</label> : null}
+
                     </div>
+                    {this.state.exists ? <label className={styles.error}>{this.state.errorm}</label> : null}
                     <div className={styles.login}>
                         <div className={styles.icons}><UserOutlined /> </div>
                         <input className={styles.inp} type="email" placeholder="Email" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
@@ -116,9 +118,11 @@ export default class Register extends Component {
                     </div>
                     <div className={styles.login_} >
                         <div className={styles.Dropdown}>
-                            <Drop title={<a className={styles.gender}>Gender<DownOutlined /></a>} >
+                            <Dropdown overlay={this.menu} placement="bottomCenter" arrow>
+                                <a style={{ fontSize: 'small', color: 'white' }}>Gender</a>
+                            </Dropdown>
 
-                            </Drop></div>
+                        </div>
                         <div className={styles.datepick}>
                             <DatePicker style={{ color: 'white' }} placeholder='DOB' onChange={(b, f) => this.setState({ date: f })} /></div>
                     </div>

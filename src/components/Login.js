@@ -165,11 +165,11 @@ export default class Login extends Component {
                         <div className={styles.h}>
                         </div>
                         {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}</div>
-                    <h1 className={styles.text}>Or Signin With</h1>
+                    <h1 className={styles.text}>or Login with social Media</h1>
 
                     <div className={styles.sociallogin}>
-                        <div className={styles.google} onClick={this.glogin}><GoogleOutlined style={{ fontSize: '40px' }} />Google</div>
-                        <div className={styles.facebook}><FacebookOutlined style={{ fontSize: '40px' }} />Facebook</div>
+                        <div className={styles.google} onClick={this.glogin}><GoogleOutlined style={{ fontSize: '30px' }} /></div>
+                        <div className={styles.facebook}><FacebookOutlined style={{ fontSize: '30px' }} /></div>
                     </div>
 
                 </div>

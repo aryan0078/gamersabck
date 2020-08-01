@@ -1,12 +1,47 @@
 .logo{
     width: 4em;
-    height: 3.2em;
-    top:10px;
-    left: -3em;
-    position: relative;
+    height: 3.8em;
+ position:absolute;
+ left: 0px;
     background-image: url('../components/new.png');
     background-size: cover;
     background-repeat: no-repeat;
+    }.labels{
+        justify-content: left;
+        text-align: left;
+        align-items: flex-start;
+        display: flex;
+        position: absolute;
+        left: 4rem;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+    .top{
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .l1,.l2{
+        font-size: smaller;
+        height: 15px;
+        margin: 0px !important;
+        padding: 0px;
+    }
+    .brandingstuff{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .log{
+        position: absolute;
+        overflow: hidden;
+        right: 0px;
+      
+     
+        display: flex;
+        flex-direction: row;
     }
     .eventname{
         font-size: medium;
@@ -28,10 +63,38 @@
     .lableoflogin{
         color:white;
 
+  font-size: xx-large;
 
         font-size: xx-large;
        
         font-weight: bold;
+    }.b1m{
+        height: 8rem !important;
+        flex-direction: column;
+        padding: 2% !important;
+    }
+    .b1m,.cevent{
+        background-color: #292929;
+        height: 2.5rem;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom:10px;
+    }
+    
+    .cevent{
+        background-color: #AA0020;
+    }
+    .cevent:hover{
+        background-color: tomato;
+        cursor: pointer;
+    }
+    .b1m:hover{
+        background-color: #222222;
+        cursor: pointer;
     }
 .login{
     background-color: transparent;
@@ -43,43 +106,44 @@ background-color: transparent;
     border-radius: 25px;
     flex-direction: row;
 }
-.loginformforgot{
-    font-size: 15px;
-    color: #AA0020;
-    font-weight: bolder;
+.login {
+  background-color: transparent;
+  display: flex;
+  height: 85vh;
+  z-index: 11000;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 25px;
+  flex-direction: row;
 }
-.loginformreg{
-    font-size: 12px;
-    color: #AA0020;
-    font-weight: bolder;
+.loginformforgot {
+  font-size: 15px;
+  color: #aa0020;
+  font-weight: bolder;
 }
-.loginbutton{
-    color: white;
-    background-color: #AA0020;
-    border-width: 0px;
-    border-radius: 5px;
-    width: 40%;
-    height: 50px;
-    font-size: medium;
+.loginformreg {
+  font-size: 12px;
+  color: #aa0020;
+  font-weight: bolder;
 }
-.image{display: flex;
-width: 50%;
-color: white;
-height: 100%;
-justify-content: center;
-align-items: center;
-background-size: cover;
-background: url('../components/b1.jpg');
+.loginbutton {
+  color: white;
+  background-color: #aa0020;
+  border-width: 0px;
+  border-radius: 5px;
+  width: 40%;
+  height: 50px;
+  font-size: medium;
 }
-.loginholder{
-    display: flex;
-    width: 50%;
-    flex:1;
-    color: white;
-    flex-direction: column;
+.image {
+  display: flex;
+  width: 50%;
+  color: white;
+  height: 100%;
   justify-content: center;
-    align-items: center;
-    background-color: #121212;
+  align-items: center;
+  background-size: cover;
+  background: url("../components/b1.jpg");
 }
 .loginregbtn{
     position: relative;
@@ -90,7 +154,8 @@ background: url('../components/b1.jpg');
     font-family: mont;
     background-color: #121212;
 border-width: 0px;  
- 
+margin-right: 10px;
+
 }
 .createevent{
     display: flex;
@@ -102,15 +167,55 @@ border-width: 0px;
     border-width: 0px;
     align-self: flex-start;
     width: 160px;
-    height: 99%;
+    height: 65px !important;
     background-color: #AA0020;margin-right: 10px;
     justify-content: center;
     align-items: center;
 
 }
-@media screen and (max-width: 800px) {
-     .logo{
-   display: none;
+.dropitem{
+    font-size: smaller;
+
+   color: black !important;
+    border-radius: 2px;
+}
+.drop{
+   
+    height: 65px;
+width: 100%;
+    display: flex;
+    flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+    color: aliceblue;
+    font-size: x-small;
+}
+.dropitem:hover{
+    background-color: #AA0020;
+    color: white !important;
+}
+.drawer{
+    display: none;
+}
+.user{
+    width: 10rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    background-color: #292929;
+    border-radius: 5px;
+    width: 200px;
+    
+    height: 100%;
+}
+@media screen and (max-width: 1200px) {
+    .user{
+        display: none;
+    }
+     .labels{
+  bottom: 40px;
     }
     .createevent{
         display: none;
@@ -118,7 +223,20 @@ border-width: 0px;
     }.loginregbtn{
      display: none;
      
-    }.textontop{
-        font-size: x-small;
+    }
+    .drawer{
+        background-color: transparent;
+        border-width: 1px;
+        border-color: grey;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+margin-top: 5px;
+margin-right: 20px;
     }
   }

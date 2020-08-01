@@ -1,0 +1,579 @@
+/* The style sheet for the CreateEvent component
+ at the route: /createevent */
+
+@font-face {
+  font-family: mont;
+  src: url("../../components/fonts/Montserrat-Regular.ttf");
+}
+
+.mgB {
+  margin-bottom: 15%;
+}
+
+.createEventWrapper {
+  width: 100%;
+  height: 100vh;
+  padding-top: 4%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+}
+
+.createEventBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 80px;
+  background-color: #aa0020;
+  letter-spacing: 1px;
+}
+
+.createEventWrapper li {
+  list-style: none;
+}
+
+.createEventWrapper ul,
+a {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.createEventInnerWrapper {
+  padding: 5% 6%;
+  display: flex;
+}
+
+.createEventInnerWrapper .createEventNav {
+  width: 20%;
+}
+
+.createEventNav .createEventNavList {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.createEventNavList .createEventNavCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 3%;
+  border: 0.1px solid #121212;
+  background-color: #121212;
+}
+
+.link {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  color: #de2358;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.active {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #aa0020;
+  transition: 0.3s;
+}
+
+.createEventNavList .active .createEventNavCircle {
+  width: 30px;
+  height: 30px;
+  background-color: #aa0020;
+  transition: 0.3s;
+}
+
+.createEventInnerWrapper .createEventInnerComponents {
+  color: white;
+  font-family: mont, sans-serif;
+  width: 80%;
+  background-color: #121212;
+  border-radius: 5px;
+  border: 1px solid #4b4a4a;
+  padding: 1% 1% 5%;
+}
+
+.createEventInnerComponents .label {
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.createEventInnerComponents .labelBg {
+  font-size: 25px;
+  text-transform: capitalize;
+  display: flex;
+}
+
+.componentHeader {
+  margin-top: 1%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.innerComponent {
+  margin: 3%;
+}
+
+.innerComponent form {
+  margin: 0 5%;
+}
+
+.rowAddDeleteButton {
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: black;
+}
+
+.rowAddDeleteButton button {
+  width: 10%;
+  background-color: #aa0020;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rowAddDeleteButton button:focus {
+  outline: none;
+}
+
+.rowAddDeleteButton button:hover {
+  background-color: #de2358;
+}
+
+.innerComponent input[type="text"],
+.innerComponent input[type="email"] {
+  color: black;
+  width: 100%;
+  border: 2px solid #282828;
+  margin: 1.5% 0 3% 0;
+  padding-left: 2%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.innerComponent input[type="text"],
+.innerComponent input[type="email"] :focus {
+  outline: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.innerComponent input[type="number"] {
+  color: black;
+  width: 100%;
+  border: 2px solid #282828;
+  margin: 1.5% 0 3% 0;
+  padding-left: 2%;
+  height: 50px;
+  border-radius: 5px;
+  -moz-appearance: textfield;
+}
+
+.innerComponent input[type="Number"]:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.innerComponent input[type="date"] {
+  color: black;
+  height: 50px;
+  padding-left: 2%;
+  width: 100%;
+}
+
+.datePicker {
+  color: black;
+  height: 50px;
+  padding-left: 2%;
+  width: 100%;
+  margin-bottom: 3% !important;
+}
+
+.innerComponent input[type="submit"] {
+  border-radius: 5px;
+  background-color: #aa0020;
+  color: #fff;
+  height: 4rem;
+  width: 40%;
+  border-width: 0;
+  font-size: larger;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.innerComponent input[type="submit"]:hover {
+  background-color: #de2358;
+}
+
+.innerComponent input[type="submit"]:focus {
+  outline: none;
+}
+
+.innerComponent input[type="radio"] {
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+.innerComponent input[type="checkbox"] {
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+.dropDownSelect {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #282828;
+  margin: 1.5% 0 0 0;
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropDownSelectTRow {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #282828;
+  margin: 1.5% 0 0 0;
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropDownMenu {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #282828;
+  margin: 0 0 1.5% 0;
+}
+
+.dropDownMenuItem {
+  margin: 1%;
+  padding: 1%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.selectedDropDownMenuItem {
+  background-color: #aa0020;
+  color: white;
+  transition: 0.2s;
+}
+
+.addtionalFeature {
+  font-size: 18px;
+}
+
+.createEventInfoSubmitButton {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.eventDescription {
+  color: black;
+  width: 100%;
+  border: 2px solid #282828;
+  margin: 1.5% 0 3% 0;
+  padding: 2% 0 0 2%;
+  height: 50px;
+  border-radius: 5px;
+  resize: none;
+  height: 250px;
+}
+
+.eventDescription:focus {
+  outline: none;
+}
+
+.rowNum {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+  border-radius: 5px;
+}
+
+.eventDates,
+.ticketInfo,
+.regInfo,
+.playersInfo,
+.TicketRowWrapper,
+.rowAddDeleteButton,
+.prizeRow {
+  display: flex;
+  margin-bottom: 1%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.startDate,
+.endDate,
+.tName,
+.tFee,
+.regStartDate,
+.regEndDate,
+.nPlayers,
+.nSubs,
+.prizeRowField {
+  width: 40%;
+}
+
+.rowAddDeleteButton button {
+  font-size: 18px;
+  height: 50px;
+  width: 150px;
+}
+
+.playerInfoCardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.selectedPlayerInfo {
+  background-color: #aa0020;
+  color: white;
+}
+
+.playerInfoOptionCard {
+  height: 200px;
+  width: 23%;
+  margin: 2.5%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playerOptionCardNonSelected {
+  background-color: #fff;
+  color: #000;
+}
+
+.playerInfoOptionCard:hover {
+  border: 3px solid #aa0020;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 5px 0px#aa0020;
+}
+
+.playerInfoCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerInfoIcon {
+  font-size: 28px;
+}
+
+.playerInfoOptionCardTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.CreateEventPlayerInfoModal {
+  padding: 5%;
+  height: 100%;
+  background-color: #121212;
+  border-radius: 5px;
+  border: 1px solid #4b4a4a;
+  overflow: auto;
+}
+
+.saveModal {
+  border-radius: 5px;
+  background-color: #aa0020;
+  color: #fff;
+  height: 4rem;
+  width: 40%;
+  border-width: 0;
+  font-size: larger;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.saveModal:hover {
+  background-color: #de2358;
+}
+
+.saveModal:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .createEventWrapper {
+    padding-top: 15%;
+  }
+  .playerInfoOptionCard {
+    width: 45%;
+  }
+
+  .playerInfoOptionCard .playerInfoIcon {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .createEventNav .link,
+  .createEventInnerComponents .label {
+    font-size: 15px;
+  }
+
+  .dropDownSelectTRow {
+    width: 100px;
+  }
+
+  .eventDescription {
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .innerComponent input[type="text"] {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .innerComponent input[type="number"] {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .dropDownSelect {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .dropDownMenu .dropDownMenuItem {
+    font-size: 12px;
+  }
+
+  .dropDownSelectTRow {
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .createEventNavList .createEventNavCircle {
+    height: 18px;
+    width: 18px;
+  }
+
+  .createEventNav .active {
+    font-size: 20px;
+  }
+
+  .createEventInnerWrapper .createEventNav {
+    width: 30%;
+  }
+
+  .createEventInnerWrapper .createEventInnerComponents {
+    width: 70%;
+  }
+
+  .createEventInnerComponents .labelBg {
+    font-size: 20px;
+  }
+
+  .dropDownSelectTrow {
+    width: 50px;
+  }
+
+  .playerInfoOptionCard {
+    width: 70%;
+    height: 150px;
+  }
+
+  .addtionalFeature {
+    font-size: 14px;
+  }
+
+  .startDate,
+  .endDate,
+  .tName,
+  .tFee,
+  .regStartDate,
+  .regEndDate,
+  .nPlayers,
+  .nSubs,
+  .prizeRowField {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .createEventNav .link,
+  .createEventInnerComponents .label {
+    font-size: 13px;
+  }
+
+  .componentHeader {
+    font-size: 30px;
+  }
+
+  .createEventNavList .createEventNavCircle {
+    display: none;
+  }
+
+  .createEventInnerWrapper .createEventNav {
+    width: 25%;
+  }
+
+  .createEventInnerWrapper .createEventInnerComponents {
+    width: 75%;
+  }
+
+  .rowAddDeleteButton button {
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 10%;
+  }
+
+  .playerInfoOptionCardTitle {
+    font-size: 15px;
+  }
+
+  .playerInfoOptionCard .playerInfoIcon {
+    font-size: 18px;
+  }
+}

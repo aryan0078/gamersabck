@@ -1,58 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 select:active, select:hover {
   outline: none
 }
 
-.ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector {
+.ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+  .ant-select-selector {
   padding: 0 11px;
   border-radius: 2px;
   background-color: #121212;
 }
-.ant-select-arrow{
+.ant-select-arrow {
   color: white;
 }
 @font-face {
   font-family: mont;
-  src: url('./components/fonts/Montserrat-Regular.ttf');
+  src: url("./components/fonts/Montserrat-Regular.ttf");
 }
-label{
+label {
   font-family: mont;
 }
 body::-webkit-scrollbar {
   width: 0.8em;
- background-color: #282828;
+  background-color: #282828;
 }
- ul{
+ul {
   padding-inline-start: 0px !important;
- }
-a{
-      padding: 0px;
+}
+a {
+  padding: 0px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #CA0C2A;
+  background-color: #ca0c2a;
   border-radius: 10px;
+}
+.ant-drawer-body{
+  background-color: #121212;
+  color: white;
 }
 .ant-picker:hover, .ant-picker-focused {
     /* border-color: #40a9ff; */
     border-right-width: 1px !important;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
 .ant-layout-sider-children,.ant-layout-sider ,.ant-layout-sider-dark,.ant-layout-sider-collapsed{
   display: none !important;
 }.ant-select,.ant-select-lg,.ant-select-single,.ant-select-show-arrow{
 width: 40vh !important;
+}
+.anticon ,.anticon-delete{
+  font-size: 15px !important;
 }
 .ant-btn ,.ant-btn-primary,.ant-btn-dangerous{
 margin: 0em !important;
@@ -79,12 +88,39 @@ height: 5vh !important;
   padding-left: 0em !important;
 
 }
+.ant-drawer-body{
+  background-color: #121212;
+  color: white;
+ 
+}
 }
 .ant-picker{
     border-width: 0px !important;
     background-color: #121212 !important;
     color: black;
-}
+  }
+  .ant-tabs-nav-list {
+    border-width: 0px !important;
+  }
+  .ant-tabs-tab-active {
+    color: #ca0c2a !important;
+  }
+  .ant-tabs-tab {
+    color: white !important;
+    border-width: 0px !important;
+  }
+  .ant-picker-input {
+    background-color: #111111 !important;
+  }
+  .ant-carousel .slick-list {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100% !important;
+  }
+
 .ant-tabs-nav-list{
   border-width: 0px !important;
 }
@@ -105,5 +141,5 @@ height: 5vh !important;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 110% !important;
+  width: 100% !important;
 }

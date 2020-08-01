@@ -1,144 +1,131 @@
-.cardholder{
-   display: flex;
-   flex-direction: column;
-    width: 100%;
-height: 30rem;
-margin-left: 1em;
- justify-content: center;
- align-items: center;
-    border-radius: 10px;
- position: relative;
-    overflow: hidden;
-    background-image: url('./b1.jpg');
-    background-color: blue;
-   filter: grayscale(80%);
+.cardholder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30rem;
+  margin-left: 1em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("./b1.jpg");
+  background-color: blue;
+  filter: grayscale(80%);
   background-size: cover;
   position: relative;
-    background-repeat: no-repeat;
-    transition: all 0.5s;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
 }
-@media (min-width:600px){
- .cardholder{
-     width: 90%;
- }   
-}
-.exp{
-    color: white;
-  
-    position: absolute;
 
-    margin: 0 auto;
-    bottom: 0px;
-    text-align: center;
-
-    font-size: medium;
-   font-family: mont;
-}
-.imgholder{
-   
-    
-}
-.buttonndstuff{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-   
-}
-.img{
-
-  
-
-   
-   
-}
-.cardholder:hover{
-    background-position-x:-10px;
-
-    filter: grayscale(20%);
-}
-.eventp{
-    color: white;
-  
-    position: absolute;
-
-    margin: 0 auto;
-    left: 5%;
-    top: 60%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-
-    font-size: medium;
-   font-family: mont;
-  
-}
-.eventn{
-    color: white;
-    position: absolute;
-  
-    margin: 0 auto;
-    left: 5%;
-    top: 70%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
- 
-    font-size: 30px;
-    font-family: mont;
-    
-}
-.eventl{
-    color: white;
-    position: absolute;
-    transition: all 1s;
-    margin: 0 auto;
-    border-width: 0px;
-    left: 5%;
-    top: 85%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-background-color: transparent;
-    font-size: medium;
-    font-family: mont;
-  
- 
-}
-.eventll{
-   display:none;
-   transition: all 1s;
- 
-}
-@font-face {
-    font-family: mont;
-    src: url('./fonts/Montserrat-Regular.ttf');
+@media (min-width: 600px) {
+  .cardholder {
+    width: 90%;
   }
-.booknow{
-    color: white;
-    position: absolute;
-    transition: all 1s;
-    margin: 0 auto;
-    margin-bottom: 1%;
-    border-width: 0px;
-    left: 5%;
-    top: 85%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-background-color: transparent;
-    font-size: medium;
-    font-family: mont;
-}.booknowl{
-    transition: all 1s;
-    display: none;
-    color: white;
-    position: absolute;
-    transition: all 1s;
-    margin: 0 auto;
-    border-width: 0px;
-    left: 5%;
-    top: 85%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-background-color: transparent;
-    font-size: medium;
-    font-family: mont;
 }
-@media screen and (max-width: 800px) {
-    .cardholder{
-        width: 100% !important;
-        margin-bottom: 5% !important;
-        margin: 0px;
-    }
+
+.exp {
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0px;
+  text-align: center;
+  font-size: medium;
+  font-family: mont;
+}
+
+.buttonndstuff {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.cardholder:hover{
+  background-position-x:-6px;
+  background-color: black ;
+  filter: grayscale(20%);
+}
+.eventp {
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  left: 5%;
+  top: 60%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  font-size: medium;
+  font-family: mont;
+}
+
+.eventn {
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  left: 5%;
+  top: 70%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  font-size: 30px;
+  font-family: mont;
+}
+
+.eventl {
+  color: white;
+  position: absolute;
+  transition: all 1s;
+  margin: 0 auto;
+  border-width: 0px;
+  left: 5%;
+  top: 85%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  background-color: transparent;
+  font-size: medium;
+  font-family: mont;
+}
+
+.eventll {
+  display: none;
+  transition: all 1s;
+}
+
+@font-face {
+  font-family: mont;
+  src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+.booknow {
+  color: white;
+  position: absolute;
+  transition: all 1s;
+  margin: 0 auto;
+  margin-bottom: 1%;
+  border-width: 0px;
+  left: 5%;
+  top: 85%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  background-color: transparent;
+  font-size: medium;
+  font-family: mont;
+}
+
+.booknowl {
+  transition: all 1s;
+  display: none;
+  color: white;
+  position: absolute;
+  transition: all 1s;
+  margin: 0 auto;
+  border-width: 0px;
+  left: 5%;
+  top: 85%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  background-color: transparent;
+  font-size: medium;
+  font-family: mont;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardholder {
+    width: 100% !important;
+    margin-bottom: 5% !important;
+    margin: 0px;
+  }
 }

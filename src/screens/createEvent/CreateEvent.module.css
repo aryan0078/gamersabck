@@ -1,6 +1,14 @@
 /* The style sheet for the CreateEvent component
  at the route: /createevent */
+ textarea{
+   background-color: #282828;
+   color: white !important;
+ }
+input{
 
+  background-color: #282828;
+  color: white !important;
+}
 @font-face {
   font-family: mont;
   src: url("../../components/fonts/Montserrat-Regular.ttf");
@@ -44,16 +52,17 @@ a {
 }
 
 .createEventInnerWrapper {
-  padding: 5% 6%;
+padding-left: 5%;
   display: flex;
 }
 
 .createEventInnerWrapper .createEventNav {
-  width: 20%;
+  width: 100%;
 }
 
 .createEventNav .createEventNavList {
-  height: 600px;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -97,10 +106,10 @@ a {
 .createEventInnerWrapper .createEventInnerComponents {
   color: white;
   font-family: mont, sans-serif;
-  width: 80%;
+  width: 100%;
   background-color: #121212;
   border-radius: 5px;
-  border: 1px solid #4b4a4a;
+ 
   padding: 1% 1% 5%;
 }
 
@@ -204,13 +213,24 @@ input::-webkit-inner-spin-button {
   padding-left: 2%;
   width: 100%;
 }
-
+.types{
+  background-color: #282828;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+}
+.drop{
+  background-color: #282828 !important;
+}
 .datePicker {
-  color: black;
-  height: 50px;
-  padding-left: 2%;
-  width: 100%;
-  margin-bottom: 3% !important;
+  color: #282828 !important;
+  height:auto;
+padding: 2%;
+justify-content: center;
+align-items: center;
+display: flex;
+  width: 100%;background-color: #282828 !important;
+ 
 }
 
 .innerComponent input[type="submit"] {
@@ -372,9 +392,9 @@ input::-webkit-inner-spin-button {
 }
 
 .playerInfoOptionCard {
-  height: 200px;
-  width: 23%;
-  margin: 2.5%;
+  height: 100px;
+  width: 15%;
+  margin: 1%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

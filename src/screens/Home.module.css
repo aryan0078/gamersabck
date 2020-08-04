@@ -6,7 +6,7 @@ padding-left: 8%;
 padding-right: 6%;
 flex-direction: column;
   display: flex;
-  background-color: black;
+  background-color: #1D1A1D;
 background-image: url('./assets/r6.jpg');
 background-size:contain;
 background-repeat: no-repeat;

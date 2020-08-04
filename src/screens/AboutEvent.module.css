@@ -11,6 +11,22 @@ overflow: hidden;
     background-size: contain;
     background-color: black;
 }
+.socialmedia{
+  background-color: #121212;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: xx-large;
+  cursor: pointer;
+  border-radius: 70px;
+  position: fixed;
+  right: 65px;
+  bottom: 100px;
+  z-index: 1000;
+}
 .rowofc{
     display: flex;
     flex-wrap: wrap;

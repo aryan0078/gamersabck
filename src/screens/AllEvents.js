@@ -43,15 +43,42 @@ class AllEvents extends Component {
 
             <div className={styles.whatholder}>
               <h3 className={styles.searchind} >WHAT</h3>
-              <Drop title={'Select Category'} />
+              <Drop
+                sendProps={this.recieveProps}
+                title={"Select Category"}
+                options={[
+                  { id: 1, option: "foo" },
+                  { id: 2, option: "bar" },
+                  { id: 3, option: "bar" },
+                  { id: 4, option: "bar" },
+                ]}
+              />
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHEN</h3>
-              <Drop title={'Select Category'} />
+              <Drop
+                sendProps={this.recieveProps}
+                title={"Select Category"}
+                options={[
+                  { id: 1, option: "foo" },
+                  { id: 2, option: "bar" },
+                  { id: 3, option: "bar" },
+                  { id: 4, option: "bar" },
+                ]}
+              />
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHERE</h3>
-              <Drop title={'Select Category'} />
+              <Drop
+                sendProps={this.recieveProps}
+                title={"Select Category"}
+                options={[
+                  { id: 1, option: "foo" },
+                  { id: 2, option: "bar" },
+                  { id: 3, option: "bar" },
+                  { id: 4, option: "bar" },
+                ]}
+              />
             </div>
             <div className={styles.whatholder_}>
               <h3 className={styles.searchind}>KEYWORD</h3>

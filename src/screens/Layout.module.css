@@ -173,6 +173,13 @@ margin-right: 10px;
     align-items: center;
 
 }
+.cart{
+    height: 100%;
+    color:white;
+
+  margin-left: 2%;
+  margin-right: 5%;
+}
 .dropitem{
     font-size: smaller;
 

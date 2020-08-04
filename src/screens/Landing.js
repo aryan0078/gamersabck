@@ -10,7 +10,7 @@ import TopHeader from "../components/TopHeader";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import { Menu, Dropdown, Drawer } from "antd";
-import { UserOutlined, DownOutlined, MenuOutlined } from "@ant-design/icons";
+import { UserOutlined, ShoppingCartOutlined, MenuOutlined } from "@ant-design/icons";
 import CFooter from "../components/footer";
 import { app } from "../firebase";
 import { Redirect, Link } from "react-router-dom";
@@ -120,6 +120,8 @@ export default class Landing extends Component {
                   </a>
                 </Link>
               </button>
+              <div className={styles.cart}>
+                <ShoppingCartOutlined style={{ fontSize: '24px' }} /></div>
               {localStorage.getItem("fullname") ? (
                 <div className={styles.user}>
                   {" "}
@@ -131,10 +133,10 @@ export default class Landing extends Component {
                   </Dropdown>{" "}
                 </div>
               ) : (
-                <button className={styles.loginregbtn} onClick={this.login}>
-                  Login/Register
-                </button>
-              )}
+                  <button className={styles.loginregbtn} onClick={this.login}>
+                    Login/Register
+                  </button>
+                )}
             </div>
           </div>
         </Header>
@@ -187,34 +189,34 @@ export default class Landing extends Component {
                 <div className={styles.cevent}>Previous Events</div>
               </Drawer>
             ) : (
-              <Drawer
-                title="Basic Drawer"
-                placement="right"
-                closable={false}
-                visible={this.state.visible}>
-                {localStorage.getItem("fullname") ? (
-                  <div className={styles.b1m}>
-                    {" "}
-                    <Avatar size={64} icon={<UserOutlined />} />{" "}
-                    {localStorage.getItem("fullname")}{" "}
-                  </div>
-                ) : (
-                  <div
-                    className={styles.b1m}
-                    onClick={() => {
-                      this.setState({ login: true, visible: false });
-                    }}>
-                    Login/Register
-                  </div>
-                )}
-                <div className={styles.cevent}>Create Event</div>
-              </Drawer>
-            )}
+                <Drawer
+                  title="Basic Drawer"
+                  placement="right"
+                  closable={false}
+                  visible={this.state.visible}>
+                  {localStorage.getItem("fullname") ? (
+                    <div className={styles.b1m}>
+                      {" "}
+                      <Avatar size={64} icon={<UserOutlined />} />{" "}
+                      {localStorage.getItem("fullname")}{" "}
+                    </div>
+                  ) : (
+                      <div
+                        className={styles.b1m}
+                        onClick={() => {
+                          this.setState({ login: true, visible: false });
+                        }}>
+                        Login/Register
+                      </div>
+                    )}
+                  <div className={styles.cevent}>Create Event</div>
+                </Drawer>
+              )}
             {this.state.login ? (
               <Auth visible={true} />
             ) : (
-              <Auth visible={false} />
-            )}
+                <Auth visible={false} />
+              )}
           </Content>
         </Layout>
       </Layout>

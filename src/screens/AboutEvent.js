@@ -4,6 +4,11 @@ import { CalendarFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { Modal, Carousel } from "antd";
 import Landing from "./Landing";
+import { createFromIconfontCN } from '@ant-design/icons';
+
+const IconFont = createFromIconfontCN({
+  scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
+});
 class AboutEvent extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +44,9 @@ class AboutEvent extends Component {
               <button>fubdifb</button>
             </div>
           </Modal>
-
+          <div className={styles.socialmedia}>
+            <IconFont type="icon-twitter" />
+          </div>
           <Link to="/payment">
             <button className={styles.booknowf}>Book Now</button>
           </Link>
@@ -69,7 +76,7 @@ class AboutEvent extends Component {
                 </div>
                 <h1 className={styles.date}>Event start date </h1>
                 <h1 className={styles.time}>7:00 pm</h1>
-                <h1 className={styles.button}>View All Dates</h1>
+
               </div>
               <div className={styles.row2}>
                 <div className={styles.icons}>

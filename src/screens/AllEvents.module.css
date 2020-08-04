@@ -8,11 +8,12 @@
   background-color: black;
 }
 .pagenav {
-  width: 100%;
+  width: 200px;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 2%;
   display: flex;
+  align-self: start;
   justify-content: start;
 }
 .c {

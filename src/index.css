@@ -6,7 +6,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.ant-layout-header{
+  background-color: #242224 !important;
+  box-shadow:0px 0px 10px #111111;
+}
+.ant-layout-sider,.ant-layout-sider-dark,.ant-layout-sider-collapsed{
+box-shadow: 1px 5px 10px #111111}
+.ant-layout-sider,.ant-layout-sider-dark,.ant-layout-sider-collapsed,.ant-menu,.ant-menu-dark,.ant-menu-inline-collapsed,.ant-menu-item,.ant-menu-root,.ant-menu-vertical{
+background-color: #242224 !important;
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

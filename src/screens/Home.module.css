@@ -6,8 +6,8 @@ padding-left: 8%;
 padding-right: 6%;
 flex-direction: column;
   display: flex;
-  background-color: black;
-background-image: url('./assets/r6.jpg');
+  background-color: #1D1A1D;
+
 background-size:contain;
 background-repeat: no-repeat;
 
@@ -62,14 +62,12 @@ padding: 0px;
 margin-bottom: 5em;
   background-color: #121212;
   width: 80%;
+  box-shadow:  2px 2px 2px 2px #111111;
   height: 130px;
   flex-direction: row;
   border-radius: 10px;
   align-self: start;
-border-width: 0.5px;
 
-border-style: solid;
-border-color: #4b4a4a;
   display: flex;
   position: relative;
   align-items: center;
@@ -398,6 +396,7 @@ flex-direction: column;
 
 .cardhoderblog{
   margin-top: 2.5%;
+  
   align-items: center;
   justify-content: center;
   display: flex;
@@ -421,7 +420,7 @@ flex-direction: column;
   width: 50%;
   height: 35em;
 background-color: #121212;
-
+box-shadow:  2px 2px 2px 2px #111111;
 
 
 padding:3%;
@@ -439,12 +438,14 @@ align-items: flex-start;
   background-size: cover;
   border-radius: 10px;
   height: 35em;
+  box-shadow:  2px 2px 2px 2px #111111;
   margin-right: 2%;
 }
 .blogbtn1{
   background-color: #CA0C2A;
   width: 10em;
   border-width: 0px;
+  box-shadow:  2px 2px 2px 2px #111111;
   border-radius: 5px;
   color: white;
   height: 2em;
@@ -453,6 +454,7 @@ align-items: flex-start;
 }
 .blogcardt1{
   font-weight: 500;
+  box-shadow:  2px 2px 2px 2px #111111;
   color: white;
   font-size: 30px;
   font-family: mont;
@@ -468,6 +470,7 @@ align-items: flex-start;
   border: 1px solid #c5c5c5;
   background-color: black;
   width: 10em;
+  box-shadow:  2px 2px 2px 2px #111111;
   height: 3em;
   border-width: 0px;
   border-radius: 5px;
@@ -514,6 +517,7 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
  margin: 0.5%;
+ box-shadow:  4px 4px 4px 4px #111111;
 
   height: 17em;
 justify-content: center;

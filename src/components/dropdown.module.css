@@ -29,7 +29,6 @@
 }
 .dropdown {
   position: absolute;
-  top: 50px;
   width: 200px;
   z-index: 100;
   transform: translateX(-5%);
@@ -54,6 +53,11 @@
   transition: background var(--speed);
   padding: 0.5rem;
   color: white;
+  cursor: pointer;
+}
+
+.selectedDdMenuItem {
+  background-color: #aa0020;
 }
 
 .menuitem .iconbutton {
@@ -75,4 +79,5 @@
 .title {
   color: white;
   padding: 0px;
+  cursor: pointer;
 }

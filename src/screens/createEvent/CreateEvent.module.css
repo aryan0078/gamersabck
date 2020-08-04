@@ -349,6 +349,15 @@ display: flex;
   border-radius: 5px;
 }
 
+.TicketRowWrapper {
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 1%;
+  padding: 2% 0 2% 2%;
+  align-items: center;
+}
+
 .eventDates,
 .ticketInfo,
 .regInfo,
@@ -372,6 +381,18 @@ display: flex;
 .nSubs,
 .prizeRowField {
   width: 40%;
+}
+
+.createEventAboutAccordion {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  font-size: 18px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 2%;
 }
 
 .rowAddDeleteButton button {
@@ -461,7 +482,7 @@ display: flex;
 }
 
 @media screen and (max-width: 1200px) {
-  .createEventWrapper{
+  .createEventWrapper {
     padding-top: 15%;
   }
   .playerInfoOptionCard {

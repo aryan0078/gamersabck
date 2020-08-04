@@ -111,7 +111,10 @@ class AboutEvent extends Component {
           <div className={styles.parentDiv_}>
             <div className={styles.title}>
               <h1 className={styles.titleofc}>Browse categorys</h1>
-              <a className={styles.vbtn}> View All</a>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a href="#" className={styles.vbtn}>
+                View All
+              </a>
             </div>
 
             <div className={styles.horscroll}>

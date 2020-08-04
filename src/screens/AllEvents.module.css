@@ -7,7 +7,7 @@
   padding-right: 5%;
   background-color: black;
 }
-.pagenav{
+.pagenav {
   width: 100%;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -43,7 +43,7 @@
   padding: 0px;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .cimg {
   height: 18em;
@@ -205,8 +205,6 @@
 .title {
   color: #ffffff;
   font-size: 40px;
- 
- 
 }
 .entertainmentholder {
   flex-direction: column;
@@ -270,10 +268,10 @@
   .main {
     overflow: hidden;
     padding-top: 15%;
-   
+
     flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -282,7 +280,7 @@
     border: none;
     color: white;
     width: 100%;
-   margin-left: 0px;
+    margin-left: 0px;
     height: auto;
     border-radius: 10px;
     margin-top: 5%;
@@ -294,8 +292,8 @@
     padding: 5%;
 
     height: auto;
-   margin-left: 0px;
-   margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
     justify-content: center;
     align-items: flex-start;
   }

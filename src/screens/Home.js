@@ -1,22 +1,27 @@
-import React, { Component } from 'react';
-import styles from './Home.module.css'
-import { Carousel } from 'antd';
-import { Menu, Button } from 'antd';
-import Drop from '../components/dropdown'
-import { Col, Row } from 'antd';
-import { Avatar } from 'antd';
-import { Link } from 'react-router-dom'
-import { UserOutlined, DownOutlined, ArrowRightOutlined } from '@ant-design/icons';
-import Card from '../components/Card'
-import { Rate } from 'antd';
-import { DatePicker } from 'antd'
-import Typewriter from 'typewriter-effect';
-import Landing from './Landing';
+import React, { Component } from "react";
+import styles from "./Home.module.css";
+import { Carousel } from "antd";
+import { Menu, Button } from "antd";
+import Drop from "../components/dropdown";
+import { Col, Row } from "antd";
+import { Avatar } from "antd";
+import { Link } from "react-router-dom";
+import {
+  UserOutlined,
+  DownOutlined,
+  ArrowRightOutlined,
+} from "@ant-design/icons";
+import Card from "../components/Card";
+import { Rate } from "antd";
+import { DatePicker } from "antd";
+import Typewriter from "typewriter-effect";
+import Landing from "./Landing";
 export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       sellbutton: 0,
+      where: "",
       selldata:
         "After the event was created you can add tickets. An event can have multiple ticket types. You can add the amount of tickets available and the date your audience can start buying them and a date when the sale ends.",
     };
@@ -42,12 +47,17 @@ export default class Home extends Component {
       });
     }
   };
+
+  recieveProps = data => {
+    this.setState({
+      where: data,
+    });
+  };
+
   render() {
     return (
       <>
-
         <Landing />
-
 
         <div className={styles.main}>
           <span className={styles.emptyspace}></span>
@@ -67,10 +77,17 @@ export default class Home extends Component {
           <h1 className={styles.btitle}>around you.</h1>
           <div className={styles.searchbox}>
             <div className={styles.whatholder}>
-              <h3 className={styles.searchind} >WHAT</h3>
-              <Drop title={'Select Category'} >
-
-              </Drop>
+              <h3 className={styles.searchind}>WHAT</h3>
+              <Drop
+                sendProps={this.recieveProps}
+                title={"Select Category"}
+                options={[
+                  { id: 1, option: "foo" },
+                  { id: 2, option: "bar" },
+                  { id: 3, option: "bar" },
+                  { id: 4, option: "bar" },
+                ]}
+              />
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHEN</h3>
@@ -78,13 +95,10 @@ export default class Home extends Component {
             </div>
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHERE</h3>
-              <Drop title={'Select Category'} >
-
-              </Drop>
+              <Drop title={"Select Category"}></Drop>
             </div>
 
             <button className={styles.searchs}>Search</button>
-
           </div>
           <div className={styles.upcomingholder}>
             <h3 style={{ color: "white", alignSelf: "flex-start" }}>
@@ -95,7 +109,6 @@ export default class Home extends Component {
                 Upcoming <span style={{ color: "#CA0C2A" }}> Events</span>
               </h1>
               <Link to="/allevents">
-                {" "}
                 <button className={styles.viewallbtn}>
                   View All Events <ArrowRightOutlined />
                 </button>
@@ -143,7 +156,6 @@ export default class Home extends Component {
             </div>
           </div>
 
-
           <div className={styles.blogsectionholder}>
             <div className={styles.lableholder}>
               <h2 className={styles.sellticketholderl}>LATEST NEWS</h2>
@@ -182,8 +194,13 @@ export default class Home extends Component {
                 <div>
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
-                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: "white", fontSize: "medium" }}>
+                        Awesom dude
+                      </h1>
+                      <p style={{ color: "white", fontSize: "smaller" }}>
+                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
+                        we
+                      </p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -219,8 +236,13 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
-                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: "white", fontSize: "medium" }}>
+                        Awesom dude
+                      </h1>
+                      <p style={{ color: "white", fontSize: "smaller" }}>
+                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
+                        we
+                      </p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -239,8 +261,13 @@ export default class Home extends Component {
                 <div>
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
-                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: "white", fontSize: "medium" }}>
+                        Awesom dude
+                      </h1>
+                      <p style={{ color: "white", fontSize: "smaller" }}>
+                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
+                        we
+                      </p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -255,8 +282,13 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
-                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: "white", fontSize: "medium" }}>
+                        Awesom dude
+                      </h1>
+                      <p style={{ color: "white", fontSize: "smaller" }}>
+                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
+                        we
+                      </p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}
@@ -271,8 +303,13 @@ export default class Home extends Component {
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: 'white', fontSize: 'medium' }}>Awesom dude</h1>
-                      <p style={{ color: 'white', fontSize: 'smaller' }}>loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg we</p>
+                      <h1 style={{ color: "white", fontSize: "medium" }}>
+                        Awesom dude
+                      </h1>
+                      <p style={{ color: "white", fontSize: "smaller" }}>
+                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
+                        we
+                      </p>
                       <div className={styles.imgstarandname}>
                         <Avatar
                           size={60}

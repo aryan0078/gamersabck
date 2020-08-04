@@ -21,6 +21,7 @@ export default class Home extends Component {
     super(props);
     this.state = {
       sellbutton: 0,
+      where: "",
       selldata:
         "After the event was created you can add tickets. An event can have multiple ticket types. You can add the amount of tickets available and the date your audience can start buying them and a date when the sale ends.",
     };
@@ -45,6 +46,13 @@ export default class Home extends Component {
       });
     }
   };
+
+  recieveProps = data => {
+    this.setState({
+      where: data,
+    });
+  };
+
   render() {
     return (
       <>
@@ -70,6 +78,7 @@ export default class Home extends Component {
             <div className={styles.whatholder}>
               <h3 className={styles.searchind}>WHAT</h3>
               <Drop
+                sendProps={this.recieveProps}
                 title={"Select Category"}
                 options={[
                   { id: 1, option: "foo" },

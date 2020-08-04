@@ -2,7 +2,7 @@
  *
  * Functional Component
  *
- * Takes 3 props:
+ * Takes 4 props:
  *   multiSelect: boolean => to make dropdown select more than one options.
  *   title: string => the value to be displayed initially before anything is selected.
  *   options: array => contains an array of object with the following keys:
@@ -13,7 +13,7 @@
  * there is a click outside the dropdown menu.
  */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import cx from "classnames";
 
 import * as styles from "./dropdown.module.css";

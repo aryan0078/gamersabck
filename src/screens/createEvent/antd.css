@@ -1,0 +1,31 @@
+.drop{
+    background-color: #121212 !important;
+}
+.dropdown{
+    background-color: #121212 !important;
+}
+.ant-steps ,.ant-steps-vertical{
+background-color: #282828;color: white !important;
+}
+.ant-select-selector{
+    background-color: #282828 !important;
+    color: white;
+    border-width: 0px !important;
+}
+.ant-picker-input ,.ant-picker-input-active{
+background-color: #282828 !important;
+}
+.ant-select-selector{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.ant-select-selection-item{
+    background-color: #111111 !important;
+    border-color: #282828 !important;
+    border-radius: 5px !important;
+    color: white !important;
+
+}
+.ant-select-selection-item-remove{
+    color: white !important;
+}

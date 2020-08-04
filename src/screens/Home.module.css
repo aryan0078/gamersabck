@@ -364,6 +364,7 @@ p {
   transform: translateY(-5px);
 }
 .blogsectionholder {
+  margin-top: 5%;
   display: flex;
   width: 100%;
   position: relative;

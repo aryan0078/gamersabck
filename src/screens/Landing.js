@@ -40,7 +40,15 @@ export default class Landing extends Component {
       </Menu.Item>
       <Menu.Item key="0">
         <Link to="/dashboard">
-          <a className={styles.dropitem}>Help</a>
+          {" "}
+          <a className={styles.dropitem}>Bookmarked Events</a>
+        </Link>
+      </Menu.Item>
+
+      <Menu.Item key="1">
+        <Link to="/">
+          {" "}
+          <a className={styles.dropitem}>help</a>
         </Link>
       </Menu.Item>
       <Menu.Item key="0">
@@ -56,12 +64,6 @@ export default class Landing extends Component {
           }}>
           Log out
         </a>
-      </Menu.Item>
-      <Menu.Item key="1">
-        <Link to="/">
-          {" "}
-          <a className={styles.dropitem}>Bookmark events</a>
-        </Link>
       </Menu.Item>
     </Menu>
   );

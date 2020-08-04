@@ -5,7 +5,7 @@ import styles from './Register.module.css'
 import firebase from 'firebase'
 import { Spin } from 'antd';
 import { useAsync } from 'react-async';
-import { LoadingOutlined, GoogleOutlined } from '@ant-design/icons';
+import { LoadingOutlined, GoogleOutlined, UserOutlined, LockOutlined, FacebookOutlined } from '@ant-design/icons';
 
 import Register from './Register';
 import { Redirect } from 'react-router-dom';
@@ -20,7 +20,7 @@ export default class Login extends Component {
 
         console.log(log)
         this.state = {
-            loading: false,
+            loading: false, nav: false,
             email: '', password: '', error: false, serror: false, fullname: '', loggedin: false, register: false
             , login: log
         }
@@ -28,15 +28,42 @@ export default class Login extends Component {
     antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
 
-    glogin = () => {
+    async glogin() {
+        var db = app.firestore()
         var provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider).then(function (result) {
+        await firebase.auth().signInWithPopup(provider).then(function (result) {
             // This gives you a Google Access Token. You can use it to access the Google API
             var token = result.credential.accessToken;
 
             // The signed-in user info.
             var user = result.user;
-            console.log(result.user)
+            var email = result.user.email
+            var fullname = result.user.displayName
+            var photo = result.user.photoURL
+            var password = result.user.getIdToken
+            var dob = '26/04/2002'
+            var gender = 'male'
+            var username = email.split('@')[0]
+            db.collection('users').doc(result.user.uid).set({
+                fullname: fullname,
+                username: username,
+                gender: gender,
+                dob: dob,
+                email: email,
+                password: 'password'
+            }).then(() => {
+                db.collection('usernames').doc(username).set({
+                    username: username
+                })
+
+                localStorage.setItem('fullname', fullname)
+                localStorage.setItem('username', username)
+                localStorage.setItem('gender', gender)
+                localStorage.setItem('dob', dob)
+                localStorage.setItem('email', email)
+                alert('Registration Done!')
+                window.location.reload()
+            })
             // ...
         }).catch(function (error) {
             // Handle Errors here.
@@ -45,7 +72,7 @@ export default class Login extends Component {
             // The email of the user's account used.
             var email = error.email;
             // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
+            var credential = error.credential; console.log(errorMessage)
             // ...
         });
     }
@@ -107,7 +134,7 @@ export default class Login extends Component {
         var visible = this.props.visible
         const error = this.state.error
 
-        if (this.state.register) {
+        if (this.state.nav) {
             return (
                 <Register />
             )
@@ -118,29 +145,34 @@ export default class Login extends Component {
 
                 <div className={styles.mainl}>
 
-                    <div className={styles.title}>
-                        <h1>Welcome Back</h1>
-                        <p>Welcome to gamersback</p>
-                    </div>
+
 
                     <div className={styles.login}>
-                        <label>Email</label>
-                        <input className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
+
+                        <div className={styles.icons}><UserOutlined /> </div>       <input type="email" placeholder="Email" className={styles.inp} value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} />
 
                     </div>
 
                     <div className={styles.login}>
-                        <label>Password</label>
-                        <input type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+
+                        <div className={styles.icons}><LockOutlined /> </div>  <input placeholder="Password" type="password" className={styles.inp} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+                    </div>
+                    <div className={styles.regf}>
+                        <div style={{ display: 'flex', flexDirection: 'row' }}> <input type="checkbox" /><h1 className={styles.rem}>Remember Me</h1></div>
+                        <h1 className={styles.forgot}>Forgot your password</h1>
+                    </div>
+                    <div className={styles.loginnrem}>
+                        <div className={styles.h}>
+                        </div>
+                        {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}</div>
+                    <h1 className={styles.text}>or Login with social Media</h1>
+
+                    <div className={styles.sociallogin}>
+                        <div className={styles.google} onClick={this.glogin}><GoogleOutlined style={{ fontSize: '30px' }} /></div>
+                        <div className={styles.facebook}><FacebookOutlined style={{ fontSize: '30px' }} /></div>
                     </div>
 
-
-                    {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <button onClick={this.log} className={styles.reg}>Sign in </button>}
-                    <button onClick={() => this.setState({ register: true })} className={styles.reg}>Register </button>
-
-                    {this.state.loading ? <Spin indicator={this.antIcon} spinning={this.state.loading} /> : <GoogleOutlined style={{ fontSize: '25px', color: 'white' }} onClick={this.glogin} />}
                 </div>
-
 
             </>
         )

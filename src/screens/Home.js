@@ -26,6 +26,7 @@ export default class Home extends Component {
         "After the event was created you can add tickets. An event can have multiple ticket types. You can add the amount of tickets available and the date your audience can start buying them and a date when the sale ends.",
     };
   }
+
   datac = e => {
     if (e.target.value === "0") {
       this.setState({
@@ -154,50 +155,7 @@ export default class Home extends Component {
               <Card />
             </div>
           </div>
-          <div className={styles.dealofthedayholder}>
-            <div className={styles.buttonndstuff}>
-              <button className={styles.grabdealnowbtn}>
-                Grab The deal Now
-              </button>
-            </div>
-          </div>
-          <div className={styles.sellticketholder}>
-            <div className={styles.lableholder}>
-              <h2 className={styles.sellticketholderl}>HOW TO</h2>
-              <h1 className={styles.sellticketholder2}>
-                Sell Your <span style={{ color: "#CA0C2A" }}>Tickets</span>
-              </h1>
-            </div>
-            <div className={styles.textandimg}>
-              <div className={styles.textcontainer}>
-                <p className={styles.sellticketlongtext}>
-                  {this.state.selldata}
-                </p>
-              </div>
-              <div className={styles.sideimageofsell}></div>
-            </div>
-            <div className={styles.allthebuttons}>
-              <button
-                className={styles.sellticketbutton}
-                value="0"
-                onMouseOver={this.datac}>
-                <span style={{ color: "#CA0C2A" }}>01</span> CREATE AN EVENT
-              </button>
-              <button
-                className={styles.sellticketbutton}
-                value="1"
-                onMouseOver={this.datac}>
-                <span style={{ color: "#CA0C2A" }}>02</span> ADD TICKETS
-              </button>
-              <button
-                className={styles.sellticketbutton}
-                value="2"
-                onMouseOver={this.datac}>
-                <span style={{ color: "#CA0C2A" }}>03</span> 03 EARN MONEY
-              </button>
-            </div>
-            <button className={styles.getstartedbtn}>GET STARTED</button>
-          </div>
+
           <div className={styles.blogsectionholder}>
             <div className={styles.lableholder}>
               <h2 className={styles.sellticketholderl}>LATEST NEWS</h2>

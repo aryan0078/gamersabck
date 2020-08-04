@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cx from "classnames";
 import { DatePicker } from "antd";
-
+import { Select } from 'antd';
 import * as styles from "./CreateEvent.module.css";
+import './antd.css'
+const { Option } = Select;
+
 
 const { RangePicker } = DatePicker;
 
@@ -132,23 +135,30 @@ class CreateEventGeneral extends React.Component {
               Dates
             </label>
             <br />
-            <RangePicker
-              className={styles.datePicker}
-              onChange={this.onDateChange}
-            />
+            <div className={styles.datePicker}>
+              <RangePicker
+                bordered={false}
+                style={{ color: 'white', padding: '10px', backgroundColor: '#282828' }}
+                className={styles.datePicker}
+                onChange={this.onDateChange}
+              />
+            </div>
             <br />
             <label htmlFor="event-type" className={styles.label}>
               Select Type(s)
             </label>
-            <div
-              className={styles.dropDownSelect}
-              onClick={() => {
-                this.setState({ open: !this.state.open });
-              }}
-            >
-              Select the type of event(s)
+            <div className={styles.types}>
+              <Select
+                mode="multiple"
+                style={{ width: '100%', backgroundColor: '#282828', color: 'black' }}
+                placeholder="Please select"
+                dropdownClassName="drop"
+                className='drop'
+                dropdownStyle={{ backgroundColor: 'pink' }}
+              >
+                <Option key="1" >1</Option>
+              </Select>
             </div>
-            {this.state.open && this.dropDown()}
             <br />
             <label htmlFor="event-location" className={styles.label}>
               Location

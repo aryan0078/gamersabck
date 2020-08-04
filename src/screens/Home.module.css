@@ -554,10 +554,10 @@ flex-direction: row;
 
   .main{
    
-      padding-right: 20px;
+
       padding-top: 100px;
-      overflow: hidden;
-      background-image: url('./assets/r6.jpg');
+   background-image: none;
+     background-color: #1D1A1D;
 background-size:cover;
 background-repeat: no-repeat;
  

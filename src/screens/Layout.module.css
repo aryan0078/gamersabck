@@ -234,16 +234,17 @@ width: 100%;
     .drawer{
         background-color: transparent;
         border-width: 1px;
-        border-color: grey;
         height: fit-content;
         padding: 10px;
+        cursor: pointer;
+        background-color: #292929;
+        box-shadow:1px 1px 5px #1D1A1D;
         border-radius: 5px;
         color: white;
-        font-size: 30px;
+        font-size: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
-margin-top: 5px;
-margin-right: 20px;
-    }
+margin-top: 25%;
+}
   }

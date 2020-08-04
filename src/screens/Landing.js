@@ -101,7 +101,7 @@ export default class Landing extends Component {
               </div>
             </div>
             <div className={styles.log}>
-              <button
+              <div
                 className={styles.drawer}
                 onClick={() => {
                   if (this.state.visible) {
@@ -111,7 +111,7 @@ export default class Landing extends Component {
                   }
                 }}>
                 <MenuOutlined />
-              </button>
+              </div>
               <button className={styles.createevent} onClick={this.login}>
                 <Link to="/createevent/general">
                   <a style={{ color: "white", fontSize: "small" }}>

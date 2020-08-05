@@ -203,66 +203,36 @@ export default class Home extends Component {
                 <div>
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white", fontSize: "medium" }}>
-                        Awesom dude
-                      </h1>
-                      <p style={{ color: "white", fontSize: "smaller" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
-                      <div className={styles.imgstarandname}>
-                        <Avatar
-                          size={60}
-                          icon={<UserOutlined />}
-                          style={{ marginTop: "6%" }}
-                        />
-                        <div className={styles.nametimestar}>
-                          <Rate disabled={true} value={5} />
-                          <h3 style={{ color: "white" }}>Aryan Singh</h3>
-                          <h4 style={{ color: "white" }}>26/04/2020</h4>
+                      <div className={styles.imgandname}>
+                        <div className={styles.userimg}></div>
+                        <div className={styles.nameofu}>
+                          <h1 style={{ fontSize: 'small' }}>Aryan Singh</h1>
                         </div>
+                      </div>
+                      <div className={styles.allcontent}>
+                        dfbtwbtwhtrhwthwehwehewtherherhwehewrhehderhxcewr
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white", fontSize: "medium" }}>
-                        Awesom dude
-                      </h1>
-                      <p style={{ color: "white", fontSize: "smaller" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
-                      <div className={styles.imgstarandname}>
-                        <Avatar
-                          size={60}
-                          icon={<UserOutlined />}
-                          style={{ marginTop: "6%" }}
-                        />
-                        <div className={styles.nametimestar}>
-                          <Rate disabled={true} value={5} />
-                          <h3 style={{ color: "white" }}>Aryan Singh</h3>
-                          <h4 style={{ color: "white" }}>26/04/2020</h4>
+                      <div className={styles.imgandname}>
+                        <div className={styles.userimg}></div>
+                        <div className={styles.nameofu}>
+                          <h1 style={{ fontSize: 'small' }}>Aryan Singh</h1>
                         </div>
+                      </div>
+                      <div className={styles.allcontent}>
+                        dfbtwbtwhtrhwthwehwehewtherherhwehewrhehderhxcewr
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white", fontSize: "medium" }}>
-                        Awesom dude
-                      </h1>
-                      <p style={{ color: "white", fontSize: "smaller" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
-                      <div className={styles.imgstarandname}>
-                        <Avatar
-                          size={60}
-                          icon={<UserOutlined />}
-                          style={{ marginTop: "6%" }}
-                        />
-                        <div className={styles.nametimestar}>
-                          <Rate disabled={true} value={5} />
-                          <h3 style={{ color: "white" }}>Aryan Singh</h3>
-                          <h4 style={{ color: "white" }}>26/04/2020</h4>
+                      <div className={styles.imgandname}>
+                        <div className={styles.userimg}></div>
+                        <div className={styles.nameofu}>
+                          <h1 style={{ fontSize: 'small' }}>Aryan Singh</h1>
                         </div>
+                      </div>
+                      <div className={styles.allcontent}>
+                        dfbtwbtwhtrhwthwehwehewtherherhwehewrhehderhxcewr
                       </div>
                     </div>
                   </div>
@@ -270,66 +240,36 @@ export default class Home extends Component {
                 <div>
                   <div className={styles.row1test}>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white", fontSize: "medium" }}>
-                        Awesom dude
-                      </h1>
-                      <p style={{ color: "white", fontSize: "smaller" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
-                      <div className={styles.imgstarandname}>
-                        <Avatar
-                          size={60}
-                          icon={<UserOutlined />}
-                          style={{ marginTop: "6%" }}
-                        />
-                        <div className={styles.nametimestar}>
-                          <Rate disabled={true} value={5} />
-                          <h3 style={{ color: "white" }}>Aryan Singh</h3>
-                          <h4 style={{ color: "white" }}>26/04/2020</h4>
+                      <div className={styles.imgandname}>
+                        <div className={styles.userimg}></div>
+                        <div className={styles.nameofu}>
+                          <h1 style={{ fontSize: 'small' }}>Aryan Singh</h1>
                         </div>
+                      </div>
+                      <div className={styles.allcontent}>
+                        dfbtwbtwhtrhwthwehwehewtherherhwehewrhehderhxcewr
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white", fontSize: "medium" }}>
-                        Awesom dude
-                      </h1>
-                      <p style={{ color: "white", fontSize: "smaller" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
-                      <div className={styles.imgstarandname}>
-                        <Avatar
-                          size={60}
-                          icon={<UserOutlined />}
-                          style={{ marginTop: "6%" }}
-                        />
-                        <div className={styles.nametimestar}>
-                          <Rate disabled={true} value={5} />
-                          <h3 style={{ color: "white" }}>Aryan Singh</h3>
-                          <h4 style={{ color: "white" }}>26/04/2020</h4>
+                      <div className={styles.imgandname}>
+                        <div className={styles.userimg}></div>
+                        <div className={styles.nameofu}>
+                          <h1 style={{ fontSize: 'small' }}>Aryan Singh</h1>
                         </div>
+                      </div>
+                      <div className={styles.allcontent}>
+                        dfbtwbtwhtrhwthwehwehewtherherhwehewrhehderhxcewr
                       </div>
                     </div>
                     <div className={styles.testnomialcards}>
-                      <h1 style={{ color: "white", fontSize: "medium" }}>
-                        Awesom dude
-                      </h1>
-                      <p style={{ color: "white", fontSize: "smaller" }}>
-                        loremipsum oienfioenonewiognoeigwegewgewgewg ewg wegewg
-                        we
-                      </p>
-                      <div className={styles.imgstarandname}>
-                        <Avatar
-                          size={60}
-                          icon={<UserOutlined />}
-                          style={{ marginTop: "6%" }}
-                        />
-                        <div className={styles.nametimestar}>
-                          <Rate disabled={true} value={5} />
-                          <h3 style={{ color: "white" }}>Aryan Singh</h3>
-                          <h4 style={{ color: "white" }}>26/04/2020</h4>
+                      <div className={styles.imgandname}>
+                        <div className={styles.userimg}></div>
+                        <div className={styles.nameofu}>
+                          <h1 style={{ fontSize: 'small' }}>Aryan Singh</h1>
                         </div>
+                      </div>
+                      <div className={styles.allcontent}>
+                        dfbtwbtwhtrhwthwehwehewtherherhwehewrhehderhxcewr
                       </div>
                     </div>
                   </div>

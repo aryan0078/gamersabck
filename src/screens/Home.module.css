@@ -7,7 +7,7 @@ padding-right: 6%;
 flex-direction: column;
   display: flex;
   background-color: #1D1A1D;
-background-image: url('./assets/r6.jpg');
+
 background-size:contain;
 background-repeat: no-repeat;
 
@@ -60,16 +60,15 @@ padding: 0px;
 }
 .searchbox{
 margin-bottom: 5em;
-  background-color: #121212;
+  background-color: #242224;
   width: 80%;
   height: 130px;
   flex-direction: row;
   border-radius: 10px;
   align-self: start;
 border-width: 0.5px;
+box-shadow: 2px 2px 2px #121212;
 
-border-style: solid;
-border-color: #4b4a4a;
   display: flex;
   position: relative;
   align-items: center;
@@ -508,19 +507,48 @@ flex-direction: column;
   background-color: black;
   width: 15em;
 }
+.imgandname{
+  display: flex;
+  flex-direction: row;
+justify-content: left;
+align-items: center;
+width: 100%;
+
+
+}
+.allcontent{
+width: 100%;
+overflow: hidden;
+
+
+height: 100%;
+margin-top: 20px;
+color: #fff;
+line-break: 10px;
+}
+.userimg{
+  margin-right: 5px;
+  background-color: #4b4a4a;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+
+}
 .testnomialcards{
   width: 30%;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
  margin: 0.5%;
 
   height: 17em;
+
+align-items: center;
+padding: 3%;
 justify-content: center;
-align-items: left;
-padding-left: 1%;
-text-align: left;
-  background-color: #121212;
+
+box-shadow: 2px 2px 2px #121212;
+  background-color: #242224;
 }
 .searchs{
   background-color: #CA0C2A;

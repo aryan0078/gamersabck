@@ -1,0 +1,56 @@
+.on-circle(@item-count, @circle-size, @item-size) {
+
+    position: relative;
+    width: unit(@circle-size, px);
+    height: unit(@circle-size, px);
+    padding: 0;
+    margin:auto;
+    border-radius: 50%;
+    
+    > * {
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: unit(@item-size, px);
+    height: unit(@item-size, px);
+    margin: unit(-(@item-size / 2), px);
+    
+    @angle: (360 / @item-count);
+    
+    .cl(@i,@r) when (@i > 0) {
+    
+    &:nth-of-type(@{i}) {
+    
+    transform: rotate(@r * 1deg)  translate(unit(@circle-size/2,px)) rotate(@r * -1deg);
+    
+    }
+    
+    @rot: @r + @angle;
+    .cl(@i - 1,@rot);
+    
+    }
+    
+    .cl(@item-count,0);
+    
+    }
+    
+    }
+
+.socialham{.on-circle($item-count: 8, $circle-size: 20em, $item-size: 6em); 
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 85px;
+    right: 50px;
+    display: flex;
+  
+    
+    
+    
+     
+    border-radius: 100px;
+    background-color: #121212;
+
+}

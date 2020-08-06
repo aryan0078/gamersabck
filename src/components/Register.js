@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { app } from '../firebase'
 import Modal from 'antd/lib/modal/Modal';
-import '../styling/componentsdesign.less'
+
 import styles from './Register.module.css'
 import { DatePicker, Alert } from 'antd'
 import { Menu, Dropdown, message } from 'antd';

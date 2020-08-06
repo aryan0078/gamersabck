@@ -11,6 +11,18 @@ overflow: hidden;
     background-size: contain;
     background-color: black;
 }
+.hamd{
+  display: none;
+}
+.twitter{
+  background-color: #CA0C2A;
+  height: 20px;
+  width: 20px;
+
+}
+.socialham{
+
+}
 .socialmedia{
   background-color: #121212;
   width: 70px;

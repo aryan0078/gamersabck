@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import { Modal, Carousel } from "antd";
 import Landing from "./Landing";
 import { createFromIconfontCN } from '@ant-design/icons';
-
+import './hamburger.less'
 const IconFont = createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
 });
 class AboutEvent extends Component {
   constructor(props) {
     super(props);
-    this.state = { m: false };
+    this.state = { m: false, sv: false, va: false };
   }
   c = () => {
     if (this.state.m) {
@@ -44,7 +44,10 @@ class AboutEvent extends Component {
               <button>fubdifb</button>
             </div>
           </Modal>
-          <div className={styles.socialmedia}>
+          <div className={styles.socialmedia} onClick={() => {
+            if (this.state.sv) { this.setState({ sv: false }) }
+            else { this.setState({ sv: true }) }
+          }} >
             <IconFont type="icon-twitter" />
           </div>
           <Link to="/payment">
@@ -64,7 +67,14 @@ class AboutEvent extends Component {
                 <button className={styles.booknowb} onClick={this.c}>
                   Book Now
                 </button>
-                <button className={styles.omodal} onClick={this.c}>
+                {this.state.sv ? <div className="socialham">
+                  <div className={styles.twitter}></div>
+                  <div className={styles.twitter}></div>
+                  <div className={styles.twitter}></div>
+                  <div className={styles.twitter}></div>
+                </div> : null}
+
+                <button className={styles.omodal} >
                   Contact Organizer
                 </button>
               </div>
@@ -127,16 +137,13 @@ class AboutEvent extends Component {
             <div className={styles.horscroll}>
               <div className={styles.dcards}></div>
               <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
+
+            </div>
+            <div className={styles.parent}>
+              <div className={styles.childc}>
+                <div className={styles.child}> <div className={styles.dcards}></div> </div>
+                <div className={styles.clear}></div>
+              </div>
             </div>
           </div>
           <div className={styles.content}>

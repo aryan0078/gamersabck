@@ -28,9 +28,10 @@
   height: 20px;
 }
 .dropdown {
+  
   position: absolute;
   width: 200px;
-  z-index: 100;
+  z-index: 10000;
   transform: translateX(-5%);
   background-color: var(--bg);
   border: var(--border);

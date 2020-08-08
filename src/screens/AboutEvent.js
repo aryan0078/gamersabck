@@ -3,12 +3,15 @@ import styles from "./AboutEvent.module.css";
 import { CalendarFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { Modal, Carousel } from "antd";
-import Landing from "./Landing";
+
+import ScrollMenu from "react-horizontal-scrolling-menu";
+import Landing from "./Landing"; import ScrollContainer from 'react-indiana-drag-scroll'
 import { createFromIconfontCN } from '@ant-design/icons';
 import './hamburger.less'
 const IconFont = createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
 });
+
 class AboutEvent extends Component {
   constructor(props) {
     super(props);
@@ -125,27 +128,33 @@ class AboutEvent extends Component {
               </div>
             </div>
           </div>
-          <div className={styles.parentDiv_}>
-            <div className={styles.title}>
-              <h1 className={styles.titleofc}>Browse categorys</h1>
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a href="#" className={styles.vbtn}>
-                View All
-              </a>
-            </div>
 
-            <div className={styles.horscroll}>
-              <div className={styles.dcards}></div>
-              <div className={styles.dcards}></div>
 
-            </div>
-            <div className={styles.parent}>
-              <div className={styles.childc}>
-                <div className={styles.child}> <div className={styles.dcards}></div> </div>
-                <div className={styles.clear}></div>
+
+
+          <div className={styles.wrapper}>
+
+
+            <Carousel draggable={true}>
+              <div>
+                <div
+                  className={styles.bcard}
+                ></div>
+                <div
+                  className={styles.bcard}
+                ></div>
               </div>
-            </div>
+              <div>
+                <div
+                  className={styles.bcard}
+                ></div>
+                <div
+                  className={styles.bcard}
+                ></div>
+              </div>
+            </Carousel>
           </div>
+
           <div className={styles.content}>
             <div className={styles.orow2}>
               <h1 className={styles.eventname_}>VIBRA MAHOU FEST</h1>

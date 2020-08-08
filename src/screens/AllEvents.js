@@ -94,11 +94,19 @@ class AllEvents extends Component {
           <div className={styles.titlenfilter}>
             <h1 className={styles.title}>Simple Layout</h1>
             <div className={styles.fbuttons}>
-              <button className={styles.fbutton_} ><FilterOutlined />  <Drop title={'filter'} /> </button>
+              <div className={styles.fbutton_} ><FilterOutlined />  <Drop title={'filter'} options={[
+                { id: 1, option: "foo" },
+                { id: 2, option: "bar" },
+                { id: 3, option: "bar" },
+                { id: 4, option: "bar" },
+              ]} /> </div>
 
 
 
-              <button className={styles.fbutton}>SORT BY: Relevance</button>
+              <div className={styles.fbutton}>SORT BY:<Drop title={'Relevance'} options={[
+                { id: 1, option: "test" },
+
+              ]} /></div>
             </div>
           </div>
 

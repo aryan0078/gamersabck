@@ -13,6 +13,7 @@ import { Menu, Dropdown, Drawer } from "antd";
 import { UserOutlined, ShoppingCartOutlined, MenuOutlined } from "@ant-design/icons";
 import CFooter from "../components/footer";
 import { app } from "../firebase";
+import Drop from '../components/dropdown'
 import { Redirect, Link } from "react-router-dom";
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -120,6 +121,17 @@ export default class Landing extends Component {
                   </a>
                 </Link>
               </button>
+              <div className={styles.br}>
+                <Drop
+                  sendProps={this.recieveProps}
+                  title={"Browse Category"}
+                  options={[
+                    { id: 1, option: "foo" },
+                    { id: 2, option: "bar" },
+                    { id: 3, option: "bar" },
+                    { id: 4, option: "bar" },
+                  ]}
+                /></div>
               <div className={styles.cart}>
                 <ShoppingCartOutlined style={{ fontSize: '24px' }} /></div>
               {localStorage.getItem("fullname") ? (

@@ -5,13 +5,14 @@
   padding-left: 7%;
   flex-direction: column;
   padding-right: 5%;
-  background-color: black;
+  background-color: #1D1A1D;
 }
 .pagenav {
   width: 200px;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 2%;
+  
   display: flex;
   align-self: start;
   justify-content: start;
@@ -42,6 +43,7 @@
   display: flex;
   width: 100%;
   padding: 0px;
+
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -67,6 +69,7 @@
   width: 3rem;
   margin-right: 2%;
   height: 3rem;
+  box-shadow: 2px 2px 2px #121212;
   background-color: #111111;
 }
 .inputk {
@@ -91,32 +94,16 @@
   margin-left: 0px;
   color: white;
 }
-.searchbox {
-  margin-bottom: 5%;
-  background-color: #121212;
-  width: 100%;
-  height: 130px;
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: #4b4a4a;
-  flex-direction: row;
-  border-radius: 10px;
-  align-self: start;
 
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
 .fbuttons {
   flex-direction: row;
   display: flex;
   height: 100%;
-  margin-bottom: 1%;
 
-  margin-top: -5%;
+font-size: small;
+
   border-radius: 10px;
-  width: 104%;
+  width: 100%;
 }
 
 .cimg {
@@ -158,12 +145,10 @@
 }
 .searchbox {
   margin-bottom: 5%;
-  background-color: #121212;
+  background-color: #242424;
   width: 100%;
   height: 130px;
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: #4b4a4a;
+  box-shadow: 2px 2px 2px #121212;
   flex-direction: row;
   border-radius: 10px;
   align-self: start;
@@ -188,18 +173,20 @@
   font-family: mont;
   font-size: small;
   display: flex;
-  width: 80%;
+  width: 100px;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .fbutton {
   background-color: #0000;
-  border-width: 0px;
+
   color: white;
   font-family: mont;
   font-size: small;
   border-left-width: 1px;
+ font-size: small;
+
   border-left-color: white;
   display: flex;
 }
@@ -256,6 +243,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     padding-left: 5%;
+    width: 100px;
   }
   .entertainmentholder {
     flex-direction: column;

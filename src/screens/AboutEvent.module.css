@@ -49,6 +49,19 @@ overflow: hidden;
     font-size: 20px;
     justify-content:flex-start;
 }
+.sc{
+width: 100vh;
+overflow: hidden;
+display: flex;
+flex-direction: row;
+background-color: aqua;
+}
+.wrapper{
+margin-left: 50vh;
+height: 30vh;
+background-color: aqua;
+width: 100%;
+}
 .dcardsg{
     background-color: #CA0C2A;
     height: 28vh;
@@ -63,14 +76,11 @@ overflow: hidden;
 
 
 }
-.dcards{
-background-color: #CA0C2A;
-height: 23vh;
-width: 13%;
-border-radius: 10px;
-display: flex;
-margin-left: 1%;
-margin-right: 1%;
+.bcard{
+
+width: 40px;
+height: 40px;
+background-color: red;
 }
 /* Rahuls dummy CSS starts here */
 .imggalleryh1 {
